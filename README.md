@@ -22,18 +22,18 @@
 ### 学术伦理问题
 
 ### 文献引用错误
-- 疑似为了降重改标题(p)： 
+疑似为了降重改标题(p63)：  
 [46] Cesur R, Sabia J J. When War Comes Home: The Impact of Combat Service on Domestic Violence[J]. Review of Economics and Statistics, 2016, 98(2): 209-225.  
 我查到的题目是 When War Comes Home: The effect of Combat Service on Domestic Violence
 - 完全重复(p64)：  
 [59] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The 
-Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J].   
+Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J].    
 Homicide Studies, 1999, 3(3): 187-214.
 [60] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The 
 Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. 
 Homicide Studies, 1999, 3(3): 187-214.
 - 完全重复(p66)：  
 [101]Tauchen H V, Witte A D, Long S K. Domestic Violence: A Nonrandom Affair[J]. International   
-Economic Review, 1991, 32(2): 491.
+Economic Review, 1991, 32(2): 491.  
 [102]Tauchen H, Witte A, Long S. Domestic Violence - a Nonrandom Affair[J]. International 
 Economic Review, 1991, 32(2): 491-511.
