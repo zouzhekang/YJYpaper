@@ -1,5 +1,5 @@
 ## 第一步 下载本仓库
-git clone https://github.com/zouzhekang/YJYpaper.git
+```git clone https://github.com/zouzhekang/YJYpaper.git```
 
 ## 第二步 使用VScode打开文档
 

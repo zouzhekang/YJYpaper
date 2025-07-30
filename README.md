@@ -1,16 +1,15 @@
 # YJYpaper
-本仓库专门用来记录武汉大学国际经济贸易专业杨景媛的硕士毕业论文《中印生育行为影响家庭暴力的经济学分析》中存在的问题。  
-
-原论文在[这里](./paper/%E4%B8%AD%E5%8D%B0%E7%94%9F%E8%82%B2%E8%A1%8C%E4%B8%BA%E5%BD%B1%E5%93%8D%E5%AE%B6%E5%BA%AD%E6%9A%B4%E5%8A%9B%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%88%86%E6%9E%90.pdf) 欢迎各位评论并列举更多的错误，也可以提供举报的地址。  
+本仓库专门用来记录武汉大学国际经济贸易专业杨景媛的硕士毕业论文《中印生育行为影响家庭暴力的经济学分析》中存在的问题。原论文在[这里](./paper/%E4%B8%AD%E5%8D%B0%E7%94%9F%E8%82%B2%E8%A1%8C%E4%B8%BA%E5%BD%B1%E5%93%8D%E5%AE%B6%E5%BA%AD%E6%9A%B4%E5%8A%9B%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%88%86%E6%9E%90.pdf) 欢迎各位评论并列举更多的错误，也可以提供举报的地址。  
 
 ❗有博主（李然于心）已经被粉衣哥带俩金哥深夜登门拜访了！！！视频在[夸克网盘](https://pan.quark.cn/s/10cebfa84661#/list/share)，顿时有点害怕捏！！！
 
 ## 📑TODO  
 - [x] 收集论文存在问题
-- [x] 提供将本文档转为pdf的[教程](./doc/export2PDF.md)
+- [x] 提供将本文档转为pdf的[教程](./doc/export2PDF.md) 🔥🔥🔥
 - [ ] 向武汉大学举报
 - [ ] 在教育部科研诚信管理信息系统举报
 - [ ] 向湖北省教育厅举报
+- [ ] ...
 
 ## 🔧主要问题
 ### 涉嫌造假
@@ -74,7 +73,7 @@
 在论文第4 节 4.数据与实证策略 4.1.实证策略 4.1.1.基于双重固定效应模型的实证策略，该模型的被解释变量 DV, 代表个体是否遭遇家庭暴力; 由于被解释变量DV只有两种取值（二元变量），有或者没有遭遇家庭暴力, 因而这是一个典型的『二元选择模型（binary choice model）』  
 计量经济学的基本常识: 不能用线性模型来解释一个二元选择变量. 应该使用 Logistic回归 或 Probit回归模型。  
 但是, 论文中使用的所谓 "双重固定效应回归模型" 4.1 是一个线性模型. 这是一个严重的错误. 论文使用了错误的模型, 主要实证结果不可靠.  
-![model](https://private-user-images.githubusercontent.com/185666644/472110072-bdc7fdf4-c9af-4096-acbd-6982bf3969f3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTM4NDI0ODQsIm5iZiI6MTc1Mzg0MjE4NCwicGF0aCI6Ii8xODU2NjY2NDQvNDcyMTEwMDcyLWJkYzdmZGY0LWM5YWYtNDA5Ni1hY2JkLTY5ODJiZjM5NjlmMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDczMFQwMjIzMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNTJiZjRlZjg1ZmQzYTNjYzkzMGI0Njg5NjQ1NmY1ZmMyNzAzMDJkZjA1ODQ0YThhM2Q5N2ZjNzVjODU2MDkzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.chLXLr0VkqsR1f6rRgD7YRxzBV9ZJSblhi-KIo2E8UE) 
+![model](./pic/picc.jpeg) 
 
 ### 写作与表达错误
 1. 摘要翻译错误：  
@@ -250,6 +249,10 @@
 [105]Wilson W W, Haiges R, Christe K. Contents Lists Available at Sciencedirect[J]. 2023.
 该引用中Contents Lists Available at Sciencedirect疑似不是论文题目，该文章的出处疑似为化学材料相关期刊。
 
+## 🏗️我的诉求
+- 要求武汉大学撤销杨某媛的硕士学位。  
+- 要求武汉大学撤销对肖同学的处罚决定，并公开致歉。  
+- 要求武汉大学保证肖同学顺利毕业，不能以身心健康问题或超过学习期限为由将肖同学退学。  
 
 ## 🙏acknowledge
 - 感谢各位提的issue
