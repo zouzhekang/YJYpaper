@@ -46,7 +46,12 @@
 道教属于宗教范畴，不同地区的宗教分布不一致，故人均道观数跟当地思想传统程度无直接关系。
 3. 强行拟合(p26)：  
 如图所示，图中的点散度过大，无明显线性关系。其中同为观念传统地区且生育率相近的甘肃和福建的家暴跨度过大，可说明该线不适合证明观念与家暴之间的关系。 
-![idiot](./pic/img.jpeg) 
+![idiot](./pic/img.jpeg)   
+4. 模型使用错误(p37)：  
+在论文第4 节 4.数据与实证策略 4.1.实证策略 4.1.1.基于双重固定效应模型的实证策略，该模型的被解释变量 DV, 代表个体是否遭遇家庭暴力; 由于被解释变量DV只有两种取值（二元变量），有或者没有遭遇家庭暴力, 因而这是一个典型的『二元选择模型（binary choice model）』  
+计量经济学的基本常识: 不能用线性模型来解释一个二元选择变量. 应该使用 Logistic回归 或 Probit回归模型。  
+但是, 论文中使用的所谓 "双重固定效应回归模型" 4.1 是一个线性模型. 这是一个严重的错误. 论文使用了错误的模型, 主要实证结果不可靠.  
+![model](https://private-user-images.githubusercontent.com/185666644/472110072-bdc7fdf4-c9af-4096-acbd-6982bf3969f3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTM4NDI0ODQsIm5iZiI6MTc1Mzg0MjE4NCwicGF0aCI6Ii8xODU2NjY2NDQvNDcyMTEwMDcyLWJkYzdmZGY0LWM5YWYtNDA5Ni1hY2JkLTY5ODJiZjM5NjlmMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDczMFQwMjIzMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNTJiZjRlZjg1ZmQzYTNjYzkzMGI0Njg5NjQ1NmY1ZmMyNzAzMDJkZjA1ODQ0YThhM2Q5N2ZjNzVjODU2MDkzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.chLXLr0VkqsR1f6rRgD7YRxzBV9ZJSblhi-KIo2E8UE) 
 
 ### 写作与表达错误
 1. 摘要翻译错误：  
