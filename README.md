@@ -5,7 +5,7 @@
 
 ❗有博主（李然于心）已经被粉衣哥带俩金哥深夜登门拜访了！！！视频在[夸克网盘](https://pan.quark.cn/s/10cebfa84661#/list/share)，顿时有点害怕捏！！！
 
-## 📑TODO
+## 📑TODO  
 - [x] 收集存在问题
 - [ ] 向武汉大学举报
 - [ ] 在教育部科研诚信管理信息系统举报
@@ -23,6 +23,11 @@
 3. 数据编造(p14)：  
 第十四页的图2.1 全球各国家暴发生率直方图，纵坐标为频数，频数指的是xxx出现的次数，她是怎么求出非整数的？
 ![plt](./pic/plt.jpeg)  
+4. 数据编造(p43)：  
+第四十三页的表5.1中城镇样本与乡村样本之和不等于全样本，疑似数据编造。  
+5230+5287=10517≠10519  
+5510+5354=10864≠10867  
+![t5.1](./pic/tab4.jpeg)  
 
 ### 涉嫌抄袭剽窃
 1. 整段抄袭(p2 p3)：  
@@ -204,24 +209,29 @@
 1. 图表引用错误(p26)：  
 第二十六页倒数第七行内容：“图 2.19 反映了这种现象，本文各省份分为宗族思想较强和宗族思想较弱的地区，结果发现，在宗族思想较强的地区，生育数量的上升往往伴随着较低的家暴发生率。”   
 图 2.19 反应的是家暴和生育的关系，跟宗教没有关系。  
-2. 疑似为了降重修改标题(p63)：  
+2. 疑似引用重复(p63)： 
+参考文献部分第六十三页： 
+[43] Card D, Dahl G B. Family Violence and Football: The Effect of Unexpected Emotional Cues on Violent Behavior[J]. The Quarterly Journal of Economics, 2011, 126(1): 103-143.
+[44] Card D, Dahl G B. Family Violence and Football: The Impact of Unexpected Emotional Cues on Violent Behavior[J]. Quarterly Journal of Economics 2011, 126(1): 103-143.  
+其中[44]疑似错把“Effect”写为“Impact”。  
+3. 疑似为了降重修改标题(p63)：  
 参考文献部分第六十三页：
 [46] Cesur R, Sabia J J. When War Comes Home: The Impact of Combat Service on Domestic Violence[J]. Review of Economics and Statistics, 2016, 98(2): 209-225.  
-我查到的题目是 When War Comes Home: The effect of Combat Service on Domestic Violence
-3. 完全重复(p64)：  
-参考文献部分第六十四页：
-[59] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The 
-Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. Homicide Studies, 1999, 3(3): 187-214.  
-[60] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The 
-Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. 
-Homicide Studies, 1999, 3(3): 187-214.
-4. 完全重复(p66)：  
-参考文献部分第六十六页：
-[101]Tauchen H V, Witte A D, Long S K. Domestic Violence: A Nonrandom Affair[J]. International   
-Economic Review, 1991, 32(2): 491.  
-[102]Tauchen H, Witte A, Long S. Domestic Violence - a Nonrandom Affair[J]. International 
-Economic Review, 1991, 32(2): 491-511.
-5. 疑似引用化学论文(p66)：
+我查到的题目只有 When War Comes Home: The effect of Combat Service on Domestic Violence
+4. 完全重复(p64)：  
+参考文献部分第六十四页：  
+[59] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. Homicide Studies, 1999, 3(3): 187-214.  
+[60] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. Homicide Studies, 1999, 3(3): 187-214.  
+5. 完全重复(p65)：  
+参考文献部分第六十五页：  
+[87] McElroy M B, Horney M J. Nash-Bargained Household Decisions: Toward a Generalization of the Theory of Demand[J]. International Economic Review, 1981, 22(2): 333.  
+[88] McElroy M B, Horney M J. Nash-Bargained Household Decisions: Toward a Generalization of the Theory of Demand[J]. International Economic Review, 1981, 22(2): 333.  
+6. 完全重复(p66)：  
+参考文献部分第六十六页：  
+[101]Tauchen H V, Witte A D, Long S K. Domestic Violence: A Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491.   
+[102]Tauchen H, Witte A, Long S. Domestic Violence - a Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491-511.  
+其中[102]中的符号“-”意义不明。
+7. 疑似引用化学论文(p66)：
 参考文献部分第六十六页：
 [105]Wilson W W, Haiges R, Christe K. Contents Lists Available at Sciencedirect[J]. 2023.
 该引用中Contents Lists Available at Sciencedirect疑似不是论文题目，该文章的出处疑似为化学材料相关期刊。
@@ -230,3 +240,4 @@ Economic Review, 1991, 32(2): 491-511.
 ## 🙏acknowledge
 - 感谢各位提的issue
 - 感谢知乎答主云杉
+- 感谢知乎答主同工Same
