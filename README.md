@@ -1,7 +1,8 @@
 # YJYpaper
 本仓库专门用来记录武汉大学国际经济贸易专业杨景媛的硕士毕业论文《中印生育行为影响家庭暴力的经济学分析》中存在的问题。  
 
-原论文在[这里](./paper/%E4%B8%AD%E5%8D%B0%E7%94%9F%E8%82%B2%E8%A1%8C%E4%B8%BA%E5%BD%B1%E5%93%8D%E5%AE%B6%E5%BA%AD%E6%9A%B4%E5%8A%9B%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%88%86%E6%9E%90.pdf) 欢迎各位评论并列举更多的错误。
+原论文在[这里](./paper/%E4%B8%AD%E5%8D%B0%E7%94%9F%E8%82%B2%E8%A1%8C%E4%B8%BA%E5%BD%B1%E5%93%8D%E5%AE%B6%E5%BA%AD%E6%9A%B4%E5%8A%9B%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%88%86%E6%9E%90.pdf) 欢迎各位评论并列举更多的错误，也可以提供举报的地址。
+
 ## TODO
 - [x] 收集存在问题
 - [ ] 向武汉大学举报
@@ -70,11 +71,29 @@
 将“支”错写为“只”。
 7. 写错时间(p15)：  
 第十五页第一段第四行内容：“与 1960 年 -1665 之间的剧烈增长形成明显对比”  
-疑似将1965写为1665。  
-8. 错别字及错误字符(p41)：  
+疑似将1965写为1665。 
+8. 错别字(p15)：  
+第十五页倒数第三行内容：“未来非洲人口获奖贡献90%的世界人口增量”   
+疑似把“或将”错写为“获奖”。  
+9. 错别字(p18)：  
+第十八页第三行内容：“就业情况等多个纬度”   
+把“维度”错写为“纬度”。  
+10. 多字(p24)：  
+第二十四页第二段第一行内容：“图 2.16 通展示了我国生育数量与平均家暴发生率之间的关系。”   
+其中的“通”为多余字。   
+11. 漏标点符号(p25)：  
+第二十五页倒数第五行内容：“甘肃，福建西藏以及辽宁等地”   
+福建西藏之间没加逗号。   
+11. 图片标题错误(p26)：  
+图 2.19 下方的标题：“图2.19 平均数量与平均家暴发生率散点图（按照宗族文化程度分类）”   
+将“平均生育数量”漏写为“平均数量”。   
+12. 错别字及错误字符(p41)：  
 第四十一页的表格疑似将“7.”写成了“x7.”，将“被迫”写成了“被破”。
 ![table](./pic/tab.jpeg)  
-9. 名字写错(p17 p40 p42, p20 p55)：  
+13. 多写符号(p43)：  
+第四十三页倒数第四行内容：“3（生育 5 个以上）），”   
+连续写了两个右括号。  
+14. 多处名字写错(p17 p40 p42, p20 p55)：  
 疑似多处将“Kleven”写成“Kelvin”，分别出现在第十七页、四十页、四十二页。  
 疑似多处将“Kleven”写成“Kelven”，分别出现在第二十页、五十五页。  
 
@@ -82,26 +101,36 @@
 1. 格式错误(p1)：  
 第一页第二段第二行内容：“即有 27%的女性一生中至少遭受过一次来自丈夫或男性亲密伴侣的身体和/或性暴力侵害”  
 没有必要使用“和/或”，直接使用或也能表达和的意思。  
+2. 图片标题格式错误(p44)：  
+第四十四页图下方的标题为：“图 5.1：生育子女数量对家庭暴力的影响”  
+其中图 5.1 后面加了冒号，与前后文格式不匹配。 
 
 ### 学术伦理问题
 1. 该文章阐述家庭暴力与生育、传统文化、宗教、女性就业之间的关联，在数据拟合度低的情况下强行将家暴与文化、宗教捆绑，该课题可能涉及较为严重的学术伦理问题。  
 
 ### 文献引用错误
-1. 疑似为了降重修改标题(p63)：  
+1. 图表引用错误(p26)：  
+第二十六页倒数第七行内容：“图 2.19 反映了这种现象，本文各省份分为宗族思想较强和宗族思想较弱的地区，结果发现，在宗族思想较强的地区，生育数量的上升往往伴随着较低的家暴发生率。”   
+图 2.19 反应的是家暴和生育的关系，跟宗教没有关系。  
+2. 疑似为了降重修改标题(p63)：  
+参考文献部分第六十三页：
 [46] Cesur R, Sabia J J. When War Comes Home: The Impact of Combat Service on Domestic Violence[J]. Review of Economics and Statistics, 2016, 98(2): 209-225.  
 我查到的题目是 When War Comes Home: The effect of Combat Service on Domestic Violence
-2. 完全重复(p64)：  
+3. 完全重复(p64)：  
+参考文献部分第六十四页：
 [59] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The 
 Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. Homicide Studies, 1999, 3(3): 187-214.  
 [60] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The 
 Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. 
 Homicide Studies, 1999, 3(3): 187-214.
-3. 完全重复(p66)：  
+4. 完全重复(p66)：  
+参考文献部分第六十六页：
 [101]Tauchen H V, Witte A D, Long S K. Domestic Violence: A Nonrandom Affair[J]. International   
 Economic Review, 1991, 32(2): 491.  
 [102]Tauchen H, Witte A, Long S. Domestic Violence - a Nonrandom Affair[J]. International 
 Economic Review, 1991, 32(2): 491-511.
-4. 疑似引用化学论文(p66)：
+5. 疑似引用化学论文(p66)：
+参考文献部分第六十六页：
 [105]Wilson W W, Haiges R, Christe K. Contents Lists Available at Sciencedirect[J]. 2023.
 该引用中Contents Lists Available at Sciencedirect疑似不是论文题目，该文章的出处疑似为化学材料相关期刊。
 
