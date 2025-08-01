@@ -9,8 +9,10 @@
 
 ## 📑TODO  
 - [x] 收集论文中存在问题(不断更新中...)
+- [x] 发布[举报地址合集](./doc/compilations.md) (不断更新中...)
 - [x] 提供将本文档转为pdf的[教程](./doc/export2PDF.md) 🔥🔥🔥
 - [x] 向中华人民共和国教育部举报[如图](./doc/jb1.jpeg)
+- [x] 向[教育部学位与研究生教育发展中心](https://www.cdgdc.edu.cn/info/1024/2316.htm)举报
 - [ ] 向[武汉大学学术委员会](xsxf@whu.edu.cn)举报
 - [ ] 向[教育部学位与研究生教育发展中心](jdjb@cdgdc.edu.cn)举报
 - [ ] 在教育部科研诚信管理信息系统举报
@@ -235,7 +237,7 @@
 
 >![en_abstract](./pic/zhaiyao.jpeg) 
 
-其中**关键词**三个字未翻译为英文keyword。  
+其中**关键词**三个字未翻译为英文Keywords。  
 
 3. 概念混淆(第一页第二段第一至三行内容)：  
 
@@ -318,7 +320,7 @@
 
 >与 1960 年 -1665 之间的剧烈增长形成明显对比  
 
-疑似将1965写为1665。 
+疑似将“1965年”写为“1665”。 
 
 16. 错别字(第十五页倒数第三行内容)：  
 
@@ -622,7 +624,9 @@
 9. 疑似引用化学论文(第六十六页)：  
 >[105]Wilson W W, Haiges R, Christe K. Contents Lists Available at Sciencedirect[J]. 2023.  
 
-该引用中“Contents Lists Available at Sciencedirect”，意思为“可在Sciencedirect获取”，不是某个文章的题目，该文章的出处疑似为化学材料相关期刊。 
+该引用中“Contents Lists Available at Sciencedirect”，意思为“可在Sciencedirect获取”，不是某个文章的题目，该文章的出处疑似为化学材料相关期刊，详情如下图：
+
+>![j](./pic/hx.png)
 
 10. 论文正文中很难找到引用了参考文献中的一些文献。 
 
