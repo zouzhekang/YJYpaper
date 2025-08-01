@@ -11,11 +11,52 @@
 - [x] 收集论文中存在问题(不断更新中...)
 - [x] 提供将本文档转为pdf的[教程](./doc/export2PDF.md) 🔥🔥🔥
 - [x] 向中华人民共和国教育部举报[如图](./doc/jb1.jpeg)
-- [ ] 向[武汉大学学术委员会](xsxf@whu.edu.cn)举报
+- [x] 向[武汉大学学术委员会](xsxf@whu.edu.cn)举报
 - [ ] 向[教育部学位与研究生教育发展中心](jdjb@cdgdc.edu.cn)举报
 - [ ] 在教育部科研诚信管理信息系统举报
 - [ ] 向湖北省教育厅举报
 - [ ] ...
+
+注意，本文档以下有繁体中文版及英文版、中文版内容，请注意删改后再进行导出。
+
+==========================================================================
+
+繁体中文版及英文版举报材料从此处开始
+
+==========================================================================
+
+舉報信
+尊敬的委員會：
+我舉報贵校擬錄取研究生楊景媛存在嚴重的誣陷、網絡暴力及道德失範行為，其行為已對他人造成嚴重傷害，並可能損害贵校聲譽。具體事實如下：
+司法認定的誣告行為：楊景媛（生於甘肅蘭州，此前在武漢大學就讀）曾在中國內地誣告一名男生（肖 XX）性騷擾，並公開其隱私，導致肖 XX 遭受大規模網暴、學業中斷、罹患抑鬱症，其祖父因此事件去世。幾天前，該誣告已被中國法院終審判決不成立（判決書在網上可以搜到）。
+敗訴後持續挑釁：楊景媛在敗訴後仍於社交平台炫耀其學術成就（如 “保研成功”“已通過法考”），並揚言向肖 XX 申請的境外院校投遞 “證據材料”，意圖繼續迫害。（其挑釁截圖如下）
+對贵校的潛在風險：楊景媛的行為嚴重違反法律道德，甚至可能會給贵校帶來不利輿論影響
+訴求：
+撤銷 楊景媛 的博士 / 研究生錄取資格；
+調查其道德品行，防止其利用學術身份繼續施害。
+
+Dear Admissions Committee,
+I submit this report regarding the prospective doctoral/master’s candidate Yang Jingyuan, whose admission to your institution I believe should be reconsidered in light of serious misconduct—specifically, malicious defamation, online harassment, and ethical violations—that has caused grave harm to others and may imperil the reputation of your university.
+Judicially Established False Accusation.
+Ms. Yang Jingyuan, born in Lanzhou, Gansu, and formerly an undergraduate at Wuhan University, falsely accused a male student (Mr. Xiao XX) of sexual harassment on the Chinese mainland. She further disseminated his private information online, triggering widespread cyber-bullying that forced Mr. Xiao to suspend his studies, suffer severe depression, and ultimately witness the death of his grandfather from the stress. A final court judgment, publicly available online, has definitively ruled Ms. Yang’s accusation unfounded.
+Post-Judgment Provocation.
+Following her legal defeat, Ms. Yang has continued to boast on social media about her academic achievements—“successful graduate-school exemption” and “passing the National Bar Examination”—while threatening to forward “evidence” to the overseas institutions Mr. Xiao has applied to, thereby perpetuating harassment.
+Potential Risk to Your Institution.
+Ms. Yang’s conduct flagrantly violates legal and ethical standards and could expose your university to reputational harm and adverse public scrutiny.
+Requests:
+Revoke Ms. Yang Jingyuan’s offer of admission to your doctoral/master’s program.
+Conduct a thorough investigation of her ethical record to prevent further harm and ensure that academic integrity is upheld.
+
+
+
+
+==========================================================================
+
+简体中文版举报材料从此处开始
+
+==========================================================================
+
+武汉大学经济与管理学院2024届硕士优秀毕业论文《中印生育行为影响家庭暴力的经济学分析》（导师：郭汝飞副教授）存在多处学术不端问题，具体包括但不限于：数据造假、文献引用失实、图表伪造、引用歪曲与伪造、方法论误用、变量定义操纵、参考文献混乱等多项学术不端行为，具体事实如下。
 
 ## 🔧主要问题
 ### 涉嫌造假  
@@ -32,7 +73,12 @@
 
 我国并未颁布《离婚法》，此为杜撰内容。
 
-3. 数据编造(第十四页的图2.1)：  
+3. 虚构中国社科院家暴数据（第二页）： 
+
+论文称“中国社会科学院数据显示近30%家庭成员遭受家暴”。
+事实：该数据原始来源为2003年《检察风云》等非权威媒体报道，且被《1995-2005中国性别平等报告》明确列为无可靠信源数据。社科院从未发布此结论。
+
+4. 数据编造(第十四页的图2.1)：  
 
 >图2.1 全球各国家暴发生率直方图：
 ![plt](./pic/plt.jpeg)  
@@ -40,7 +86,7 @@
 纵坐标为频数，频数指的是xxx出现的次数，只能是整数，可是论文图中却出现了小数，说明该数据为编造数据。  
 就算把每一条都按最大值5来计算，也只有60，根本凑不满100个国家，疑似数据编造。
 
-4. 疑似数据编造(第四十三页的表5.1)：  
+5. 疑似数据编造(第四十三页的表5.1)：  
 
 >![t5.1](./pic/tab4.jpeg)  
 
@@ -48,25 +94,25 @@
 例如：5230+5287=10517≠10519  
 &emsp;&emsp;&emsp;5510+5354=10864≠10867   
 
-5. 疑似数据编造(第四十五页的表5.2)：  
+6. 疑似数据编造(第四十五页的表5.2)：  
 
 >![t5.2](./pic/tab5.jpg)  
 
 城镇样本与乡村样本之和不等于全样本，疑似数据编造。  
 
-6. 疑似数据编造(第四十六页的表5.3)：  
+7. 疑似数据编造(第四十六页的表5.3)：  
 
 >![t5.3](./pic/tab6.jpeg)  
 
 城镇样本与乡村样本之和不等于全样本，疑似数据编造。  
 
-7. 疑似数据编造(第四十七页的表5.4)：  
+8. 疑似数据编造(第四十七页的表5.4)：  
 
 >![t5.4](./pic/tab7.jpeg)   
 
 城镇样本与乡村样本之和不等于全样本，疑似数据编造。  
 
-8. 疑似数据编造(第四十八页的表5.5)：  
+9. 疑似数据编造(第四十八页的表5.5)：  
 
 >![t5.5](./pic/tab8.jpeg)  
 
@@ -105,7 +151,9 @@
 
 >全球两百多个国家中有 104 个国家的总和生育率低于代际人口平衡所需的 2.1 以下
 
-全球193个联合国会员国，2个联合国观察员国（梵蒂冈和巴勒斯坦），并非两百多个国家，作者疑似将港澳台地区算作国家，这属于严重的**政治错误**，建议严查。
+文章指出“根据联合国人口司的预测，……，104 个国家的总和生育率低于代际人口平衡所需的 2.1 以下。”而联合国《世界人口展望2022》明确统计为97国（论文数据超实际数据7.2%），且论文未给出数据来源。
+
+此外，全球193个联合国会员国，2个联合国观察员国（梵蒂冈和巴勒斯坦），并非两百多个国家，作者疑似将港澳台地区算作国家，这属于严重的**政治错误**，建议严查。
 
 2. 年份错误(第四页第七行内容)：  
 
@@ -197,6 +245,74 @@
 >城镇样本家暴发生率上升 3.2%，而乡村家暴发生率上升 5.4%，二者相差 2.1%。
 
 5.4%-3.2%=2.2%，并非2.1%。  
+
+### 文献引用错误
+
+1. 图表引用错误(第二十六页倒数第七行内容)：  
+>图 2.19 反映了这种现象，本文各省份分为宗族思想较强和宗族思想较弱的地区，结果发现，在宗族思想较强的地区，生育数量的上升往往伴随着较低的家暴发生率。  
+
+图 2.19 反应的是家暴和生育的关系，跟宗教没有关系。  
+
+2. 疑似引用重复(第六十三页)：  
+ 
+>[43] Card D, Dahl G B. Family Violence and Football: The Effect of Unexpected Emotional Cues on Violent Behavior[J]. The Quarterly Journal of Economics, 2011, 126(1): 103-143.
+[44] Card D, Dahl G B. Family Violence and Football: The Impact of Unexpected Emotional Cues on Violent Behavior[J]. Quarterly Journal of Economics 2011, 126(1): 103-143.  
+
+其中[44]疑似错把“Effect”写为“Impact”。  
+
+3. 疑似标题写错(第六十三页)：  
+
+>[46] Cesur R, Sabia J J. When War Comes Home: The Impact of Combat Service on Domestic Violence[J]. Review of Economics and Statistics, 2016, 98(2): 209-225.  
+
+我查到的题目只有 When War Comes Home: The effect of Combat Service on Domestic Violence
+
+4. 完全重复(第六十四页)：  
+  
+>[59] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. Homicide Studies, 1999, 3(3): 187-214.  
+[60] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. Homicide Studies, 1999, 3(3): 187-214.  
+
+5. 引用未写完整(第六十五页)：  
+
+>[72] Guo R. A Theory of Differential Fertility under Filial Piety[J].   
+
+未写明会议/期刊的名称及出版年份。
+
+在corssref、Google Scholar和Google都搜不到该论文，疑似为AI生成。 
+
+6. 完全重复(第六十五页)：  
+
+>[87] McElroy M B, Horney M J. Nash-Bargained Household Decisions: Toward a Generalization of the Theory of Demand[J]. International Economic Review, 1981, 22(2): 333.  
+[88] McElroy M B, Horney M J. Nash-Bargained Household Decisions: Toward a Generalization of the Theory of Demand[J]. International Economic Review, 1981, 22(2): 333.  
+
+7. 引用未写完整(第六十六页)：  
+
+>[96] Ramos A. Household Decision Making with Violence: Implications for Conditional Cash Transfer Programs[J].   
+
+未写明会议/期刊的名称及出版年份。  
+
+8. 完全重复(第六十六页)：  
+ 
+>[101]Tauchen H V, Witte A D, Long S K. Domestic Violence: A Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491.   
+[102]Tauchen H, Witte A, Long S. Domestic Violence - a Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491-511.  
+
+其中[102]中的符号“-”意义不明。  
+
+9. 疑似引用化学论文(第六十六页)：  
+>[105]Wilson W W, Haiges R, Christe K. Contents Lists Available at Sciencedirect[J]. 2023.  
+
+该引用中“Contents Lists Available at Sciencedirect”，意思为“可在Sciencedirect获取”，不是某个文章的题目，该文章的出处疑似为化学材料相关期刊。 
+
+10. 论文正文中很难找到引用了参考文献中的一些文献。 
+
+例如第九至十页1.2.2小节引用的论文，我在参考文献中大部分都找不到。
+
+11. 引而不注
+
+多处正文引用文献（如 Goldin,2014；Daouli 等，2009）未在参考文献列表中出现，属于 “引而不注”（证据：论文第 10 页、第 62-66 页参考文献）。
+
+12. 虚构文献
+
+引用 “Kleven,2024” 的伪事件研究法，但实际该文献为 Kleven 2022 年 NBER 工作论文（WP30176），论文刻意篡改年份以夸大文献权威性；虚构 “Harvard Review of Economics” 期刊及刊载论文，该期刊实际不存在（证据：论文第 17 页、第 65 页参考文献 [82]）。
 
 ### 写作与表达错误
 
@@ -544,73 +660,15 @@
 ### 学术伦理问题
 该文章阐述家庭暴力与生育、传统文化、宗教、女性就业之间的关联，在数据拟合度低的情况下强行将家暴与文化、宗教捆绑，该课题可能涉及较为严重的**学术伦理问题**。  
 
-### 文献引用错误
-
-1. 图表引用错误(第二十六页倒数第七行内容)：  
->图 2.19 反映了这种现象，本文各省份分为宗族思想较强和宗族思想较弱的地区，结果发现，在宗族思想较强的地区，生育数量的上升往往伴随着较低的家暴发生率。  
-
-图 2.19 反应的是家暴和生育的关系，跟宗教没有关系。  
-
-2. 疑似引用重复(第六十三页)：  
- 
->[43] Card D, Dahl G B. Family Violence and Football: The Effect of Unexpected Emotional Cues on Violent Behavior[J]. The Quarterly Journal of Economics, 2011, 126(1): 103-143.
-[44] Card D, Dahl G B. Family Violence and Football: The Impact of Unexpected Emotional Cues on Violent Behavior[J]. Quarterly Journal of Economics 2011, 126(1): 103-143.  
-
-其中[44]疑似错把“Effect”写为“Impact”。  
-
-3. 疑似标题写错(第六十三页)：  
-
->[46] Cesur R, Sabia J J. When War Comes Home: The Impact of Combat Service on Domestic Violence[J]. Review of Economics and Statistics, 2016, 98(2): 209-225.  
-
-我查到的题目只有 When War Comes Home: The effect of Combat Service on Domestic Violence
-
-4. 完全重复(第六十四页)：  
-  
->[59] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. Homicide Studies, 1999, 3(3): 187-214.  
-[60] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. Homicide Studies, 1999, 3(3): 187-214.  
-
-5. 引用未写完整(第六十五页)：  
-
->[72] Guo R. A Theory of Differential Fertility under Filial Piety[J].   
-
-未写明会议/期刊的名称及出版年份。
-
-在corssref、Google Scholar和Google都搜不到该论文，疑似为AI生成。 
-
-6. 完全重复(第六十五页)：  
-
->[87] McElroy M B, Horney M J. Nash-Bargained Household Decisions: Toward a Generalization of the Theory of Demand[J]. International Economic Review, 1981, 22(2): 333.  
-[88] McElroy M B, Horney M J. Nash-Bargained Household Decisions: Toward a Generalization of the Theory of Demand[J]. International Economic Review, 1981, 22(2): 333.  
-
-7. 引用未写完整(第六十六页)：  
-
->[96] Ramos A. Household Decision Making with Violence: Implications for Conditional Cash Transfer Programs[J].   
-
-未写明会议/期刊的名称及出版年份。  
-
-8. 完全重复(第六十六页)：  
- 
->[101]Tauchen H V, Witte A D, Long S K. Domestic Violence: A Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491.   
-[102]Tauchen H, Witte A, Long S. Domestic Violence - a Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491-511.  
-
-其中[102]中的符号“-”意义不明。  
-
-9. 疑似引用化学论文(第六十六页)：  
->[105]Wilson W W, Haiges R, Christe K. Contents Lists Available at Sciencedirect[J]. 2023.  
-
-该引用中“Contents Lists Available at Sciencedirect”，意思为“可在Sciencedirect获取”，不是某个文章的题目，该文章的出处疑似为化学材料相关期刊。 
-
-10. 论文正文中很难找到引用了参考文献中的一些文献。 
-
-例如第九至十页1.2.2小节引用的论文，我在参考文献中大部分都找不到。
-
-
 ## 🏗️我的诉求
-- 要求武汉大学撤销杨某媛的硕士学位。  
+根据教育部《学位论文作假行为处理办法》（第34号令）（第二条、第三条、第七条）、教育部《高等学校预防与处理学术不端行为办法》（第二十七条、第二十九条）、《武汉大学学位授予工作实施细则（暂行）》（第二十八条）以及《武汉大学学术不端行为查处细则》（第二十一条）等相关之规定，做出以下诉求：
+- 立即启动正式调查程序，要求被举报人及其导师就上述疑点作出解释，并提交相关原始数据、研究记录等证明材料。
+- 要求武汉大学撤销杨某媛的硕士论文及其硕士学位，依法追究相关负责人的责任。
 - 要求武汉大学撤销对肖同学的处罚决定，并公开致歉。  
 - 要求武汉大学保证肖同学顺利毕业，不能以身心健康问题或超过学习期限为由将肖同学退学。  
 - 要求公布杨某媛的高考录取信息。
 - 要求杨某媛的入党介绍人公开声明其对杨某诬告肖某事件的评价。
+- 要求对举报人信息予以严格保密。
 
 ## 📖参考文献
 [1]杨景媛. 中印生育行为影响家庭暴力的经济学分析. 武汉大学, 2024
