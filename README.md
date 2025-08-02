@@ -7,7 +7,7 @@
 
 疑似武大图书馆录音[点此下载](./doc/videoplayback.mp3)
 <audio controls>
-  <source src="./doc/videoplayback.mp3" type="audio/mpeg">
+  <source src="https://github.com/zouzhekang/YJYpaper/blob/main/doc/videoplayback.mp3" type="audio/mpeg">
 </audio>
 
 ❗博主（李然于心）被粉衣哥带几个金哥深夜登门拜访了！！！视频在[夸克网盘](https://pan.quark.cn/s/10cebfa84661#/list/share)，顿时有点害怕捏！！！  
