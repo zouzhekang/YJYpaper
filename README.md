@@ -1,5 +1,13 @@
 <h1 align="center">杨景媛论文问题汇总</h1>
 
+<div align="center">
+
+**Language / 语言**: [中文](#中文版本) | [English](#english-version)
+
+</div>
+
+## 中文版本
+
 &emsp;&emsp;本仓库专门用来记录武汉大学国际经济贸易专业杨景媛的**优秀**硕士毕业论文《中印生育行为影响家庭暴力的经济学分析》中存在的问题，本人认为该仓库似乎确实<sup>[1]</sup>是**全网最全**的错误记录。原论文在[这里](./paper/YJYpaper.pdf) 欢迎各位评论并列举更多的错误，也可以提供举报的地址。如下所示，这可是杨博自己声明的哦！    
 ![sm](./pic/sm.jpeg) 
 
@@ -742,3 +750,754 @@
 - 感谢知乎答主 云杉
 - 感谢知乎答主 同工Same
 - 感谢哔哩哔哩up主 [水论文的程序猿](https://b23.tv/wmJtrZa)
+
+---
+
+# English Version
+
+<h1 align="center">Yang Jingyuan Thesis Issues Compilation</h1>
+
+<div align="center">
+
+**Language / 语言**: [中文](#中文版本) | [English](#english-version)
+
+</div>
+
+&emsp;&emsp;This repository is dedicated to documenting the issues found in the **excellent** master's thesis "Economic Analysis of How Fertility Behavior Affects Domestic Violence in China and India" by Yang Jingyuan from Wuhan University's International Economics and Trade program. I believe this repository is indeed<sup>[1]</sup> the **most comprehensive** error record on the entire internet. The original paper is available [here](./paper/YJYpaper.pdf). Comments and additional error reports are welcome, as well as providing reporting addresses. As shown below, this is what Yang herself declared!    
+![sm](./pic/sm.jpeg) 
+
+---
+
+Video, audio and photographic evidence submitted by the female protagonist of this incident to the court [Baidu Netdisk](https://pan.baidu.com/s/1Jvw5mXjDltMEHARtg6c6Rg?pwd=i86x)
+
+❗The blogger (Li Ranyu Xin) was visited late at night by Pink Shirt Guy and several Gold Brothers!!! Videos are on [Quark Netdisk](https://pan.quark.cn/s/10cebfa84661#/list/share), feeling a bit scared now!!!  
+
+Related link: [Yang Jingyuan Incident Related](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
+
+## 📑TODO  
+- [x] Collect issues in the thesis (continuously updating...)
+- [x] Publish [compilation of reporting addresses](./doc/compilations.md) (continuously updating...)
+- [x] Provide [tutorial](./doc/export2PDF.md) for converting this document to PDF 🔥🔥🔥
+- [x] [Wuhan University School of Economics and Management Master's Thesis Writing Guidelines (2024 Second Edition)](https://mpacc.whu.edu.cn/info/1028/3056.htm)
+- [x] [2019 Wuhan University School of Economics and Management Thesis Writing Standards](https://mpacc.whu.edu.cn/info/1026/1193.htm)
+- [x] Report to the Ministry of Education of the People's Republic of China [as shown](./doc/jb1.jpeg)
+- [x] Report to [Academic Degrees and Graduate Education Development Center of the Ministry of Education](https://www.cdgdc.edu.cn/info/1024/2316.htm)
+- [x] Report to [Wuhan University Academic Committee](xsxf@whu.edu.cn)
+- [x] Report to [Academic Degrees and Graduate Education Development Center of the Ministry of Education](jdjb@cdgdc.edu.cn)
+- [ ] Report in the Ministry of Education Scientific Research Integrity Management Information System
+- [ ] Report to Hubei Provincial Department of Education
+- [ ] ...
+
+## 🏗️My Demands
+- Demand Wuhan University revoke Yang's master's degree.  
+- Demand Wuhan University revoke the disciplinary decision against Student Xiao and issue a public apology.  
+- Demand Wuhan University guarantee Student Xiao's smooth graduation, and not dismiss Student Xiao on grounds of physical and mental health issues or exceeding the study period.  
+- Demand disclosure of Yang's college entrance examination admission information.
+- Request that the Party organization not approve Yang's probationary party member confirmation application in the future.
+
+## 🔧Main Issues in the Thesis
+### Suspected Fraud  
+
+1. Suspected content fabrication (third line from bottom of page 1): 
+
+>For example, the "Immediate Arrest Act" issued by some countries and regions， 
+
+No "Immediate Arrest Act" related to domestic violence has been found. This is suspected to refer to mandatory arrest laws.
+
+2. Content fabrication (fifth line of page 2):  
+
+>And in 2001, with the promulgation and publicity of the "Divorce Law" 
+
+China has never promulgated a "Divorce Law". This is fabricated content.
+
+3. Data fabrication (Figure 2.1 on page 14):  
+
+>Figure 2.1 Histogram of domestic violence incidence rates by country globally:
+![plt](./pic/plt.jpeg)  
+
+The vertical axis shows frequency, which refers to the number of times xxx appears and can only be integers, but the paper's figure shows decimals, indicating the data is fabricated. 
+
+Even calculating each bar at maximum value 5, it only totals 60, far from reaching 100 countries, suspected data fabrication.
+
+4. Suspected data fabrication (Table 5.1 on page 43):  
+
+>![t5.1](./pic/tab4.jpeg)  
+
+Urban samples plus rural samples do not equal total samples, suspected data fabrication.  
+For example: 5230+5287=10517≠10519  
+&emsp;&emsp;&emsp;5510+5354=10864≠10867   
+
+Note that the table title is:
+>Table 5.1 Based on Chinese samples—Overall regression of fertility on domestic violence (1999/2000/2010 data)
+
+But the table content shows 1990, 2000, 2010, indicating the title mistakenly wrote "1990" as "1999"
+
+5. Suspected data fabrication (Table 5.2 on page 45):  
+
+>![t5.2](./pic/tab5.jpg)  
+
+Urban samples plus rural samples do not equal total samples, suspected data fabrication.  
+
+6. Suspected data fabrication (Table 5.3 on page 46):  
+
+>![t5.3](./pic/tab6.jpeg)  
+
+Urban samples plus rural samples do not equal total samples, suspected data fabrication.  
+
+7. Suspected data fabrication (Table 5.4 on page 47):  
+
+>![t5.4](./pic/tab7.jpeg)   
+
+Urban samples plus rural samples do not equal total samples, suspected data fabrication.  
+
+8. Suspected data fabrication (Table 5.5 on page 48):  
+
+>![t5.5](./pic/tab8.jpeg)  
+
+High caste samples plus low caste samples do not equal total samples, suspected data fabrication.
+
+### Suspected Plagiarism
+
+1. Entire paragraph plagiarism (last paragraph of page 2):  
+
+>In India, according to the official report of the National Crime Research Bureau of India, among the 405,000 crimes against women in 2019, more than 30% were domestic violence cases. The 2021 India NFHS-5 data shows that among Indian women aged 18-49, nearly one-third have experienced domestic violence, 32% of married women have experienced physical, sexual or emotional violence from partners, of which 27% of women experienced at least one form of violence in the nearly one year during the survey.  
+
+Suspected plagiarism from the paper He Hui, Wang Linglin. India's Practice and Effectiveness in Anti-Domestic Violence[J]. Modern World Police, 2022(11):58-64, with no citation appearing in Yang's original text.  
+
+![en_abstract](./pic/pap2.jpg)  
+
+2. Entire paragraph plagiarism (first paragraph of page 3):
+
+>Imperfect legal systems and complex reporting processes are external causes of frequent domestic violence in India. As early as 1983, Article 498A of the revised Indian Penal Code stipulated that if a husband or in-laws abuse women, they face up to three years imprisonment and corresponding fines. In June 2005, India passed its first "Anti-Domestic Violence Law". But India's anti-domestic violence laws have not been revised according to social changes. At the same time, complex reporting evidence and procedures, coupled with lack of strict enforcement, make India's anti-domestic violence legal system exist in name only, and many cases end up unresolved. By the end of 2020, the conviction rate based on Article 498A was less than 20%, and Indian courts had a total of 651,000 pending Article 498A domestic violence cases.
+
+Suspected plagiarism from the paper He Hui, Wang Linglin. India's Practice and Effectiveness in Anti-Domestic Violence[J]. Modern World Police, 2022(11):58-64, with no citation appearing in Yang's original text.
+
+![en_abstract](./pic/pap1.jpg)  
+
+3. Suspected incomplete deletion of plagiarized content (last paragraph of page 4):  
+
+>In December 2013, the 12th National People's Congress Standing Committee passed the "Resolution on Adjusting and Improving Fertility Policy", which stipulated the single-child two-child policy. Less than two years later, to further promote balanced population development and correct the gradually imbalanced population structure, in October 2015, the Fifth Plenary Session of the 18th CPC Central Committee clearly proposed implementing the comprehensive two-child policy, from then on, all couples gained the right to have two children.
+
+"which stipulated the single-child two-child policy" doesn't connect with the context, suspected incomplete deletion of plagiarized content.  
+
+### Data Errors
+
+1. Quantity error (sixth line from bottom of page 3):
+
+>Among more than 200 countries globally, 104 countries have total fertility rates below 2.1 required for intergenerational population balance
+
+There are a total of 193 UN member states and 4 UN observer states (Vatican, Palestine, Cook Islands, Niue) globally, not more than 200 countries. The author suspects counting Hong Kong, Macao, and Taiwan as countries, which is a serious **political error** that should be thoroughly investigated.
+
+2. Year error (seventh line of page 4):  
+
+>After the founding of New China, due to gradual social and economic stability and development, the national population grew from 542 million before 1049 to 830 million in 1970.
+
+China was founded in 1949, not 1049. This is a serious **political error**.
+
+3. Common sense error (last paragraph of page 15):   
+
+>It is estimated that by 2087, the world population will reach a peak of 10.3 billion, and then slowly decline to 10.3 billion in 2100."   
+
+What decline is this? One of these numbers must be wrong.   
+
+4. Abnormal horizontal axis (Figure 2.8, Figure 2.9 on page 20):   
+   
+>![pic 2.8](./pic/img2.8.jpeg)  
+
+Suspected missing T_1. 
+
+5. Table data error (Table 4.1 on page 39):  
+
+>![tab 4.1](./pic/tab2.jpeg)  
+
+Maximum values in panels b and c of Table 4.1 are abnormal.  
+
+6. Table data error (Table 4.2 on page 40):  
+
+>![tab 4.2](./pic/tab3.jpeg)   
+
+Minimum and maximum values in Table 4.2 are inconsistent with the ranges.   
+
+7. Year error (fourth line of last paragraph on page 45):   
+
+>The impact of fertility on domestic violence continued to weaken from 1990-201  
+
+Missing a digit in the year. 
+
+8. Abnormal horizontal axis (Figure 6.7 on page 55): 
+  
+>![tab 4.2](./pic/pic.jpeg)  
+
+Suspected writing "post-event period 8" as "post-event period 7". 
+
+9. Fabricated data (last paragraph of 1.1.2 on page 13):
+
+>![原文](./pic/1.1.2.png)
+
+India does not have only 22 states and union territories; the data is completely incorrect.
+Related link: https://dhsprogram.com/pubs/pdf/fr339/fr339.pdf
+
+>![相关](./pic/nfhs4_tab4.20.png)
+
+10. Fabricated data (Table 4.3 on page 41):
+
+>![原文](./pic/tab.jpeg)
+
+Related link: https://dhsprogram.com/pubs/pdf/fr339/fr339.pdf
+This data is completely incorrect; the total population is only 61,906.
+
+>![相关](./pic/nfhs4_tab16.9.png)
+
+### Data Analysis Errors
+
+1. Common sense analysis error (third line from bottom of first paragraph on page 21):  
+
+>![idiot](./pic/img2.jpg)  
+
+As shown above, 0.01% should be 1 out of 10,000 women.  
+
+2. Abnormal data analysis (Figure 2.15 on page 24):  
+
+>![idiot](./pic/v2.jpg)  
+
+Data from Figure 2.15 on page 24 of the paper (Figure 2.1 above) was extracted and linearly fitted (see Figure 2.2 above), yielding a linear fit of y=0.1067x R²=0.1083. Detailed data is available in the [attachment](./paper/testdata.csv).  
+Verification shows this data has an R² of only 0.1, proving that fertility quantity is almost unrelated to domestic violence incidence.  
+
+3. Analysis error (sixth line from bottom of page 25):   
+
+>This paper uses the number of Taoist temples per capita in each region to measure the degree of traditional thinking in that region
+
+Taoism belongs to the religious category. Different regions have different religious distributions, so the number of Taoist temples per capita has no direct relationship with local traditional thinking.
+
+4. Forced fitting (Figure 2.18 on page 26):  
+
+>![idiot](./pic/img.jpeg)   
+
+The points in the figure are too scattered with no obvious linear relationship. Among regions with similar traditional concepts and fertility rates, Gansu and Fujian show too large a span in domestic violence, indicating this line is not suitable for proving the relationship between concepts and domestic violence. 
+
+5. Formula analysis error (seventh line of page 33):   
+
+>The increase is 1/2   
+
+The increase here should be ϕα/2.
+
+6. Model usage error (page 37): 
+
+In Section 4 of the paper, 4. Data and Empirical Strategy 4.1. Empirical Strategy 4.1.1. Empirical Strategy Based on Two-Way Fixed Effects Model.
+
+>![model](./pic/picc.jpeg)  
+
+The dependent variable DV in this model represents whether an individual experiences domestic violence. Since the dependent variable DV has only two values (binary variable), either experiencing domestic violence or not, this is a typical "binary choice model."  
+Basic common sense in econometrics: linear models cannot be used to explain binary choice variables. Logistic regression or Probit regression models should be used.  
+However, the so-called "two-way fixed effects regression model" 4.1 used in the paper is a linear model. This is a serious error. The paper uses the wrong model, making the main empirical results unreliable.  
+
+7. Basic calculation error (last line of page 43):   
+
+>Urban sample domestic violence incidence increased by 3.2%, while rural domestic violence incidence increased by 5.4%, a difference of 2.1%.
+
+5.4%-3.2%=2.2%, not 2.1%.  
+
+8. Self-contradiction (page 10):
+
+>![原文](./pic/pic_1.1.png)
+
+Earlier it says one in ten women, but the figure shows far below 0.1, and it's regardless of gender.
+
+9. Policy implications conflict with conclusions (page 61):
+
+Section 7.1 Conclusion, second paragraph:
+
+>First, fertility increases the incidence of domestic violence. In China and India, as the number of births increases, the incidence of domestic violence also continues to rise.
+
+Section 7.2 Policy Implications, fourth point:
+
+>Fourth, provide more fertility support and build a fertility-friendly society. Increase policy support for fertility and provide women with more comprehensive fertility support and protection
+
+The policy implication of "increasing fertility support to reduce domestic violence" seems to logically conflict with the conclusion that "fertility leads to increased domestic violence."
+
+### Important Data Without Citations
+
+Multiple important data points in the text lack citations and sources cannot be found, raising doubts about the authenticity of such data.
+
+>![main_page_2](./pic/data_no_citation_1.jpg)  
+![main_page](./pic/data_no_citation_2.jpg) 
+
+### Writing and Expression Errors
+
+1. Abstract translation error:  
+>Chinese keywords: Fertility; Domestic Violence; Motherhood Penalty; Social Norms
+
+>English keywords: Fertility; Domestic Violence; Outside Option; Social Norm  
+
+"Motherhood Penalty" and "Outside Option" translations do not correspond.
+
+2. Abstract translation issue:  
+
+>![en_abstract](./pic/zhaiyao.jpeg) 
+
+The three Chinese characters for **keywords** are not translated to English "Keywords".  
+
+3. English abstract issue (tenth line of English abstract):
+
+>Survey and the the National Family and Health Survey of India. 
+
+Two "the"s appear simultaneously.
+
+4. Concept confusion (first to third lines of second paragraph on page 1):  
+
+>The World Health Organization's 2018 "Global, Regional and National Survey of Domestic Violence Incidence Against Women" shows that the lifetime incidence of domestic violence among women of appropriate age is still as high as 27%, meaning 27% of women experience at least one incident of physical and/or sexual violence from husbands or male intimate partners in their lifetime   
+
+Male intimate partners who are not married don't count as domestic violence.  
+
+5. Typo (caption of Figure 1.2 on page 3):  
+
+>Note: The horizontal axis in the figure is the timeline, and the vertical axis is the domestic violence incidence rate. The 1998-2021 domestic violence incidence rate was calculated using India's NFHS2-5 surveys. Additionally, Figure 1.2 marks the timing of judicial reforms related to India's domestic violence incidence rate. Furthermore, starting in 2006, India's civilian anti-domestic violence organization "Pink Gang" began to be active in northern India, which also effectively reduced the incidence of domestic violence.
+
+"Pink Gang" is incorrectly written as "Pink State".  
+
+"NFHS2-5 surveys" seems to have a grammatical error or symbol error.
+
+6. Typo (first line of page 4):
+
+>Accompanied by the burst of the stock market and real estate bubble in the 90s  
+
+Should be "decade" not "belt".   
+
+7. Typo (ninth to tenth lines of page 5):  
+
+>These clinics are mainly responsible for distributing contraceptive-related drugs and equipment"  
+
+"And" is incorrectly written as "namely".   
+
+8. Typo (sixth to seventh lines from bottom of page 6):  
+
+>The key factors determining women's external choices include women's characteristics   
+
+Should be "choices" not "selections".  
+
+9. Typo (sixth to seventh lines of page 8): 
+
+>At this time there will only be expressive domestic violence  
+
+The "big" here is suspected to be "的".   
+
+10. Wrong character (page 8):  
+
+Sixth line in "Other Literature on Domestic Violence" on page 8:
+>For example, g found through Vietnam data  
+
+This "g" has unclear reference, suspected wrong character.  
+
+11. Missing word (last line of page 8):  
+
+>And does not necessarily result in resource transfer
+
+"Not necessarily" is written as "not one" with missing words.  
+
+12. Typo (second line from bottom of page 9):  
+
+>Fertility also makes women's wage rates decrease
+   
+"Makes" is incorrectly written as "is"; "wages" is incorrectly written as "wage rates".
+
+13. Typo (last paragraph of page 10):  
+
+>Discussions about domestic violence mechanisms in family economics can mainly be divided into two branches of literature. The first branch starts from family bargaining power and discusses the pricing mechanism behind expressive domestic violence. The second branch starts from the purpose of instrumental domestic violence behavior and explains the possible rent-seeking attributes of domestic violence behavior.
+
+"Branch" is incorrectly written as "only".  
+
+14. Typo (first paragraph of section 2.1.1 on page 13):  
+  
+>![picture](./pic/picture.jpeg)
+
+Four different expressions appear simultaneously: "lifetime incidence of domestic violence," "lifetime domestic violence incidence," "lifetime incidence of domestic violence," and "domestic violence incidence."
+
+>Suspected confusion between "lifetime" and "lifelong". 
+
+15. Typo (sixth line from bottom of page 13):  
+
+>245-307 million women are experiencing domestic violence.   
+
+Suspected writing "women" as "female students".
+
+16. Wrong time (fourth line of first paragraph on page 15):  
+
+>In sharp contrast to the dramatic growth between 1960-1665  
+
+Suspected writing "1965" as "1665". 
+
+17. Typo (third line from bottom of page 15):  
+
+>Future African population will contribute 90% of world population growth
+
+Suspected writing "or will" as "will award".  
+
+18. Grammar and typos (seventh line from bottom of page 16):  
+
+>I believe there seems to indeed exist some positive relationship between fertility and domestic violence incidence   
+
+Suspected writing "this paper" as "I"; "seems to indeed" has serious grammatical issues.  
+
+19. Typo (third line of page 18):  
+
+>Employment status and other dimensions
+
+"Dimensions" is incorrectly written as "latitudes". 
+
+20. Typo (sixth line of second paragraph on page 18): 
+
+>Fertility indeed caused impact on women's employment   
+
+"Caused" is incorrectly written as "suffered".  
+
+21. Typo (last line of second paragraph on page 18):  
+>Different relative income levels with husbands and fertility situations all caused impact on domestic violence.  
+
+"Caused" is incorrectly written as "suffered".  
+
+22. Typo (third line of last paragraph on page 18):  
+
+>Almost negligible   
+
+Possible grammatical issue, and "negligible" is incorrectly written as "negligible and".  
+
+23. Character order error (sixth line from bottom of page 22):  
+
+>It can be seen that when women's income is much less than their husband's (i.e., less than 1/4 of husband's income), domestic violence incidence is high   
+
+Should move "时" to the right of the right parenthesis.  
+
+24. Typo (third line of first paragraph on page 24):  
+
+>This is consistent with the research framework preset in this paper.   
+
+Suspected writing "previously" as "between".   
+
+25. Extra word (first line of second paragraph on page 24):  
+
+>Figure 2.16 shows the relationship between fertility quantity and average domestic violence incidence in China.   
+
+The "通" is an extra word.   
+
+26. Punctuation error (p25):  
+
+>Fifth line from bottom on page 25: "Gansu, Fujian, Tibet, and Liaoning"   
+
+Gansu and Fujian should use semicolons; no semicolon between Fujian and Tibet.  
+
+27. Inappropriate word choice (sixth line from bottom of page 26):  
+
+>This paper divides each province into regions with stronger and weaker clan ideology   
+
+Suspected writing "the figure" as "this paper". 
+
+28. Figure title error (page 26):  
+
+Title below Figure 2.19:
+>"Figure 2.19 Scatter plot of average quantity and average domestic violence incidence (classified by clan culture degree)"   
+
+"Average fertility quantity" is written as just "average quantity".  
+
+29. Figure caption error (caption below Figure 2.19 on page 27):  
+
+Caption below Figure 2.19:
+>Note: The horizontal axis in the figure represents the average fertility quantity of each province, and the vertical axis represents the average domestic violence incidence rate. This paper used the measurement variable for clan culture from Chen (2021), namely the number of genealogies per capita in each region, and classified based on this variable. Solid points and solid lines represent regions with stronger clan concepts, while hollow points and dashed lines represent regions with weaker clan concepts. Results show that in regions with weaker clan concepts, fertility quantity and domestic violence incidence rate have a positive correlation.
+
+"Measurement" is incorrectly written as "beam measurement".  
+
+30. Abbreviation error (section 2.2.4 on page 27):  
+
+>Also called oppressed castes (Scheduled Castes, abbreviated as CS)   
+
+Abbreviation error, should be SCs or SC.  
+
+31. Text repetition, missing punctuation (last line of page 35 to first line of page 36):  
+
+>From economic incentives, the probability of husband's domestic violence husband's domestic violence is higher   
+
+"Husband's domestic violence" is repeated five times, and period is missing at the end.  
+
+32. Extra symbol (third line from bottom of page 40):  
+
+>Including whether the husband has ever beaten you, etc.   
+
+Extra comma.    
+
+33. Wrong word (second line from bottom of page 40):  
+
+>Descriptive statistics of respondent answers in NHHS4 survey are shown in Table 4.3. From the table it can be seen   
+
+"NFHS4" is incorrectly written as "NHHS4".  
+
+34. Multiple spacing inconsistencies:  
+
+Multiple places in the text mix "NHHS4" and "NHHS 4" as well as "NHHS3" and "NHHS 3", inconsistent spacing. For example, last paragraph on page 40.
+
+35. Typos and wrong characters (table on page 41):  
+
+>![table](./pic/tab.jpeg)  
+
+Suspected writing "7." as "x7."
+
+Writing "forced" as "broken".
+
+36. Extra symbol (fourth line from bottom of page 43):  
+
+>3 (fertility 5 or more)), domestic violence probability increased by 4.4%.   
+
+Two consecutive right parentheses.  
+
+37. Inappropriate subject (first line of page 45):  
+
+>I still use whether individuals are 40 years old for grouping"   
+
+Suspected writing "this paper" as "I".  
+
+38. Typo (fifth to sixth lines from bottom of page 45):  
+
+>Therefore external choices are deteriorated, more easily subject to domestic violence, and when offspring grow up and recognize,  
+
+Suspected writing "because" as "therefore"; writing "grow up and mature" as "grow up and recognize".  
+
+39. Text repetition (second to third lines of second paragraph from bottom on page 48):  
+
+>Whether NFHS3 (2005-2006 survey) or NFHS4 (2015 and 2017 survey) survey  
+
+"Survey" is repeated.  
+
+40. Symbol error (last sentence of second paragraph from bottom on page 48):  
+
+>Same as China, over time, the impact of fertility on domestic violence declined more obviously in urban areas;  
+
+Paragraph ends with semicolon.  
+
+41. Text repetition (fifth line of first paragraph on page 49):  
+
+>Considering in event event as 0 (year of child birth),  
+
+"Event" is repeated.  
+
+42. Typo (second line of second paragraph from bottom on page 50):  
+
+>Urban areas showed obvious increase in domestic violence in the first period after birth,  
+
+"Urban" is written as "sincere conquest".  
+
+43. Typo (third line of middle paragraph on page 56):  
+
+>While in people of average education level  
+
+"People" is written as "per capita".  
+
+44. Extra symbol (third line from bottom of page 56):  
+
+>Large population states (accounting for more than 95% of total sample) motherhood penalty).   
+
+Extra right parenthesis after motherhood penalty.  
+
+45. Typo (second line of middle paragraph on page 57):  
+
+>From fertility period continuing until the eighth year after birth"  
+
+Suspected writing "current period" as "file period". 
+
+46. Typo (third line of first paragraph on page 59):  
+
+>Domestic violence incidence will immediately decline after birth  
+
+"Immediately" is written as "optionally".  
+
+47. Typo (third line of second paragraph on page 59):  
+
+>People with higher education groups  
+
+"People with higher education levels" is written as "people with higher education groups".  
+
+48. Typo (last line of third paragraph in policy implications on page 61):  
+
+>Can allow victims to more conveniently end violent relationships  
+
+"Conveniently" is written as "aspect".  
+
+49. Typo (fourth line of third paragraph in acknowledgments on page 67): 
+
+>So I hope to construct a fertility-friendly society"   
+
+Suspected writing "hope" as "hope yearn".  
+
+50. Punctuation error (first line of fourth paragraph in acknowledgments on page 67):  
+
+>We often hear isn't the status of Chinese women high enough nowadays?,  
+
+Question mark and comma used together.  
+
+51. Text error (third paragraph from bottom in acknowledgments on page 68):  
+
+>At the end of my undergraduate thesis acknowledgments, I quoted what Carl Sagan said: 
+
+Isn't this a **master's** thesis? Why write undergraduate? Could even the acknowledgments be plagiarized?  
+
+52. Punctuation error (second paragraph from bottom in acknowledgments on page 68):  
+
+>We make our world significant by the courage of our questions and by the depth of our answers。 
+
+English text in acknowledgments ends with Chinese period.
+
+53. Multiple name errors (pages 17, 20, 25, 40, 42, 51, 55):  
+
+1. Multiple places write "Kleven" as "Kelvin", appearing on pages 17, 40, 42.  
+2. Multiple places write "Kleven" as "Kelven", appearing on pages 20, 55.  
+3. Writing "Kleven" as "Kelvev", appearing on page 25.
+4. Writing "Kleven" as "Kelevn", appearing on page 51. 
+
+54. Multiple figure caption content errors (pages 56, 57, 58):  
+
+1. Figure 6.8 caption writes "NFHS 3" as "NFHS3 year" 
+2. Figure 6.9 caption writes "NFHS 3" as "NFHS3 year" 
+3. Figure 6.10 caption writes "NFHS 3" as "NFHS3 year"  
+4. Figure 6.11 caption writes "NFHS 3" as "NFHS3 year"  
+
+### Format and Standard Errors
+
+1. Page number errors:  
+>![page](./pic/pg.jpeg)
+
+The page number formats at the bottom of the paper's cover, statement, abstract, and table of contents all have issues.
+
+Also, does the cover need page numbers?
+
+2. Indentation issues:  
+
+Each paragraph in the English abstract of the paper is not indented at the beginning.
+
+3. Format error (second to third lines of second paragraph on page 1):  
+
+>That is, 27% of women experience at least one incident of physical and/or sexual violence from husbands or male intimate partners in their lifetime  
+
+No need to use "and/or", just using "or" can also express "and".
+
+4. Font issue (first paragraph on page 15): 
+
+>&emsp;&emsp;The advancement of industrialization and urbanization has led the world population through a transition from a low-growth stage with high birth rates and high death rates to a high-growth stage with high birth rates and low death rates. Contemporary world population birth rates continue to decline, and population growth is in a transitional stage from high growth to low growth. **As shown in Figure 2.2. Since the 1970s, the global total fertility rate has begun to decline significantly, in sharp contrast to the dramatic growth between 1960-1665. The average number of children each woman bears during her reproductive years dropped from 4.79 in 1970 to 2.40 in 2019, a decline of nearly half. As of 2021, the world average total fertility rate is close to 2.1 required for intergenerational population balance.**  
+
+Bold text of unknown significance. 
+
+5. Figure title format error (page 16):  
+
+> ![p2.3](./pic/ble.jpeg) 
+
+Japan and USA use the same line.  
+
+6. Font error (page 27):  
+
+Numbers and English letters in the main text - although most places in the text correctly use Times New Roman font, there are still many numbers and English letters in the main text that are not in this font, for example on page 27:  
+
+> ![p27](./pic/font.jpeg) 
+
+7. Figure title format error (page 44):  
+
+>Figure 5.1: Impact of Number of Children on Domestic Violence 
+
+Figure 5.1 is followed by a colon, inconsistent with surrounding format.  
+
+8. Citation format error (first line of last paragraph on page 53):  
+
+>This paper is based on the regional clan variables constructed by Chen (2021)"  
+
+This citation format is inconsistent with the surrounding text. 
+
+9. Personal confusion
+
+Are references in Wuhan University School of Economics and Management theses sorted alphabetically? Don't they use cross-references? Feels very strange. Please provide official format clarification from Wuhan University. 
+
+### Academic Ethics Issues
+This article discusses the correlation between domestic violence and fertility, traditional culture, religion, and women's employment. With low data fitting, it forcibly links domestic violence with culture and religion. This topic may involve serious **academic ethics issues**.  
+
+### Literature Citation Errors
+
+1. Figure and table citation error (seventh line from bottom on page 26):  
+>Figure 2.19 reflects this phenomenon. This paper divides provinces into regions with stronger and weaker clan ideology. Results show that in regions with stronger clan ideology, increased fertility is often accompanied by lower domestic violence incidence.  
+
+Figure 2.19 reflects the relationship between domestic violence and fertility, not related to religion.  
+
+2. Suspected duplicate citation (page 63):  
+ 
+>[43] Card D, Dahl G B. Family Violence and Football: The Effect of Unexpected Emotional Cues on Violent Behavior[J]. The Quarterly Journal of Economics, 2011, 126(1): 103-143.
+[44] Card D, Dahl G B. Family Violence and Football: The Impact of Unexpected Emotional Cues on Violent Behavior[J]. Quarterly Journal of Economics 2011, 126(1): 103-143.  
+
+[44] suspects incorrectly writing "Effect" as "Impact".  
+
+3. Suspected title error (page 63):  
+
+>[46] Cesur R, Sabia J J. When War Comes Home: The Impact of Combat Service on Domestic Violence[J]. Review of Economics and Statistics, 2016, 98(2): 209-225.  
+
+The title I found is only "When War Comes Home: The effect of Combat Service on Domestic Violence"
+
+4. Complete duplication (page 64):  
+  
+>[59] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. Homicide Studies, 1999, 3(3): 187-214.  
+[60] Dugan L, Nagin D S, Rosenfeld R. Explaining the Decline in Intimate Partner Homicide: The Effects of Changing Domesticity, Women's Status, and Domestic Violence Resources[J]. Homicide Studies, 1999, 3(3): 187-214.  
+
+5. Incomplete citation (page 65):  
+
+>[72] Guo R. A Theory of Differential Fertility under Filial Piety[J].   
+
+Conference/journal name and publication year not specified.
+
+Cannot be found in CrossRef, Google Scholar, or Google, suspected AI-generated. 
+
+6. Complete duplication (page 65):  
+
+>[87] McElroy M B, Horney M J. Nash-Bargained Household Decisions: Toward a Generalization of the Theory of Demand[J]. International Economic Review, 1981, 22(2): 333.  
+[88] McElroy M B, Horney M J. Nash-Bargained Household Decisions: Toward a Generalization of the Theory of Demand[J]. International Economic Review, 1981, 22(2): 333.  
+
+7. Incomplete citation (page 66):  
+
+>[96] Ramos A. Household Decision Making with Violence: Implications for Conditional Cash Transfer Programs[J].   
+
+Conference/journal name and publication year not specified.  
+
+8. Complete duplication (page 66):  
+ 
+>[101]Tauchen H V, Witte A D, Long S K. Domestic Violence: A Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491.   
+[102]Tauchen H, Witte A, Long S. Domestic Violence - a Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491-511.  
+
+The symbol "-" in [102] has unclear meaning.  
+
+9. Reference publication time error (page 66):  
+
+>[103]Terror as a Bargaining Instrument: A Case Study of Dowry Violence in Rural India[J]. The American Economic Review, 2024. 
+
+Suspected alteration of publication time to meet requirements for citing recent papers. Original time was:
+
+>Bloch F, Rao V. Terror as a bargaining instrument: A case study of dowry violence in rural India[J]. American Economic Review, 2002, 92(4): 1029-1043.
+Paper URL: https://www.aeaweb.org/articles?id=10.1257/00028280260344588
+
+10. Suspected citation of chemistry paper (page 66):  
+>[105]Wilson W W, Haiges R, Christe K. Contents Lists Available at Sciencedirect[J]. 2023.  
+
+"Contents Lists Available at Sciencedirect" in this citation means "available on Sciencedirect", not an article title. The source is suspected to be from chemistry materials journals, details as shown:
+
+>![j](./pic/hx.png)
+
+11. Many citations in the reference list are hard to find in the paper text. 
+
+For example, the papers cited in section 1.2.2 on pages 9-10, most cannot be found in the reference list.
+
+12. Reference content suspected not cited in main text  
+References [90], [91], [96], [97], [99], [68] not found in main text
+
+13. Reference format does not comply with Wuhan University School of Economics and Management master's thesis standards  
+References [100] to [107], no space between number and name (after ])  
+
+## 🏋️‍♂️Personal Statement
+&emsp;&emsp;During the probationary party member examination period, Comrade Yang Jingyuan is acrimonious in thought, deliberately creating gender opposition; knows and violates the law legally, suspected of malicious false accusation of others, groundlessly creating a "Divorce Law"; is perfunctory in studies, with serious problems in her graduation thesis, causing immeasurable damage to the school's reputation. I personally oppose her party member confirmation and request that the Party organization not approve Yang Jingyuan's probationary party member confirmation application in the future.
+
+## 📖References
+[1] Yang Jingyuan. Economic Analysis of How Fertility Behavior Affects Domestic Violence in China and India. Wuhan University, 2024
+
+## 🙏Acknowledgments
+- Thanks to everyone who submitted issues
+- Thanks to Zhihu user Yunshan
+- Thanks to Zhihu user Same Work
+- Thanks to Bilibili UP host [Water Paper Programmer](https://b23.tv/wmJtrZa)
