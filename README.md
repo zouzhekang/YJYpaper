@@ -8,7 +8,7 @@
 
 ## 中文版本
 
-&emsp;&emsp;本仓库专门用来记录武汉大学国际经济贸易专业杨景媛的**优秀**硕士毕业论文《中印生育行为影响家庭暴力的经济学分析》中存在的问题，本人认为该仓库似乎确实<sup>[1]</sup>是**全网最全**的错误记录。原论文在[这里](./paper/YJYpaper.pdf) 欢迎各位评论并列举更多的错误，也可以提供举报的地址。如下所示，这可是杨博自己声明的哦！    
+&emsp;&emsp;本仓库专门用来记录武汉大学国际经济贸易专业杨景媛的硕士毕业论文《中印生育行为影响家庭暴力的经济学分析》中存在的问题，本人认为该仓库似乎确实<sup>[1]</sup>是**全网最全**的错误记录。原论文在[这里](./paper/YJYpaper.pdf) 欢迎各位评论并列举更多的错误，也可以提供举报的地址。如下所示，这可是杨博自己声明的哦！    
 ![sm](./pic/sm.jpeg) 
 
 ---
@@ -226,13 +226,19 @@
 
 图中的点散度过大，无明显线性关系。其中同为观念传统地区且生育率相近的甘肃和福建的家暴跨度过大，可说明该线不适合证明观念与家暴之间的关系。 
 
-5. 公式分析错误(第三十三页第七行内容)：   
+5. 致命分析错误(第二十八页倒数第二段):
+
+>ϕ ≥ 0表示生育子女带来的净收益，
+
+生育子女只会带来净支出，不会带来收益，该点导致其三十一页命题一完全不成立。
+
+6. 公式分析错误(第三十三页第七行内容)：   
 
 >增加量为1/2   
 
 此处增加量应为ϕα/2。
 
-6. 模型使用错误(第三十七页)： 
+7. 模型使用错误(第三十七页)： 
 
 在论文第4 节 4.数据与实证策略 4.1.实证策略 4.1.1.基于双重固定效应模型的实证策略.
 
@@ -242,19 +248,19 @@
 计量经济学的基本常识: 不能用线性模型来解释一个二元选择变量. 应该使用 Logistic回归 或 Probit回归模型。  
 但是, 论文中使用的所谓 "双重固定效应回归模型" 4.1 是一个线性模型. 这是一个严重的错误. 论文使用了错误的模型, 主要实证结果不可靠.  
 
-7. 低级计算错误(第四十三页倒数第一行内容)：   
+8. 低级计算错误(第四十三页倒数第一行内容)：   
 
 >城镇样本家暴发生率上升 3.2%，而乡村家暴发生率上升 5.4%，二者相差 2.1%。
 
 5.4%-3.2%=2.2%，并非2.1%。  
 
-8. 自相矛盾(第十页)：
+9. 自相矛盾(第十页)：
 
 >![原文](./pic/pic_1.1.png)
 
 前面说十分之一妇女，但是图里显示远低于0.1，而且是不分男女的。
 
-9. 政策启示与结论对冲(第六十一页)：
+10. 政策启示与结论对冲(第六十一页)：
 
 7.1.结论第二段：
 
@@ -765,7 +771,7 @@
 
 </div>
 
-&emsp;&emsp;This repository is dedicated to documenting the issues found in the **excellent** master's thesis "Economic Analysis of How Fertility Behavior Affects Domestic Violence in China and India" by Yang Jingyuan from Wuhan University's International Economics and Trade program. I believe this repository is indeed<sup>[1]</sup> the **most comprehensive** error record on the entire internet. The original paper is available [here](./paper/YJYpaper.pdf). Comments and additional error reports are welcome, as well as providing reporting addresses. As shown below, this is what Yang herself declared!    
+&emsp;&emsp;This repository is dedicated to documenting the issues found in the master's thesis "Economic Analysis of How Fertility Behavior Affects Domestic Violence in China and India" by Yang Jingyuan from Wuhan University's International Economics and Trade program. I believe this repository is indeed<sup>[1]</sup> the **most comprehensive** error record on the entire internet. The original paper is available [here](./paper/YJYpaper.pdf). Comments and additional error reports are welcome, as well as providing reporting addresses. As shown below, this is what Yang herself declared!    
 ![sm](./pic/sm.jpeg) 
 
 ---
