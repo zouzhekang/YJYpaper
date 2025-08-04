@@ -31,7 +31,6 @@
 - [x] 向[教育部学位与研究生教育发展中心](jdjb@cdgdc.edu.cn)举报
 - [ ] 在教育部科研诚信管理信息系统举报
 - [ ] 向湖北省教育厅举报
-- [ ] 向路透社、彭博社和法新社等国际媒体和联合国教科文组织（UNESCO）投稿揭露武汉大学涉嫌学术不端的论文内容
 - [ ] 向爱思唯尔及所有大型SCI/SSCI出版机构的主编/副主编通报武汉大学所有涉嫌学术不端的论文和提交涉及学术腐败相关的证据，要求重点审查该校学术出版物
 - [ ] ...
 
@@ -795,7 +794,6 @@ Related link: [Yang Jingyuan Incident Related](https://github.com/yangjingyuan08
 - [x] Report to [Academic Degrees and Graduate Education Development Center of the Ministry of Education](jdjb@cdgdc.edu.cn)
 - [ ] Report in the Ministry of Education Scientific Research Integrity Management Information System
 - [ ] Report to Hubei Provincial Department of Education
-- [ ] Submit to international media such as Reuters, Bloomberg, and Agence France-Presse, and UNESCO to expose suspected academic misconduct in papers from Wuhan University
 - [ ] Notify editors-in-chief/deputy editors-in-chief of Elsevier and all major SCI/SSCI publishing institutions about all suspected academic misconduct papers from Wuhan University and submit evidence related to academic corruption, requesting focused review of the university's academic publications
 - [ ] ...
 
