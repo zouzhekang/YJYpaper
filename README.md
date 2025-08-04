@@ -17,7 +17,6 @@
 
 ❗博主（李然于心）被粉衣哥带几个金哥深夜登门拜访了！！！视频在[夸克网盘](https://pan.quark.cn/s/10cebfa84661#/list/share)，顿时有点害怕捏！！！  
 
-
 友情链接：[杨景媛事件相关](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
 
 ## 📑TODO  
@@ -74,6 +73,8 @@
 城镇样本与乡村样本之和不等于全样本，疑似数据编造。  
 例如：5230+5287=10517≠10519  
 &emsp;&emsp;&emsp;5510+5354=10864≠10867   
+
+并且该表没有说明是否家暴和是否生育之间的先后顺序，无法说明家暴和生育的因果性。
 
 注意该表格的标题为：
 >表 5.1 基于中国样本——生育对家庭暴力的整体回归（分 1999/2000/2010 年数据）
@@ -230,7 +231,7 @@
 
 >ϕ ≥ 0表示生育子女带来的净收益，
 
-生育子女只会带来净支出，不会带来收益，该点导致其三十一页命题一完全不成立。
+生育子女只会带来净支出，不会带来收益，该点导致其三十三页命题二完全不成立。
 
 6. 公式分析错误(第三十三页第七行内容)：   
 
@@ -837,6 +838,8 @@ Urban samples plus rural samples do not equal total samples, suspected data fabr
 For example: 5230+5287=10517≠10519  
 &emsp;&emsp;&emsp;5510+5354=10864≠10867   
 
+Moreover, this table does not indicate the sequence between domestic violence and childbirth, and thus cannot explain the causality between the two.
+
 Note that the table title is:
 >Table 5.1 Based on Chinese samples—Overall regression of fertility on domestic violence (1999/2000/2010 data)
 
@@ -984,6 +987,12 @@ Taoism belongs to the religious category. Different regions have different relig
 >![idiot](./pic/img.jpeg)   
 
 The points in the figure are too scattered with no obvious linear relationship. Among regions with similar traditional concepts and fertility rates, Gansu and Fujian show too large a span in domestic violence, indicating this line is not suitable for proving the relationship between concepts and domestic violence. 
+
+5. Fatal analytical error (The second-to-last paragraph on page 28):
+
+>ϕ ≥ 0 represents the net benefit brought by having children, 
+
+Having children will only result in net expenditures and no gains. This fact leads to the complete invalidity of Proposition Two on page 33.
 
 5. Formula analysis error (seventh line of page 33):   
 
