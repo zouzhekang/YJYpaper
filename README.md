@@ -772,7 +772,7 @@
 
 Video, audio and photographic evidence submitted by the female protagonist of this incident to the court [Baidu Netdisk](https://pan.baidu.com/s/1Jvw5mXjDltMEHARtg6c6Rg?pwd=i86x)
 
-❗The blogger (Li Ranyu Xin) was visited late at night by Pink Shirt Guy and several Gold Brothers!!! Videos are on [Quark Netdisk](https://pan.quark.cn/s/10cebfa84661#/list/share), feeling a bit scared now!!!  
+❗The blogger (Li Ranyu Xin) was visited late at night by Pink Shirt Guy and several Cops!!! Videos are on [Quark Netdisk](https://pan.quark.cn/s/10cebfa84661#/list/share), feeling a bit scared now!!!  
 
 Related link: [Yang Jingyuan Incident Related](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
 
@@ -788,6 +788,8 @@ Related link: [Yang Jingyuan Incident Related](https://github.com/yangjingyuan08
 - [x] Report to [Academic Degrees and Graduate Education Development Center of the Ministry of Education](jdjb@cdgdc.edu.cn)
 - [ ] Report in the Ministry of Education Scientific Research Integrity Management Information System
 - [ ] Report to Hubei Provincial Department of Education
+- [ ] Submit to international media such as Reuters, Bloomberg, and Agence France-Presse, and UNESCO to expose suspected academic misconduct in papers from Wuhan University
+- [ ] Notify editors-in-chief/deputy editors-in-chief of Elsevier and all major SCI/SSCI publishing institutions about all suspected academic misconduct papers from Wuhan University and submit evidence related to academic corruption, requesting focused review of the university's academic publications
 - [ ] ...
 
 ## 🏗️My Demands
@@ -1502,4 +1504,4 @@ References [100] to [107], no space between number and name (after ])
 - Thanks to everyone who submitted issues
 - Thanks to Zhihu user Yunshan
 - Thanks to Zhihu user Same Work
-- Thanks to Bilibili UP host [Water Paper Programmer](https://b23.tv/wmJtrZa)
+- Thanks to Bilibili user [水论文的程序猿](https://b23.tv/wmJtrZa)
