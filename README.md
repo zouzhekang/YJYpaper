@@ -226,19 +226,23 @@
 
 图中的点散度过大，无明显线性关系。其中同为观念传统地区且生育率相近的甘肃和福建的家暴跨度过大，可说明该线不适合证明观念与家暴之间的关系。 
 
-5. 致命分析错误(第二十八页倒数第二段):
+5. 数据缺失未说明(第二十六页图2.18)：  
+
+图2.18缺少4个直辖市（北京、上海、天津、重庆）、2个特别行政区（香港、澳门），以及宁夏、内蒙古和台湾3个省份的数据点，并未作任何说明。这种重要数据缺失不仅影响分析的完整性，也降低了研究结论的可信度。
+
+6. 致命分析错误(第二十八页倒数第二段):
 
 >ϕ ≥ 0表示生育子女带来的净收益，
 
 生育子女只会带来净支出，不会带来收益，该点导致其三十三页命题二完全不成立。
 
-6. 公式分析错误(第三十三页第七行内容)：   
+7. 公式分析错误(第三十三页第七行内容)：   
 
 >增加量为1/2   
 
 此处增加量应为ϕα/2。
 
-7. 模型使用错误(第三十七页)： 
+8. 模型使用错误(第三十七页)： 
 
 在论文第4 节 4.数据与实证策略 4.1.实证策略 4.1.1.基于双重固定效应模型的实证策略.
 
@@ -248,19 +252,19 @@
 计量经济学的基本常识: 不能用线性模型来解释一个二元选择变量. 应该使用 Logistic回归 或 Probit回归模型。  
 但是, 论文中使用的所谓 "双重固定效应回归模型" 4.1 是一个线性模型. 这是一个严重的错误. 论文使用了错误的模型, 主要实证结果不可靠.  
 
-8. 低级计算错误(第四十三页倒数第一行内容)：   
+9. 低级计算错误(第四十三页倒数第一行内容)：   
 
 >城镇样本家暴发生率上升 3.2%，而乡村家暴发生率上升 5.4%，二者相差 2.1%。
 
 5.4%-3.2%=2.2%，并非2.1%。  
 
-9. 自相矛盾(第十页)：
+10. 自相矛盾(第十页)：
 
 >![原文](./pic/pic_1.1.png)
 
 前面说十分之一妇女，但是图里显示远低于0.1，而且是不分男女的。
 
-10. 政策启示与结论对冲(第六十一页)：
+11. 政策启示与结论对冲(第六十一页)：
 
 7.1.结论第二段：
 
@@ -986,19 +990,23 @@ Taoism belongs to the religious category. Different regions have different relig
 
 The points in the figure are too scattered with no obvious linear relationship. Among regions with similar traditional concepts and fertility rates, Gansu and Fujian show too large a span in domestic violence, indicating this line is not suitable for proving the relationship between concepts and domestic violence. 
 
-5. Fatal analytical error (The second-to-last paragraph on page 28):
+5. Missing data without explanation (Figure 2.18 on page 26):  
+
+Figure 2.18 lacks data points for 4 municipalities (Beijing, Shanghai, Tianjin, Chongqing), 2 special administrative regions (Hong Kong, Macao), and 3 provinces/regions (Ningxia, Inner Mongolia, Taiwan), without any explanation. This significant data omission not only affects the completeness of the analysis but also reduces the credibility of the research conclusions.
+
+6. Fatal analytical error (The second-to-last paragraph on page 28):
 
 >ϕ ≥ 0 represents the net benefit brought by having children, 
 
 Having children will only result in net expenditures and no gains. This fact leads to the complete invalidity of Proposition Two on page 33.
 
-5. Formula analysis error (seventh line of page 33):   
+7. Formula analysis error (seventh line of page 33):   
 
 >The increase is 1/2   
 
 The increase here should be ϕα/2.
 
-6. Model usage error (page 37): 
+8. Model usage error (page 37): 
 
 In Section 4 of the paper, 4. Data and Empirical Strategy 4.1. Empirical Strategy 4.1.1. Empirical Strategy Based on Two-Way Fixed Effects Model.
 
@@ -1008,19 +1016,19 @@ The dependent variable DV in this model represents whether an individual experie
 Basic common sense in econometrics: linear models cannot be used to explain binary choice variables. Logistic regression or Probit regression models should be used.  
 However, the so-called "two-way fixed effects regression model" 4.1 used in the paper is a linear model. This is a serious error. The paper uses the wrong model, making the main empirical results unreliable.  
 
-7. Basic calculation error (last line of page 43):   
+9. Basic calculation error (last line of page 43):   
 
 >Urban sample domestic violence incidence increased by 3.2%, while rural domestic violence incidence increased by 5.4%, a difference of 2.1%.
 
 5.4%-3.2%=2.2%, not 2.1%.  
 
-8. Self-contradiction (page 10):
+10. Self-contradiction (page 10):
 
 >![原文](./pic/pic_1.1.png)
 
 Earlier it says one in ten women, but the figure shows far below 0.1, and it's regardless of gender.
 
-9. Policy implications conflict with conclusions (page 61):
+11. Policy implications conflict with conclusions (page 61):
 
 Section 7.1 Conclusion, second paragraph:
 
