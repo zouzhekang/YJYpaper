@@ -830,7 +830,7 @@ China has never promulgated a "Divorce Law". This is fabricated content.
 
 The vertical axis shows frequency, which refers to the number of times xxx appears and can only be integers, but the paper's figure shows decimals, indicating the data is fabricated. 
 
-Even calculating each bar at maximum value 5, it only totals 60, far from reaching 100 countries, suspected data fabrication.
+Even if each bar is calculated at the maximum value of 5, the total is only 60—far from 100 countries—suggesting possible data fabrication.
 
 4. Suspected data fabrication (Table 5.1 on page 43):  
 
@@ -845,7 +845,7 @@ Moreover, this table does not indicate the sequence between domestic violence an
 Note that the table title is:
 >Table 5.1 Based on Chinese samples—Overall regression of fertility on domestic violence (1999/2000/2010 data)
 
-But the table content shows 1990, 2000, 2010, indicating the title mistakenly wrote "1990" as "1999"
+However, the table content shows 1990, 2000, and 2010, suggesting that “1990” was mistakenly written as “1999” in the title.
 
 5. Suspected data fabrication (Table 5.2 on page 45):  
 
@@ -901,7 +901,7 @@ Suspected plagiarism from the paper He Hui, Wang Linglin. India's Practice and E
 
 >Among more than 200 countries globally, 104 countries have total fertility rates below 2.1 required for intergenerational population balance
 
-There are a total of 193 UN member states and 4 UN observer states (Vatican, Palestine, Cook Islands, Niue) globally, not more than 200 countries. The author suspects counting Hong Kong, Macao, and Taiwan as countries, which is a serious **political error** that should be thoroughly investigated.
+There are a total of 193 UN member states and 4 UN observer states (Vatican, Palestine, Cook Islands, Niue) globally, not more than 200 countries. It is suspected that the author included Hong Kong, Macao, and Taiwan as separate countries, which is a serious **political error** that should be thoroughly investigated.
 
 2. Year error (seventh line of page 4):  
 
@@ -988,7 +988,7 @@ Taoism belongs to the religious category. Different regions have different relig
 
 >![idiot](./pic/img.jpeg)   
 
-The points in the figure are too scattered with no obvious linear relationship. Among regions with similar traditional concepts and fertility rates, Gansu and Fujian show too large a span in domestic violence, indicating this line is not suitable for proving the relationship between concepts and domestic violence. 
+The points in the figure are too scattered with no obvious linear relationship. Among regions with similar traditional values and fertility rates, Gansu and Fujian exhibit a significant discrepancy in domestic violence rates, indicating this line is not suitable for proving the relationship between concepts and domestic violence. 
 
 5. Missing data without explanation (Figure 2.18 on page 26):  
 
