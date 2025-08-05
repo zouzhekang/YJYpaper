@@ -908,13 +908,13 @@ This repository provides a systematic documentation of academic irregularities i
 
 >For example, the "Immediate Arrest Act" issued by some countries and regions
 
-**Analysis**: No documented "Immediate Arrest Act" related to domestic violence exists in international legal frameworks. This appears to be a misrepresentation of mandatory arrest laws.
+There is no documented law concerning domestic violence that is titled the "Immediate Arrest Act." This appears to be a misrepresentation of "Mandatory Arrest Laws."
 
 2. Content fabrication (fifth line of page 2):  
 
 >And in 2001, with the promulgation and publicity of the "Divorce Law" 
 
-The paper mentions the promulgation of a “Divorce Law” in 2001 in China. No such law exists, indicating fabricated content.
+The paper mentions the promulgation of a "Divorce Law" in 2001 in China. No such law exists, indicating fabricated content.
 
 3. Data fabrication (Figure 2.1 on page 14):  
 
