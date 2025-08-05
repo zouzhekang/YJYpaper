@@ -786,7 +786,7 @@ This repository provides a systematic documentation of academic irregularities i
 
 **Related Resources**: [Yang Jingyuan Incident Documentation](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
 
-## � Action Items  
+## 📑 Action Items  
 - [x] Compile thesis irregularities (continuously updated)
 - [x] Publish [comprehensive reporting directory](./doc/compilations.md) (continuously updated)
 - [x] Provide [PDF conversion tutorial](./doc/export2PDF.md) 🔥🔥🔥
@@ -801,14 +801,14 @@ This repository provides a systematic documentation of academic irregularities i
 - [ ] Notify editors-in-chief and deputy editors-in-chief of Elsevier and major SCI/SSCI publishing institutions regarding suspected academic misconduct at Wuhan University, submitting evidence of academic corruption and requesting enhanced scrutiny of institutional publications
 - [ ] Additional actions pending
 
-## � Institutional Demands
+## 🏗️ Our Demands
 - **Degree Revocation**: Demand that Wuhan University revoke Yang Jingyuan's master's degree
 - **Disciplinary Reversal**: Demand that Wuhan University rescind disciplinary actions against Student Xiao and issue a public apology
 - **Academic Protection**: Ensure Student Xiao's graduation upon meeting academic requirements, without dismissal based on health concerns or timeline violations
 - **Transparency**: Demand disclosure of Yang Jingyuan's college entrance examination records
 - **Party Membership**: Request denial of Yang Jingyuan's probationary party member confirmation
 
-## � Critical Academic Irregularities
+## 🔧 Critical Academic Irregularities
 ### Data Fabrication and Falsification  
 
 1. **Fabricated Legal Reference** (page 1, third line from bottom): 
