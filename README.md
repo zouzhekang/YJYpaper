@@ -625,12 +625,6 @@
 
 问号和逗号连用。  
 
-51. 文字错误(第六十八页致谢部分倒数第三段内容)：  
-
->本科毕业论文致谢的最后，我引了 Carl Sagan 所说的： 
-
-这不是**硕士**毕业论文吗？怎么写的本科？不会连致谢都是抄的吧？  
-
 52. 标点符号错误(第六十八页致谢部分倒数第二段内容)：  
 
 >We make our world significant by the courage of our questions and by the depth of our answers。 
