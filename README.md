@@ -292,6 +292,23 @@
 
 政策启示“加大生育支持以降低家暴”与结论中“生育导致家暴增加”疑似逻辑冲突。
 
+12. 严重统计方法错误：未使用样本权重进行加权分析
+
+论文使用了NFHS（印度国家家庭健康调查）和中国妇女社会地位调查数据，这两个调查均采用分层抽样设计的全国代表性样本。然而，论文中从未提及使用样本权重（sampling weights）进行加权分析。
+
+分层抽样调查的基本要求是必须使用样本权重来确保：
+- 不同地区、不同人群的代表性
+- 统计推断的有效性和无偏性
+- 结果能够代表总体而非仅仅是样本
+
+不使用样本权重的后果：
+- 统计结果存在系统性偏误
+- 无法进行有效的统计推断
+- 研究结论不具备代表性
+- 违反了调查数据使用的基本规范
+
+这是计量经济学和统计学的基本常识，该错误严重影响了论文所有实证结果的可信度。
+
 ### 重要数据未引用
 
 文中多处重要数据未引用，找不到来源，怀疑该数据的真实性。
@@ -1056,7 +1073,22 @@ The increase here should be ϕα/2.
 
 Earlier it says one in ten women, but the figure shows far below 0.1, and it's regardless of gender.
 
+11. **Critical Methodological Error: Failure to Use Sampling Weights**
 
+The thesis utilizes data from the NFHS (National Family Health Survey) and China Women's Social Status Survey, both employing stratified sampling designs for national representativeness. However, the thesis completely omits any mention of using sampling weights for weighted analysis.
+
+**Fundamental Requirements for Stratified Survey Data:**
+- Sampling weights are mandatory to ensure representativeness across different regions and populations
+- Statistical inference validity and unbiased estimation require proper weighting
+- Results must represent the population, not merely the sample
+
+**Consequences of Omitting Sampling Weights:**
+- Systematic bias in statistical results
+- Invalid statistical inference and hypothesis testing
+- Research conclusions lack population representativeness
+- Violation of basic survey data usage protocols
+
+This represents a fundamental violation of econometric and statistical principles, severely compromising the credibility of all empirical results in the thesis.
 
 12. Policy implications conflict with conclusions (page 61):
 
