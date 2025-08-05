@@ -821,31 +821,29 @@ No "Immediate Arrest Act" related to domestic violence has been found. This is s
 
 >And in 2001, with the promulgation and publicity of the "Divorce Law" 
 
-China has never promulgated a "Divorce Law". This is fabricated content.
+The paper mentions the promulgation of a “Divorce Law” in 2001 in China. No such law exists, indicating fabricated content.
 
 3. Data fabrication (Figure 2.1 on page 14):  
 
 >Figure 2.1 Histogram of domestic violence incidence rates by country globally:
 ![plt](./pic/plt.jpeg)  
 
-The vertical axis shows frequency, which refers to the number of times xxx appears and can only be integers, but the paper's figure shows decimals, indicating the data is fabricated. 
-
-Even if each bar is calculated at the maximum value of 5, the total is only 60—far from 100 countries—suggesting possible data fabrication.
+Figure 2.1, a histogram of global domestic violence incidence rates, uses frequency as the vertical axis, which should only include integers. However, the figure displays decimal values, suggesting data fabrication. Additionally, even assuming a maximum value of 5 per bar, the total reaches only 60, far short of the claimed 100 countries.
 
 4. Suspected data fabrication (Table 5.1 on page 43):  
 
 >![t5.1](./pic/tab4.jpeg)  
 
-Urban samples plus rural samples do not equal total samples, suspected data fabrication.  
+The sum of urban and rural samples does not match the total sample size, indicating possible data fabrication.  
 For example: 5230+5287=10517≠10519  
 &emsp;&emsp;&emsp;5510+5354=10864≠10867   
 
-Moreover, this table does not indicate the sequence between domestic violence and childbirth, and thus cannot explain the causality between the two.
+Furthermore, the table fails to specify the temporal sequence between domestic violence and childbirth, undermining claims of causality.
 
 Note that the table title is:
 >Table 5.1 Based on Chinese samples—Overall regression of fertility on domestic violence (1999/2000/2010 data)
 
-However, the table content shows 1990, 2000, and 2010, suggesting that “1990” was mistakenly written as “1999” in the title.
+The table title references “1999/2000/2010” data, but the content covers 1990, 2000, and 2010, suggesting a typographical error in the title.
 
 5. Suspected data fabrication (Table 5.2 on page 45):  
 
