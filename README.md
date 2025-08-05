@@ -798,6 +798,48 @@
 13. 参考文献格式不符合武汉大学经管学院硕士学位论文规范  
 参考文献[100]到[107]，序号与姓名间（]之后）无空格  
 
+14. 严重误用Pollak (2004)文献，篡改原文含义
+
+论文多处引用Pollak (2004)的《代际家庭暴力模型》，但存在严重的误用和曲解：
+
+**误用案例一：将"社会传递"曲解为"遗传特征"**
+
+论文原文：
+>家暴带来的影响不仅体现在当代，研究表明，家暴具有代际遗传特征，在暴力家庭长大的人往往会将暴力行为遗传下去（Pollak，2004）。
+
+**问题分析**：
+- Pollak (2004)讨论的是家庭暴力的"代际传递"(intergenerational transmission)，强调的是社会学习机制
+- 原文明确指出这是"行为策略或脚本从父母传递给子女"的社会现象
+- 论文使用"代际遗传特征"和"遗传下去"的表述，错误地暗示这是生物学遗传，严重曲解了原文的社会传递概念
+
+**误用案例二：错误归类为议价理论框架**
+
+论文原文：
+>在家庭议价权中，经济学者往往将家庭暴力视作一种表达行为，即家庭暴力会直接给施暴者带来效用。造成这种暴力倾向的原因可能是孩童时期目睹或者经历过家暴（Bowlus 和 Seitz，2006；Pollak，2004）。根据议价理论，暴力只是一种让施暴者效用增加而受害者效用减少的行为，因此，家庭就会就最佳暴力程度进行议价并通过金钱转移对受虐者进行补偿。
+
+**问题分析**：
+- Pollak (2004)明确声明其模型"忽略议价和理性选择，专注于家庭暴力的代际相关性"
+- 原文采用的是概率模型而非效用最大化或战略谈判模型
+- 论文错误地将Pollak的研究归类到议价理论框架中，与原文方法论完全不符
+- 原文从未讨论"最佳暴力程度"或"金钱转移补偿"等概念
+
+**误用案例三：性别焦点的偏颇解读**
+
+论文原文：
+>此外，也有部分文献抛开了单一代际的家庭内部，从其他角度分析了男性的暴力动机：Pollak（2004）构建了一个家暴在代际之间传递的模型，认为父代家庭出现家暴的概率与子代发生家暴的概率呈现正相关关系。
+
+**问题分析**：
+- 虽然正相关关系的描述基本准确，但将研究重点描述为"男性的暴力动机"是片面的
+- Pollak (2004)的模型同时考虑男性(暴力实施)和女性(容忍暴力)的行为，强调"男性和女性的异质性是核心"
+- 论文的表述忽略了女性在代际传递循环中的作用，过度简化了原文的复杂性
+
+**学术不端性质**：
+这些误用构成严重的学术不端行为：
+- **曲解引用**：将社会传递概念错误表述为生物遗传
+- **错误归类**：将非议价理论研究强行纳入议价理论框架
+- **选择性引用**：仅关注部分内容而忽略原文的完整论述
+- **误导读者**：可能使读者对相关文献产生错误理解
+
 ## 🏋️‍♂️本人声明
 &emsp;&emsp;在预备党员考察期内，杨景媛同志在思想上尖酸刻薄，刻意制造性别对立；在法律上知法犯法，涉嫌恶意诬告他人，无端创造《离婚法》；在学业上敷衍了事，毕业论文问题严重，给学校名誉造成了不可估量的伤害。本人实名反对其党员转正，请党组织今后不要同意杨景媛的预备党员转正申请。
 
@@ -1612,6 +1654,53 @@ References [90], [91], [96], [97], [99], [68] not found in main text
 
 13. Reference format does not comply with Wuhan University School of Economics and Management master's thesis standards  
 References [100] to [107], no space between number and name (after ])  
+
+14. **Systematic Misuse of Pollak (2004): Misrepresentation of Intergenerational Domestic Violence Model**
+
+The thesis repeatedly cites Pollak (2004)'s "Intergenerational Model of Domestic Violence" but demonstrates severe misinterpretation and academic misrepresentation across multiple instances:
+
+**Misuse Case 1: Misrepresenting "Social Transmission" as "Genetic Inheritance"**
+
+Thesis Quote:
+>The impact of domestic violence is not only reflected in the present; research shows that domestic violence has intergenerational genetic characteristics, meaning that people who grow up in violent families tend to pass on violent behavior (Pollak, 2004).
+
+**Critical Analysis**:
+- Pollak (2004) discusses "intergenerational transmission" emphasizing social learning mechanisms, not biological inheritance
+- The original paper explicitly describes "behavioral strategies or scripts transmitted from parents to children" as a social phenomenon
+- The thesis's use of "genetic characteristics" (代际遗传特征) and "pass on genetic behavior" fundamentally misrepresents Pollak's social transmission framework
+- This constitutes academic misrepresentation by suggesting biological causation where none exists in the source material
+
+**Misuse Case 2: Incorrect Attribution to Bargaining Theory Framework**
+
+Thesis Quote:
+>In family bargaining power, economists often view domestic violence as an expressive behavior, meaning that domestic violence directly brings utility to the perpetrator. The cause of this violent tendency may be witnessing or experiencing domestic violence during childhood (Bowlus and Seitz, 2006; Pollak, 2004). According to bargaining theory, violence is merely a behavior that increases the perpetrator's utility while decreasing the victim's utility. Therefore, the family will bargain over the optimal level of violence and compensate the victim through monetary transfers.
+
+**Critical Analysis**:
+- Pollak (2004) explicitly states: "In this paper I ignore bargaining and rational choice in order to focus on... the intergenerational correlation of domestic violence"
+- The original employs probabilistic propensity models rather than utility maximization or strategic negotiation frameworks
+- The thesis incorrectly attributes bargaining theory concepts ("optimal violence levels," "monetary transfers") to Pollak's work
+- This represents fundamental academic misattribution, as Pollak's methodology explicitly avoids the theoretical framework the thesis claims he employs
+
+**Misuse Case 3: Gender-Selective Misinterpretation**
+
+Thesis Quote:
+>Additionally, some literature has moved beyond single-generation families to analyze male violence motives from other perspectives: Pollak (2004) constructed a model of intergenerational transmission of domestic violence, arguing that the probability of domestic violence in the parental generation is positively correlated with the probability of domestic violence in the offspring generation.
+
+**Critical Analysis**:
+- While the correlation claim is accurate, the framing as analysis of "male violence motives" is reductive and misleading
+- Pollak (2004) explicitly examines both genders' roles: men's perpetration propensities and women's tolerance behaviors
+- The original emphasizes "heterogeneity of both men and women is central" to the model
+- The thesis's exclusive focus on "male motives" ignores women's role in the transmission cycle, misrepresenting the paper's comprehensive approach
+
+**Academic Misconduct Assessment**:
+These misuses constitute serious academic integrity violations:
+
+- **Literature Misrepresentation**: Transforming social science concepts into biological determinism claims
+- **Theoretical Misattribution**: Assigning theoretical frameworks explicitly rejected by the original author  
+- **Selective Citation**: Extracting partial claims while ignoring contradictory methodological statements
+- **Reader Deception**: Creating false impressions about established academic literature
+
+The systematic nature of these misrepresentations suggests either fundamental misunderstanding of the source material or deliberate mischaracterization to support predetermined conclusions. Both scenarios represent serious violations of academic scholarship standards.
 
 ## 📝 Academic Integrity Assessment
 
