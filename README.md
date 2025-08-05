@@ -199,6 +199,22 @@
 
 >![相关](./pic/nfhs4_tab16.9.png)
 
+11. 数据不一致(第十页与第四十七页)：
+
+论文第十页"家庭暴力的中印现状"子标题下提到：
+>![家暴数据](./pic/data_no_citation_1.jpg)"2010年的调查数据显示我国妇女遭受家庭暴力的占比降至8.8%"。
+
+但论文第四十七页表4.1
+>![900010](./pic/900010.png)
+"中国妇女社会调查数据的描述性统计"中2010年数据显示，我国妇女遭受家庭暴力的占比仅为0.0540（即5.4%）。
+
+
+根据《第三期中国妇女社会地位调查 全国主要数据报告》第16页的数据：
+- 广义家庭暴力（包括侮辱谩骂、殴打、限制人身自由、经济控制、强迫性生活等）：24.7%
+- 狭义家庭暴力（明确表示遭受过配偶殴打）：5.5%
+
+显然，正文中的8.8%与表格中的5.4%存在矛盾，且8.8%的数据来源不明，疑似为编造数据。表格中的5.4%与官方报告中的5.5%基本一致，说明作者知道正确数据应该是多少，但在正文中却使用了错误的8.8%。
+
 ### 数据分析错误
 
 1. 常识性分析错误(第二十一页第一段倒数三行内容)：  
@@ -961,6 +977,22 @@ This data is completely incorrect; the total population is only 61,906.
 
 >![相关](./pic/nfhs4_tab16.9.png)
 
+11. **Data Inconsistency** (pages 10 and 47):
+
+**Analysis**: The thesis presents contradictory domestic violence statistics for 2010. Page 10, under the subheading "Current Status of Domestic Violence in China and India," states:
+
+>![家暴数据](./pic/data_no_citation_1.jpg)"The 2010 survey data shows that the proportion of Chinese women suffering from domestic violence dropped to 8.8%."
+
+However, Table 4.1 on page 47:
+
+>![900010](./pic/900010.png)"Descriptive Statistics of Chinese Women's Social Survey Data" shows that for 2010 data, the proportion of Chinese women suffering from domestic violence is only 0.0540 (i.e., 5.4%).
+
+According to page 16 of the *Third National Survey on the Social Status of Women in China - National Main Data Report*:
+- Broad definition of domestic violence (including insults, beatings, restriction of personal freedom, economic control, forced sexual activity, etc.): 24.7%
+- Narrow definition of domestic violence (explicitly stating having been beaten by spouse): 5.5%
+
+**Critical Finding**: The 8.8% figure in the main text contradicts the 5.4% in Table 4.1. The 8.8% data source is unidentified and suspected to be fabricated, while the 5.4% aligns closely with the official report's 5.5%. This suggests the author knew the correct data but deliberately used incorrect figures in the narrative text, demonstrating systematic data manipulation.
+
 ### Methodological and Analytical Deficiencies
 
 1. Common sense analysis error (third line from bottom of first paragraph on page 21):  
@@ -1024,7 +1056,9 @@ The increase here should be ϕα/2.
 
 Earlier it says one in ten women, but the figure shows far below 0.1, and it's regardless of gender.
 
-11. Policy implications conflict with conclusions (page 61):
+
+
+12. Policy implications conflict with conclusions (page 61):
 
 Section 7.1 Conclusion, second paragraph:
 
