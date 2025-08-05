@@ -247,11 +247,30 @@
 
 图2.18缺少4个直辖市（北京、上海、天津、重庆）、2个特别行政区（香港、澳门），以及宁夏和内蒙古2个自治区和台湾省的数据点，并未作任何说明。这种重要数据缺失不仅影响分析的完整性，也降低了研究结论的可信度。
 
-6. 致命分析错误(第二十八页倒数第二段):
+6. 严重篡改引用文献原意(第二十八页倒数第二段):
 
 >ϕ ≥ 0表示生育子女带来的净收益，
 
-生育子女只会带来净支出，不会带来收益，该点导致其三十三页命题二完全不成立。
+**学术不端分析**：杨的论文声称基于Doepke & Kindermann (2019)构建模型，但严重篡改了原文献含义。
+
+**原文献信息**：
+>Doepke, M., & Kindermann, F. (2019). Bargaining over babies: Theory, evidence, and policy implications. *American Economic Review*, 109(9), 3264-3306.
+- DOI: 10.1257/aer.20160328
+
+**原文献公式**：
+>$$c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)$$
+
+**原文献原文**：
+>"For a cooperating couple, the budget constraint is then given by $c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)$."
+
+**原文献解释**：公式中的"-ϕ"以及后续"consumption"一词明确表明，原文献认为生育带来的是支出(cost)，而非收益。
+
+**篡改性质**：
+- **直接篡改**：将原文献中的"生育成本"(-ϕ)篡改为"生育收益"(ϕ≥0)
+- **逻辑缺陷**：在提出"生育带来正收益"时，未提供任何支持论据，也未讨论如何否定引用文献的成本观点
+- **连锁错误**：此篡改导致第32页命题二及全文主要结论完全失效
+
+这属于学术不端中的"篡改引用文献原意，使其对己有利"，是严重的学术诚信违规行为。
 
 7. 公式分析错误(第三十三页第七行内容)：   
 
@@ -1044,11 +1063,31 @@ Verification shows this data has an R² of only 0.1, proving that fertility quan
 
 Figure 2.18 lacks data points for 4 municipalities (Beijing, Shanghai, Tianjin, Chongqing), 2 special administrative regions (Hong Kong, Macao), and 2 autonomous regions (Ningxia, Inner Mongolia) plus Taiwan ROC, without any explanation. This significant data omission not only affects the completeness of the analysis but also reduces the credibility of the research conclusions.
 
-6. Fatal analytical error (The second-to-last paragraph on page 28):
+6. **Severe Misrepresentation of Cited Literature** (page 28, second-to-last paragraph):
 
 >ϕ ≥ 0 represents the net benefit brought by having children, 
 
-Having children will only result in net expenditures and no gains. This fact leads to the complete invalidity of Proposition Two on page 33.
+**Academic Misconduct Analysis**: Yang's thesis claims to be based on Doepke & Kindermann (2019) but severely misrepresents the original literature's meaning.
+
+**Original Literature Information**:
+> Doepke, M., & Kindermann, F. (2019). Bargaining over babies: Theory, evidence, and policy implications. *American Economic Review*, 109(9), 3264-3306.
+- DOI: 10.1257/aer.20160328
+
+**Original Literature Formula**: 
+>$$c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)$$
+
+**Original Literature Quote**: 
+>"For a cooperating couple, the budget constraint is then given by $c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)$."
+
+**Original Literature Interpretation**: 
+The "-ϕ" in the formula and subsequent use of "consumption" clearly indicate that the original literature treats childbearing as a cost, not a benefit.
+
+**Nature of Misrepresentation**:
+- **Direct Falsification**: Transforming the original literature's "childbearing cost" (-ϕ) into "childbearing benefit" (ϕ≥0)
+- **Logical Deficiency**: When proposing "childbearing brings positive returns," no supporting evidence is provided, nor is there discussion of how to refute the original literature's cost perspective
+- **Cascading Errors**: This misrepresentation renders Proposition Two on page 32 and the thesis's main conclusions completely invalid
+
+This constitutes academic misconduct through "misrepresenting cited literature to favor one's argument," representing a serious violation of academic integrity standards.
 
 7. Formula analysis error (seventh line of page 33):   
 
