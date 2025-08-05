@@ -882,25 +882,25 @@ The table title references “1999/2000/2010” data, but the content covers 199
 
 >![t5.2](./pic/tab5.jpg)  
 
-Urban samples plus rural samples do not equal total samples, suspected data fabrication.  
+Mathematical inconsistencies where urban and rural sample sizes fail to sum to reported total sample size, indicating potential data manipulation.  
 
 6. Suspected data fabrication (Table 5.3 on page 46):  
 
 >![t5.3](./pic/tab6.jpeg)  
 
-Urban samples plus rural samples do not equal total samples, suspected data fabrication.  
+Systematic arithmetic discrepancies between subsample aggregations and reported total sample sizes, suggesting fabricated or manipulated data sets.  
 
 7. Suspected data fabrication (Table 5.4 on page 47):  
 
 >![t5.4](./pic/tab7.jpeg)   
 
-Urban samples plus rural samples do not equal total samples, suspected data fabrication.  
+Persistent mathematical inconsistencies in sample size reporting, where urban and rural subsamples do not aggregate to stated totals, indicating data integrity violations.  
 
 8. Suspected data fabrication (Table 5.5 on page 48):  
 
 >![t5.5](./pic/tab8.jpeg)  
 
-High caste samples plus low caste samples do not equal total samples, suspected data fabrication.
+Demographic composition errors where high-caste and low-caste sample sizes fail to sum to total sample size, suggesting systematic data manipulation across caste-based analyses.
 
 ### Academic Plagiarism
 
