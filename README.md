@@ -759,8 +759,8 @@
 
 ## 🙏acknowledge
 - 感谢各位提的issue
-- 感谢知乎答主 云杉
-- 感谢知乎答主 同工Same
+- 感谢知乎答主 [云杉](https://www.zhihu.com/question/1932776847508214307/answer/1933277605647349267)
+- 感谢知乎答主 [同工Same](https://www.zhihu.com/question/1934664649212683483/answer/1934733318307440479)
 - 感谢哔哩哔哩up主 [水论文的程序猿](https://b23.tv/wmJtrZa)
 
 ---
@@ -1520,5 +1520,5 @@ During the probationary period for party membership consideration, Yang Jingyuan
 
 ## 🙏 Acknowledgments
 - Contributors who submitted detailed issue reports
-- Zhihu contributors: Yunshan and Same Work  
+- Zhihu contributors: [云杉](https://www.zhihu.com/question/1932776847508214307/answer/1933277605647349267) and [同工Same](https://www.zhihu.com/question/1934664649212683483/answer/1934733318307440479)  
 - Bilibili content creator: [水论文的程序猿](https://b23.tv/wmJtrZa)
