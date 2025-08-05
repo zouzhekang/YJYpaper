@@ -277,7 +277,7 @@ Conduct a thorough investigation of her ethical record to prevent further harm a
 
 未写明会议/期刊的名称及出版年份。
 
-在corssref、Google Scholar和Google都搜不到该论文，疑似为AI生成。 
+在CrossRef、Google Scholar和Google都搜不到该论文，疑似为AI生成。 
 
 6. 完全重复(第六十五页)：  
 
