@@ -202,11 +202,12 @@
 11. 数据不一致(第十页与第四十七页)：
 
 论文第十页"家庭暴力的中印现状"子标题下提到：
->![家暴数据](./pic/data_no_citation_1.jpg)"2010年的调查数据显示我国妇女遭受家庭暴力的占比降至8.8%"。
+>![家暴数据](./pic/data_no_citation_1.jpg)
+>"2010年的调查数据显示我国妇女遭受家庭暴力的占比降至8.8%"。
 
 但论文第四十七页表4.1
 >![900010](./pic/900010.png)
-"中国妇女社会调查数据的描述性统计"中2010年数据显示，我国妇女遭受家庭暴力的占比仅为0.0540（即5.4%）。
+>"中国妇女社会调查数据的描述性统计"中2010年数据显示，我国妇女遭受家庭暴力的占比仅为0.0540（即5.4%）。
 
 
 根据《第三期中国妇女社会地位调查 全国主要数据报告》第16页的数据：
@@ -244,7 +245,7 @@
 
 5. 数据缺失未说明(第二十六页图2.18)：  
 
-图2.18缺少4个直辖市（北京、上海、天津、重庆）、2个特别行政区（香港、澳门），以及宁夏、内蒙古和台湾3个省份的数据点，并未作任何说明。这种重要数据缺失不仅影响分析的完整性，也降低了研究结论的可信度。
+图2.18缺少4个直辖市（北京、上海、天津、重庆）、2个特别行政区（香港、澳门），以及宁夏和内蒙古2个自治区和台湾省的数据点，并未作任何说明。这种重要数据缺失不仅影响分析的完整性，也降低了研究结论的可信度。
 
 6. 致命分析错误(第二十八页倒数第二段):
 
@@ -762,7 +763,7 @@
 
 >[103]Terror as a Bargaining Instrument: A Case Study of Dowry Violence in Rural India[J]. The American Economic Review, 2024. 
 
-疑似为了满足引用较新论文的要求，串改文献发表时间。原时间为：
+疑似为了满足引用较新论文的要求，篡改文献发表时间。原时间为：
 
 >Bloch F, Rao V. Terror as a bargaining instrument: A case study of dowry violence in rural India[J]. American Economic Review, 2002, 92(4): 1029-1043.
 文献url：https://www.aeaweb.org/articles?id=10.1257/00028280260344588
@@ -998,11 +999,13 @@ This data is completely incorrect; the total population is only 61,906.
 
 **Analysis**: The thesis presents contradictory domestic violence statistics for 2010. Page 10, under the subheading "Current Status of Domestic Violence in China and India," states:
 
->![家暴数据](./pic/data_no_citation_1.jpg)"The 2010 survey data shows that the proportion of Chinese women suffering from domestic violence dropped to 8.8%."
+>![家暴数据](./pic/data_no_citation_1.jpg)
+>"The 2010 survey data shows that the proportion of Chinese women suffering from domestic violence dropped to 8.8%."
 
 However, Table 4.1 on page 47:
 
->![900010](./pic/900010.png)"Descriptive Statistics of Chinese Women's Social Survey Data" shows that for 2010 data, the proportion of Chinese women suffering from domestic violence is only 0.0540 (i.e., 5.4%).
+>![900010](./pic/900010.png)
+>"Descriptive Statistics of Chinese Women's Social Survey Data" shows that for 2010 data, the proportion of Chinese women suffering from domestic violence is only 0.0540 (i.e., 5.4%).
 
 According to page 16 of the *Third National Survey on the Social Status of Women in China - National Main Data Report*:
 - Broad definition of domestic violence (including insults, beatings, restriction of personal freedom, economic control, forced sexual activity, etc.): 24.7%
@@ -1039,7 +1042,7 @@ Verification shows this data has an R² of only 0.1, proving that fertility quan
 
 5. Missing data without explanation (Figure 2.18 on page 26):  
 
-Figure 2.18 lacks data points for 4 municipalities (Beijing, Shanghai, Tianjin, Chongqing), 2 special administrative regions (Hong Kong, Macao), and 3 provinces/regions (Ningxia, Inner Mongolia, Taiwan), without any explanation. This significant data omission not only affects the completeness of the analysis but also reduces the credibility of the research conclusions.
+Figure 2.18 lacks data points for 4 municipalities (Beijing, Shanghai, Tianjin, Chongqing), 2 special administrative regions (Hong Kong, Macao), and 2 autonomous regions (Ningxia, Inner Mongolia) plus Taiwan ROC, without any explanation. This significant data omission not only affects the completeness of the analysis but also reduces the credibility of the research conclusions.
 
 6. Fatal analytical error (The second-to-last paragraph on page 28):
 
