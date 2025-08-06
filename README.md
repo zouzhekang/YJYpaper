@@ -914,7 +914,7 @@ There is no documented law concerning domestic violence that is titled the "Imme
 
 >And in 2001, with the promulgation and publicity of the "Divorce Law" 
 
-The paper mentions the promulgation of a "Divorce Law" in 2001 in China. No such law exists, indicating fabricated content.
+The thesis mentions the promulgation of a "Divorce Law" in 2001 in China. No such law exists, indicating fabricated content.
 
 3. Data fabrication (Figure 2.1 on page 14):  
 
@@ -1084,12 +1084,12 @@ As shown above, 0.01% should be 1 out of 10,000 women.
 
 >![idiot](./pic/v2.jpg)  
 
-Data from Figure 2.15 on page 24 of the paper (Figure 2.1 above) was extracted and linearly fitted (see Figure 2.2 above), yielding a linear fit of y=0.1067x R²=0.1083. Detailed data is available in the [attachment](./paper/testdata.csv).  
+Data from Figure 2.15 on page 24 of the thesis (Figure 2.1 above) was extracted and linearly fitted (see Figure 2.2 above), yielding a linear fit of y=0.1067x R²=0.1083. Detailed data is available in the [attachment](./paper/testdata.csv).  
 Verification shows this data has an R² of only 0.1, proving that fertility quantity is almost unrelated to domestic violence incidence.  
 
 3. **Methodological Flaw in Cultural Measurement** (page 25, sixth line from bottom):   
 
->This paper uses the number of Taoist temples per capita in each region to measure the degree of traditional thinking in that region
+>This thesis uses the number of Taoist temples per capita in each region to measure the degree of traditional thinking in that region
 
 **Analysis**: This represents a fundamental misunderstanding of cultural measurement. Religious distribution varies significantly across regions due to historical, geographical, and demographic factors unrelated to "traditional thinking." Using Taoist temple density as a proxy for traditionalism lacks theoretical foundation and empirical validity.
 
@@ -1304,7 +1304,7 @@ Suspected writing "or will" as "will award".
 
 >I believe there seems to indeed exist some positive relationship between fertility and domestic violence incidence   
 
-Suspected writing "this paper" as "I"; "seems to indeed" has serious grammatical issues.  
+Suspected writing "this thesis" as "I"; "seems to indeed" has serious grammatical issues.  
 
 19. Typo (third line of page 18):  
 
@@ -1337,7 +1337,7 @@ Should move "时" to the right of the right parenthesis.
 
 24. Typo (third line of first paragraph on page 24):  
 
->This is consistent with the research framework preset in this paper.   
+>This is consistent with the research framework preset in this thesis.   
 
 Suspected writing "previously" as "between".   
 
@@ -1355,9 +1355,9 @@ Gansu and Fujian should use semicolons; no semicolon between Fujian and Tibet.
 
 27. Inappropriate word choice (sixth line from bottom of page 26):  
 
->This paper divides each province into regions with stronger and weaker clan ideology   
+>This thesis divides each province into regions with stronger and weaker clan ideology   
 
-Suspected writing "the figure" as "this paper". 
+Suspected writing "the figure" as "this thesis". 
 
 28. Figure title error (page 26):  
 
@@ -1369,7 +1369,7 @@ Title below Figure 2.19:
 29. Figure caption error (caption below Figure 2.19 on page 27):  
 
 Caption below Figure 2.19:
->Note: The horizontal axis in the figure represents the average fertility quantity of each province, and the vertical axis represents the average domestic violence incidence rate. This paper used the measurement variable for clan culture from Chen (2021), namely the number of genealogies per capita in each region, and classified based on this variable. Solid points and solid lines represent regions with stronger clan concepts, while hollow points and dashed lines represent regions with weaker clan concepts. Results show that in regions with weaker clan concepts, fertility quantity and domestic violence incidence rate have a positive correlation.
+>Note: The horizontal axis in the figure represents the average fertility quantity of each province, and the vertical axis represents the average domestic violence incidence rate. This thesis used the measurement variable for clan culture from Chen (2021), namely the number of genealogies per capita in each region, and classified based on this variable. Solid points and solid lines represent regions with stronger clan concepts, while hollow points and dashed lines represent regions with weaker clan concepts. Results show that in regions with weaker clan concepts, fertility quantity and domestic violence incidence rate have a positive correlation.
 
 "Measurement" is incorrectly written as "beam measurement".  
 
@@ -1419,7 +1419,7 @@ Two consecutive right parentheses.
 
 >I still use whether individuals are 40 years old for grouping"   
 
-Suspected writing "this paper" as "I".  
+Suspected writing "this thesis" as "I".  
 
 38. Typo (fifth to sixth lines from bottom of page 45):  
 
@@ -1530,13 +1530,13 @@ English text in acknowledgments ends with Chinese period.
 1. Page number errors:  
 >![page](./pic/pg.jpeg)
 
-The page number formats at the bottom of the paper's cover, statement, abstract, and table of contents all have issues.
+The page number formats at the bottom of the thesis's cover, statement, abstract, and table of contents all have issues.
 
 Also, does the cover need page numbers?
 
 2. Indentation issues:  
 
-Each paragraph in the English abstract of the paper is not indented at the beginning.
+Each paragraph in the English abstract of the thesis is not indented at the beginning.
 
 3. Format error (second to third lines of second paragraph on page 1):  
 
@@ -1570,7 +1570,7 @@ Figure 5.1 is followed by a colon, inconsistent with surrounding format.
 
 8. Citation format error (first line of last paragraph on page 53):  
 
->This paper is based on the regional clan variables constructed by Chen (2021)"  
+>This thesis is based on the regional clan variables constructed by Chen (2021)"  
 
 This citation format is inconsistent with the surrounding text. 
 
@@ -1585,7 +1585,7 @@ Are references in Wuhan University School of Economics and Management theses sor
 ### Bibliographic Irregularities
 
 1. **Misattributed Figure Reference** (page 26, seventh line from bottom):  
->Figure 2.19 reflects this phenomenon. This paper divides provinces into regions with stronger and weaker clan ideology. Results show that in regions with stronger clan ideology, increased fertility is often accompanied by lower domestic violence incidence.
+>Figure 2.19 reflects this phenomenon. This thesis divides provinces into regions with stronger and weaker clan ideology. Results show that in regions with stronger clan ideology, increased fertility is often accompanied by lower domestic violence incidence.
 
 **Analysis**: Figure 2.19 depicts the relationship between domestic violence and fertility, not religious factors. This represents a fundamental misattribution of empirical evidence.
 
@@ -1649,7 +1649,7 @@ Paper URL: https://www.aeaweb.org/articles?id=10.1257/00028280260344588
 
 >![j](./pic/hx.png)
 
-11. Many citations in the reference list are hard to find in the paper text. 
+11. Many citations in the reference list are hard to find in the thesis text. 
 
 For example, the papers cited in section 1.2.2 on pages 9-10, most cannot be found in the reference list.
 
