@@ -284,10 +284,16 @@
 - DOI: 10.1257/aer.20160328
 
 **原文献公式**：
->$$c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)$$
+```math
+c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)
+```
 
 **原文献原文**：
->"For a cooperating couple, the budget constraint is then given by $c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)$."
+>For a cooperating couple, the budget constraint is then given by:
+
+```math
+c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)
+```
 
 **原文献解释**：公式中的"-ϕ"以及后续"consumption"一词明确表明，原文献认为生育带来的是支出(cost)，而非收益。
 
@@ -1166,10 +1172,16 @@ Figure 2.18 lacks data points for 4 municipalities (Beijing, Shanghai, Tianjin, 
 - DOI: 10.1257/aer.20160328
 
 **Original Literature Formula**: 
->$$c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)$$
+```math
+c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)
+```
 
 **Original Literature Quote**: 
->"For a cooperating couple, the budget constraint is then given by $c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)$."
+>For a cooperating couple, the budget constraint is then given by:
+
+```math
+c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)
+```
 
 **Original Literature Interpretation**: 
 The "-ϕ" in the formula and subsequent use of "consumption" clearly indicate that the original literature treats childbearing as a cost, not a benefit.
