@@ -2,11 +2,33 @@
 
 <div align="center">
 
-**Language / 语言**: [中文](#中文版本) | [English](#english-version)
+**Language/语言**: [中文](#中文版本) | [English](#english-version)
 
 </div>
 
+### 目录
+
+- [📑 TODO](#todo)
+- [🏗️ 我们的诉求](#我们的诉求)
+- [🔧 论文主要问题](#论文主要问题) 
+  - [💥 涉嫌造假](#涉嫌造假)  - 编造法律、数据造假、表格数据不符等
+  - [📋 涉嫌抄袭剽窃](#涉嫌抄袭剽窃)  - 整段抄袭、无引用等
+  - [❌ 数据错误](#数据错误)  - 年份错误、数量错误、常识性错误等  
+  - [📊 数据分析错误](#数据分析错误)  - 计算错误、模型错误、强行拟合等
+  - [❓ 重要数据未引用](#重要数据未引用)  - 缺少数据来源
+  - [✏️ 写作与表达错误](#写作与表达错误)  - 错别字、语病、格式错误等
+  - [📄 格式与规范错误](#格式与规范错误)  - 页码、字体、格式等
+  - [⚖️ 学术伦理问题](#学术伦理问题)  - 伦理问题分析
+  - [📚 文献引用错误](#文献引用错误)  - 重复引用、格式错误、篡改等
+- [🏋️‍♂️ 本人声明](#本人声明)
+- [📖 参考文献](#参考文献)
+- [🙏 Acknowledge](#acknowledge)
+
+---
+
 ###### 中文版本
+
+---
 
 &emsp;&emsp;本仓库专门用来记录武汉大学国际经济贸易专业杨景媛的硕士毕业论文《中印生育行为影响家庭暴力的经济学分析》中存在的问题，本人认为该仓库似乎确实<sup>[1]</sup>是**全网最全**的错误记录。原论文在[这里](./paper/YJYpaper.pdf) 欢迎各位评论并列举更多的错误，也可以提供举报的地址。如下所示，这可是杨博自己声明的哦！    
 ![sm](./pic/sm.jpeg) 
@@ -856,6 +878,12 @@
 - 感谢知乎答主 [同工Same](https://www.zhihu.com/question/1934664649212683483/answer/1934733318307440479)
 - 感谢哔哩哔哩up主 [水论文的程序猿](https://b23.tv/wmJtrZa)
 
+<div align="center">
+
+**[ ⬆️ 返回顶部 ](#目录) | [🌍 English Version](#english-version)**
+
+</div>
+
 ---
 
 ###### English Version
@@ -867,6 +895,26 @@
 **Language / 语言**: [中文](#中文版本) | [English](#english-version)
 
 </div>
+
+### Menu
+
+- [📑 Action Items](#action-items)
+- [🏗️ Our Demands](#our-demands)
+- [🔧 Critical Academic Irregularities](#critical-academic-irregularities) 
+  - [💥 Data Fabrication](#data-fabrication-and-falsification)  - Fabricated laws, falsified data, inconsistent tables
+  - [📋 Suspected Plagiarism](#suspected-plagiarism)  - Wholesale copying without attribution  
+  - [❌ Data Errors](#data-errors)  - Year errors, quantity errors, factual mistakes
+  - [📊 Analysis Errors](#data-analysis-errors)  - Calculation errors, model misuse, forced correlations
+  - [❓ Missing Citations](#missing-citations-for-important-data)  - Lack of data sources
+  - [✏️ Writing Errors](#writing-and-expression-errors)  - Typos, grammar, formatting
+  - [📄 Format Violations](#format-and-standards-errors)  - Page numbers, fonts, standards
+  - [⚖️ Ethics Issues](#academic-ethics-issues)  - Academic integrity concerns
+  - [📚 Citation Problems](#citation-errors)  - Duplicate citations, format errors, misrepresentation
+- [📝 Academic Integrity Assessment](#academic-integrity-assessment)
+- [📖 References](#references)
+- [🙏 Acknowledgments](#acknowledgments)
+
+---
 
 This repository provides a systematic documentation of academic irregularities identified in the master's thesis titled "Economic Analysis of How Fertility Behavior Affects Domestic Violence in China and India" by Yang Jingyuan, a graduate student in the International Economics and Trade program at Wuhan University. This compilation represents what we believe to be<sup>[1]</sup> the **most comprehensive** academic integrity assessment of this work available online. The original thesis is accessible [here](./paper/YJYpaper.pdf). We welcome scholarly comments, additional error reports, and information regarding relevant reporting channels. As documented below, this represents the author's own academic declaration:
 ![sm](./pic/sm.jpeg) 
@@ -1717,3 +1765,9 @@ During the probationary period for party membership consideration, Yang Jingyuan
 - Contributors who submitted detailed issue reports
 - Zhihu contributors: [云杉](https://www.zhihu.com/question/1932776847508214307/answer/1933277605647349267) and [同工Same](https://www.zhihu.com/question/1934664649212683483/answer/1934733318307440479)  
 - Bilibili content creator: [水论文的程序猿](https://b23.tv/wmJtrZa)
+
+<div align="center">
+
+**[ ⬆️  Back to Top ](#目录) | [ Menu ](#menu)**
+
+</div>
