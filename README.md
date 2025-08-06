@@ -41,7 +41,7 @@
 
 友情链接：[杨景媛事件相关](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
 
-## 📑TODO  
+## 📋TODO  
 - [x] 收集论文中存在问题(不断更新中...)
 - [x] 发布[举报地址合集](./doc/compilations.md) (不断更新中...)
 - [x] 提供将本文档转为pdf的[教程](./doc/export2PDF.md) 🔥🔥🔥
@@ -56,7 +56,7 @@
 - [ ] 向爱思唯尔及所有大型SCI/SSCI出版机构的主编/副主编通报武汉大学所有涉嫌学术不端的论文和提交涉及学术腐败相关的证据，要求重点审查该校学术出版物
 - [ ] ...
 
-## 🏗️我们的诉求
+## 我们的诉求
 - 要求武汉大学撤销杨某媛的硕士学位。  
 - 要求武汉大学撤销对肖同学的处罚决定，并公开致歉。  
 - 要求武汉大学保证肖同学在各项学习成绩达标的前提下顺利毕业，不能以身心健康问题或超过学习期限为由将肖同学退学。  
@@ -898,18 +898,18 @@
 
 ### Menu
 
-- [📑 Action Items](#action-items)
+- [📋 Action Items](#action-items)
 - [🏗️ Our Demands](#our-demands)
 - [🔧 Critical Academic Irregularities](#critical-academic-irregularities) 
   - [💥 Data Fabrication](#data-fabrication-and-falsification)  - Fabricated laws, falsified data, inconsistent tables
-  - [📋 Suspected Plagiarism](#suspected-plagiarism)  - Wholesale copying without attribution  
-  - [❌ Data Errors](#data-errors)  - Year errors, quantity errors, factual mistakes
-  - [📊 Analysis Errors](#data-analysis-errors)  - Calculation errors, model misuse, forced correlations
-  - [❓ Missing Citations](#missing-citations-for-important-data)  - Lack of data sources
-  - [✏️ Writing Errors](#writing-and-expression-errors)  - Typos, grammar, formatting
-  - [📄 Format Violations](#format-and-standards-errors)  - Page numbers, fonts, standards
-  - [⚖️ Ethics Issues](#academic-ethics-issues)  - Academic integrity concerns
-  - [📚 Citation Problems](#citation-errors)  - Duplicate citations, format errors, misrepresentation
+  - [📋 Suspected Plagiarism](#suspected-academic-plagiarism)  - Wholesale copying without attribution  
+  - [❌ Factual and Computational Errors](#factual-and-computational-errors)  - Year errors, quantity errors, factual mistakes
+  - [📊 Analysis Errors](#methodological-and-analytical-deficiencies)  - Calculation errors, model misuse, forced correlations
+  - [❓ Absence of Source Attribution](#absence-of-source-attribution)  - Lack of data sources
+  - [✏️ Writing Errors](#linguistic-and-translation-deficiencies)  - Typos, grammar, formatting
+  - [📄 Format Violations](#format-and-standard-errors)  - Page numbers, fonts, standards
+  - [⚖️ Ethics Issues](#ethical-considerations-in-research-design)  - Academic integrity concerns and ethical considerations in research design
+  - [📚 Bibliographic Irregularities](#bibliographic-irregularities)  - Duplicate citations, format errors, misrepresentation
 - [📝 Academic Integrity Assessment](#academic-integrity-assessment)
 - [📖 References](#references)
 - [🙏 Acknowledgments](#acknowledgments)
@@ -927,7 +927,7 @@ This repository provides a systematic documentation of academic irregularities i
 
 **Related Resources**: [Yang Jingyuan Incident Documentation](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
 
-## 📑 Action Items  
+## 📋Action Items  
 - [x] Compile thesis irregularities (continuously updated)
 - [x] Publish [comprehensive reporting directory](./doc/compilations.md) (continuously updated)
 - [x] Provide [PDF conversion tutorial](./doc/export2PDF.md) 🔥🔥🔥
@@ -942,14 +942,14 @@ This repository provides a systematic documentation of academic irregularities i
 - [ ] Notify editors-in-chief and deputy editors-in-chief of Elsevier and major SCI/SSCI publishing institutions regarding suspected academic misconduct at Wuhan University, submitting evidence of academic corruption and requesting enhanced scrutiny of institutional publications
 - [ ] Additional actions pending
 
-## 🏗️ Our Demands
+## Our Demands
 - **Degree Revocation**: Demand that Wuhan University revoke Yang Jingyuan's master's degree
 - **Disciplinary Reversal**: Demand that Wuhan University rescind disciplinary actions against Student Xiao and issue a public apology
 - **Academic Protection**: Ensure Student Xiao's graduation upon meeting academic requirements, without dismissal based on health concerns or timeline violations
 - **Transparency**: Demand disclosure of Yang Jingyuan's college entrance examination records
 - **Party Membership**: Request denial of Yang Jingyuan's probationary party member confirmation
 
-## 🔧 Critical Academic Irregularities
+## 🔧Critical Academic Irregularities
 ### Data Fabrication and Falsification  
 
 1. **Fabricated Legal Reference** (page 1, third line from bottom): 
@@ -1010,7 +1010,7 @@ Persistent mathematical inconsistencies in sample size reporting, where urban an
 
 Demographic composition errors where high-caste and low-caste sample sizes fail to sum to total sample size, suggesting systematic data manipulation across caste-based analyses.
 
-### Academic Plagiarism
+### Suspected Academic Plagiarism
 
 1. **Verbatim Plagiarism** (page 2, final paragraph):  
 
@@ -1754,14 +1754,14 @@ These misuses constitute serious academic integrity violations:
 
 The systematic nature of these misrepresentations suggests either fundamental misunderstanding of the source material or deliberate mischaracterization to support predetermined conclusions. Both scenarios represent serious violations of academic scholarship standards.
 
-## 📝 Academic Integrity Assessment
+## 📝Academic Integrity Assessment
 
 During the probationary period for party membership consideration, Yang Jingyuan has demonstrated concerning patterns of academic conduct. The documented irregularities in her master's thesis—including data fabrication, plagiarism, and methodological errors—represent serious violations of scholarly integrity that potentially compromise institutional reputation. This comprehensive analysis supports formal opposition to her party membership confirmation and calls for appropriate institutional accountability measures.
 
 ## 📖References
 [1] Yang Jingyuan. Economic Analysis of How Fertility Behavior Affects Domestic Violence in China and India. Wuhan University, 2024
 
-## 🙏 Acknowledgments
+## 🙏Acknowledgments
 - Contributors who submitted detailed issue reports
 - Zhihu contributors: [云杉](https://www.zhihu.com/question/1932776847508214307/answer/1933277605647349267) and [同工Same](https://www.zhihu.com/question/1934664649212683483/answer/1934733318307440479)  
 - Bilibili content creator: [水论文的程序猿](https://b23.tv/wmJtrZa)
