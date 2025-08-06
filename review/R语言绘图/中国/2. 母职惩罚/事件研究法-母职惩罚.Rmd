@@ -1,0 +1,86 @@
+---
+title: "事件研究法-母职惩罚"
+author: "小咩"
+date: "2024-03-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = ".")
+```
+
+
+```{r 加载需要的包}
+library(showtext)
+showtext_auto()
+library(patchwork)
+library(dplyr)
+```
+
+
+```{r 读取数据}
+data <- read.csv("cp_es.csv")
+data
+```
+
+```{r}
+data$分类 <- factor(data$分类, levels = c("高母职惩罚地区", "低母职惩罚地区"))
+data$parm <- factor(data$parm, levels = c("T_45", "T_23", "T_1", "T12", "T34", "T56", "T78", "T910"))
+
+p1 <- ggplot(data, aes(x = parm, y = estimate, group = 分类)) +
+  geom_line(color = "black", position = position_dodge(width = 0.5)) +
+  geom_point(position = position_dodge(width = 0.5), size = 1.5, shape = 21, fill = "black") +
+  geom_errorbar(aes(ymin = min90, ymax = max90), width = 0.2, position = position_dodge(width = 0.5)) +
+  scale_x_discrete(labels = c("", "事前2-3期 ", "", " 事后1-2期", "", " 事后5-6期", "", "事后9-10期 ")) +
+  xlab("事件时间") + ylab("回归系数") + ggtitle("") + theme_grey(base_family = "STKaiti") +
+  theme_classic() +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey") +
+  facet_grid(.~分类, scales = "free_y")+
+  ggtitle(" ")
+
+p1
+
+
+```
+
+
+
+这些内容是之前第一次计算的（用男性做对比的母职惩罚数据）3.21的论文初稿没有用这个母职惩罚，而是只用了女性样本去算的母职惩罚
+```{r}
+Census <- read_excel("CPHighCensus.xlsx")
+Census$Short_Hcp <- substr(Census$Hcp, 1, 7)
+Census$性别 <- substr(Census$Hcp, 9, 10)
+Census
+```
+
+
+```{r}
+Census$Short_Hcp <- factor(Census$Short_Hcp, levels = c("高母职惩罚地区", "低母职惩罚地区"))  
+
+p2 <- ggplot(Census, aes(x = v1, y = coef, group = 性别)) +
+  geom_line(aes(linetype = 性别), color = "black", position = position_dodge(width = 0.5)) +
+  geom_point(position = position_dodge(width = 0.5), size = 1.5, shape = 21, fill = "black") +
+  geom_errorbar(aes(ymin = low, ymax = high), width = 0.2, position = position_dodge(width = 0.5)) +
+  scale_x_discrete(labels = Census$v1) +  # 使用v1变量的值作为标签
+  xlab("事件时间") + ylab("回归系数") + ggtitle("") + theme_grey(base_family = "STKaiti") +
+  theme_classic() +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey") +
+  facet_grid(.~Short_Hcp, scales = "free_y") +
+  scale_linetype_manual(values = c("男性" = "solid", "女性" = "dashed"))+
+  ggtitle("母职惩罚（用生育对劳动力市场的影响衡量）")
+
+
+p2
+
+
+```
+
+```{r}
+combined_plot <- p1 / p2
+
+# 显示合并的图形
+combined_plot
+
+```
+
+

@@ -1,0 +1,72 @@
+---
+title: "绪论-时间趋势图"
+author: "小咩"
+date: "2024-03-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = ".")
+```
+
+```{r}
+data1 <- read.csv("time_trend.csv")
+
+list1 <- c(UR = "城镇", year = 2020, dv1 = 0.02)
+list2 <- c(UR = "农村", year = 2020, dv1 = 0.02)
+
+# 将新行添加到原始数据框
+data <- rbind(data, list1, list2)
+
+data$year <- as.numeric(data$year)
+data$dv1 <- as.numeric(data$dv1)
+data1$dv1 <- round(data1$dv1, 2)
+data1
+
+
+p <- ggplot(data, aes(x = year, y = dv1, group = UR)) +
+  geom_line(data = subset(data, year <= 2010), aes(color = UR, linetype = ifelse(UR == "城镇", "solid", "dashed")), show.legend = FALSE) +
+  geom_line(data = subset(data, year >= 2010), aes(color = UR), linetype = "dotted", color = "grey", show.legend = FALSE) +  # 2010年之后的点线
+  geom_point(show.legend = FALSE) +  # 设置点的图例不显示
+  geom_vline(xintercept = 2001, linetype = "dotted") +  # 添加垂直线
+  geom_text(aes(x = 2001, y = max(data$dv1), label = "2001年《离婚法》"), vjust = 0.2, hjust = 0.4) +  # 调整vjust参数
+  geom_vline(xintercept = 2015, linetype = "dotted") +  # 添加垂直线
+  geom_text(aes(x = 2015, y = max(data$dv1), label = "2015年《反家庭暴力法》"), vjust = 0.2, hjust = 0.8) +  # 调整vjust参数
+  geom_text(aes(x = 2020, y = 0.02, label = "（预估）"), vjust = -1, hjust = 0.5) +  # 调整vjust参数
+  geom_text(aes(x = 1992, y = 0.31, label = "乡村地区"), vjust = -1, hjust = 0.5) +  # 调整vjust参数
+  geom_text(aes(x = 1992, y = 0.21, label = "城镇地区"), vjust = -1, hjust = 0.5) +  # 调整vjust参数
+  labs(title = "中国家庭暴力的时间趋势图", x = "年份", y = "平均家暴发生率") +  # 不再设置 linetype 图例标题
+  theme_classic() +
+  scale_color_manual(values = c("black", "black"))  # 设置颜色
+p
+
+
+```
+
+```{r}
+India <- read.csv("time_trendINDIA.csv")
+
+# 绘制折线图
+p_india <- ggplot(data = India, aes(x = year, y = dv, group = UR, color = UR, linetype = UR), show.legend = FALSE) +
+  geom_line() +  # 不显示图例
+  geom_point() +  # 不显示图例
+  theme_classic() +
+  labs(title = "印度家庭暴力的时间趋势图", x = "年份", y = "平均家暴发生率") +
+  scale_color_manual(values = c("black", "black"), labels = c("乡村", "城镇")) +  
+  scale_linetype_manual(values = c("solid", "dashed"), labels = c("乡村", "城镇")) +  
+  geom_vline(xintercept = 2005, linetype = "dotted") +  
+  geom_text(aes(x = 2005, y = max(data$dv1), label = "2005《反家庭暴力法》"), vjust = 0.2, hjust = 0.8) + 
+  geom_text(aes(x = 2000, y = 0.22, label = "乡村地区"), vjust = -1, hjust = 0.5) +  
+  geom_text(aes(x = 2000, y = 0.17, label = "城镇地区"), vjust = -1, hjust = 0.5) +
+  theme(legend.position = "none")  # 不显示图例
+
+p_india
+
+
+
+
+
+
+
+```
+

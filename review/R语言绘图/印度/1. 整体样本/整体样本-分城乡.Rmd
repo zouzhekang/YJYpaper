@@ -1,0 +1,50 @@
+---
+title: "事件研究法-整体样本"
+author: "小咩"
+date: "2024-03-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = ".")
+```
+
+
+```{r 加载需要的包}
+library(showtext)
+showtext_auto()
+library(patchwork)
+library(dplyr)
+```
+
+
+```{r 读取数据}
+all <- read.csv("all_india.csv")
+all
+bornless <- read.csv("bornless_india.csv")
+bornless
+```
+
+```{r 整体样本}
+bornless$parm <- factor(bornless$parm, levels = c("T_4", "T_3", "T_2", "T_1", "T0", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8"))
+bornless$分类 <- factor(bornless$分类, levels = c("全样本", "一胎家庭"))
+
+p <- ggplot(filter(bornless, 分类 == "全样本"),
+            aes(x = parm, y = estimate, group = 分类)) +
+     geom_line(color = "black", position = position_dodge(width = 0.5)) +
+     geom_point(position = position_dodge(width = 0.5), size = 1.5, shape = 21, fill = "black") +
+     geom_errorbar(aes(ymin = min90, ymax = max90), width = 0.2, position = position_dodge(width = 0.5)) +
+     scale_x_discrete(labels = c("事前4期", "  ", "事前2期", "  ", "事后0期", " ", "事后2期", " ", "事后4期", " ", "事后6期", " ", "事后8期")) +
+     xlab("事件时间") + ylab("回归系数") +
+     theme_grey(base_family = "STKaiti") +
+     theme_classic() +
+     geom_hline(yintercept = 0, linetype = "dashed", color = "grey") +
+     theme(legend.position="none")  # 不展示图例
+
+p
+
+```
+
+
+
+
