@@ -2,6 +2,8 @@
 
 <div align="center">
 
+[<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>](https://github.com/zouzhekang/YJYpaper.git)
+
 **Language/语言**: [中文](#中文版本) | [English](#english-version)
 
 </div>
