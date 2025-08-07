@@ -1,0 +1,33 @@
+\begin{columns}
+        \column{.6\textwidth}
+\begin{lstlisting}[language=TeX]
+    \begin{table}[htbp]
+      \caption{编号与含义}
+      \label{tab:number}
+      \centering
+      \begin{tabular}{cl}
+        \toprule
+        编号 & 含义 \\
+        \midrule
+        1 & 4.0 \\
+        2 & 3.7 \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+    公式~(\ref{eq:vsphere}) 的
+    编号与含义请参见
+    表~\ref{tab:number}。
+\end{lstlisting}
+        \column{.4\textwidth}
+        \begin{table}[htpb]
+            \centering
+            \caption{编号与含义}
+            \label{tab:number}
+            \begin{tabular}{cl}\toprule
+                编号 & 含义 \\\midrule
+                1 & 4.0\\
+                2 & 3.7\\\bottomrule
+            \end{tabular}
+        \end{table}
+        \normalsize 公式~(\ref{eq:vsphere})的编号与含义请参见表~\ref{tab:number}。
+    \end{columns}

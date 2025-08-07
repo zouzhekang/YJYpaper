@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{选题背景}{3}{0}{1}
+\beamer@sectionintoc {2}{文献综述}{10}{0}{2}
+\beamer@sectionintoc {3}{研究意义}{25}{0}{3}
+\beamer@sectionintoc {4}{数据与实证策略}{30}{0}{4}
