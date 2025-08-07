@@ -14,6 +14,7 @@
 
 - [📑 TODO](#todo)
 - [🏗️ 我们的诉求](#我们的诉求)
+- [🏗 问题总结](#问题总结)
 - [🔧 论文主要问题](#论文主要问题) 
   - [💥 涉嫌造假](#涉嫌造假)  - 编造法律、数据造假、表格数据不符等
   - [📋 涉嫌抄袭剽窃](#涉嫌抄袭剽窃)  - 整段抄袭、无引用等
@@ -59,6 +60,79 @@
 - [ ] 向湖北省教育厅举报
 - [ ] 向爱思唯尔及所有大型SCI/SSCI出版机构的主编/副主编通报武汉大学所有涉嫌学术不端的论文和提交涉及学术腐败相关的证据，要求重点审查该校学术出版物
 - [ ] ...
+
+## 问题总结
+🔧 论文主要问题
+
+💥 数据造假
+
+虚构“离婚法”等法律
+
+图表数据中频数为小数，不合逻辑
+
+城乡样本与总样本不一致
+
+图表年份、标题错误
+
+📋 抄袭行为
+
+多处整段抄袭何晖、王凌林的论文内容，无引用
+
+疑似抄袭未删除干净
+
+❌ 数据错误
+
+国家数量错误（将港澳台误当国家）
+
+年份写成“1049年”
+
+人口数据前后矛盾
+
+图表数据不一致（如5.4%与8.8%矛盾）
+
+📊 分析错误
+
+二元变量使用线性回归
+
+使用NFHS与中国调查数据未加权
+
+曲解Doepke & Kindermann (2019) 模型含义
+
+低R²强行线性拟合
+
+❓ 缺少引用
+
+多处统计数据未标明来源
+
+支撑性数据无法查证
+
+✏️ 写作错误
+
+多处错别字（如“选则”应为“选择”）
+
+英文摘要错词（双“the”）
+
+摘要关键词不一致
+
+语病、政治术语误用
+
+📄 格式问题
+
+页码、字体、缩进等格式不统一
+
+引用文献格式不符武大规范
+
+⚖️ 学术伦理问题
+
+在数据不充分情况下将家暴与宗教、文化、传统联系，研究伦理存在重大争议
+
+📚 文献引用问题
+
+文献重复引用、年份造假（如将2002年论文标注为2024）
+
+引用内容与正文不对应
+
+引用非经济学相关期刊
 
 ## 我们的诉求
 - 要求武汉大学撤销杨某媛的硕士学位。  
@@ -910,6 +984,7 @@ c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)
 
 - [📋 Action Items](#action-items)
 - [🏗️ Our Demands](#our-demands)
+- [🏗 Main essay problems](#Main-essay-problems)
 - [🔧 Critical Academic Irregularities](#critical-academic-irregularities) 
   - [💥 Data Fabrication](#data-fabrication-and-falsification)  - Fabricated laws, falsified data, inconsistent tables
   - [📋 Suspected Plagiarism](#suspected-academic-plagiarism)  - Wholesale copying without attribution  
@@ -958,6 +1033,88 @@ This repository provides a systematic documentation of academic irregularities i
 - **Academic Protection**: Ensure Student Xiao's graduation upon meeting academic requirements, without dismissal based on health concerns or timeline violations
 - **Transparency**: Demand disclosure of Yang Jingyuan's college entrance examination records
 - **Party Membership**: Request denial of Yang Jingyuan's probationary party member confirmation
+
+## Main essay problems
+🔧 Thesis Irregularities
+
+💥 Data Fabrication
+
+Cites fake laws (e.g., “Divorce Law” 2001)
+
+Decimal frequency in histograms (invalid)
+
+Inconsistent sample counts
+
+Year labels wrong in tables
+
+📋 Plagiarism
+
+Copied from: He & Wang (2022), no citation
+
+Phrasing identical to published papers
+
+Some fragments remain from pasted content
+
+❌ Data Errors
+
+Counts 200+ countries globally (UN: 193)
+
+Year typo: “1049” instead of 1949
+
+Population trends contradictory
+
+Conflicting DV rates: 5.4% vs 8.8%
+
+📊 Analysis Flaws
+
+Used OLS for binary outcome (should use logit/probit)
+
+No survey weights for NFHS/Chinese data
+
+Misrepresents models from cited literature
+
+R² = 0.1 used as "strong" correlation
+
+❓ Missing Citations
+
+No source for population/fertility statistics
+
+Key claims unreferenced
+
+✏️ Writing Errors
+
+Frequent typos ("即" vs "及")
+
+Awkward English abstract ("the the", mismatched keywords)
+
+Political errors: improper country references
+
+📄 Formatting Issues
+
+Wrong font, inconsistent styles
+
+Incorrect captions and page numbers
+
+Citations violate formatting requirements
+
+⚖️ Ethical Concerns
+
+Cultural, religious generalizations unsupported by data
+
+Misuses academic literature to suit narrative
+
+Potential ideological bias
+
+📚 Reference Issues
+
+Duplicate entries
+
+Fabricated or incomplete references
+
+Non-economic journals cited in economic analysis
+
+Dates and titles do not match source material
+
 
 ## 🔧Critical Academic Irregularities
 ### Data Fabrication and Falsification  
