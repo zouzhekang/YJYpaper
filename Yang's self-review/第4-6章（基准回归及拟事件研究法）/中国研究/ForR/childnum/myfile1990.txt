@@ -1,0 +1,20 @@
+	(1)
+VARIABLES	dv1
+	
+1.childnum	0.100
+	(0.0490 - 0.151)
+2.childnum	0.135
+	(0.0718 - 0.198)
+3.childnum	0.167
+	(0.0894 - 0.245)
+4.childnum	0.202
+	(0.108 - 0.296)
+5.childnum	0.181
+	(0.0717 - 0.291)
+6.childnum	0.194
+	(0.101 - 0.286)
+Constant	0.132
+	(0.0688 - 0.194)
+	
+Observations	10,519
+R-squared	0.049

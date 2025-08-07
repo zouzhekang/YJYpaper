@@ -1,0 +1,42 @@
+---
+title: "毕业论文- childnum图"
+author: "小咩"
+date: "2024-03-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = ".")
+```
+
+```{r 加载需要的包}
+library(showtext)
+showtext_auto()
+```
+
+
+```{r 读取数据}
+data <- read.csv("ForR.csv")
+data
+```
+
+
+```{r}
+data$调查年份<-as.factor(data$调查年份)
+# 绘制图形
+p <- ggplot(data, aes(x = childnum, y = coef, group = 调查年份)) +
+  geom_line(aes(linetype = 调查年份), color = "black", position = position_dodge(width = 0.5)) +# 绘制折线
+  geom_point(position = position_dodge(width = 0.5), size = 1.5, shape = 21, fill = "black") +  # 绘制数据点
+  geom_errorbar(aes(ymin = low, ymax = high), width = 0.2,position = position_dodge(width = 0.5)) +  # 绘制误差线
+  scale_x_continuous(breaks = 1:6) + #显示每个横坐标数值
+  xlab("生育孩子数量") + ylab("回归系数") + ggtitle("")+ theme_grey(base_family = "STKaiti" )+
+  theme_classic()
+# 添加y=0的虚线
+p <- p + geom_hline(yintercept = 0, linetype = "dashed", color = "grey")
+
+p
+```
+
+
+
+
