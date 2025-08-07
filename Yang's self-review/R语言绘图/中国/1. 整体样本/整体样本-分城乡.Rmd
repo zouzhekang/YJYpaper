@@ -1,0 +1,73 @@
+---
+title: "事件研究法-整体样本"
+author: "小咩"
+date: "2024-03-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = ".")
+```
+
+
+```{r 加载需要的包}
+# install.packages("sysfonts")
+# install.packages("showtextdb")
+library(showtext)
+showtext_auto()
+library(patchwork)
+library(dplyr)
+```
+
+
+```{r 读取数据}
+all <- read.csv('all_es.csv')
+UR <- read.csv('UR_es.csv')
+all
+UR
+```
+
+```{r 整体样本}
+all$parm <- factor(all$parm, levels = c("T_45", "T_23", "T_1", "T12", "T34", "T56", "T78", "T910"))
+
+# 绘制图形，并指定纵坐标轴的范围
+p <- ggplot(all, aes(x = parm, y = estimate, group = 分类)) +
+  geom_line(color = "black", position = position_dodge(width = 0.5)) +
+  geom_point(position = position_dodge(width = 0.5), size = 1.5, shape = 21, fill = "black") +
+  geom_errorbar(aes(ymin = min90, ymax = max90), width = 0.2, position = position_dodge(width = 0.5)) +
+  scale_x_discrete(labels = c("事前4-5期", "事前2-3期 ", "事前1期-0期", " 事后1-2期", "事后3-4期", " 事后5-6期", "事后7-8期", "事后9-10期 ")) +
+  xlab("事件时间") + ylab("回归系数") +
+  theme_grey(base_family = "STKaiti") +
+  theme_classic() +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey") 
+p
+
+```
+
+```{r}
+UR
+```
+
+
+```{r}
+UR$parm <- factor(UR$parm, levels = c("T_45", "T_23", "T_1", "T12", "T34", "T56", "T78", "T910"))
+
+UR$分类 <- factor(UR$分类, levels = c("城镇", "乡村"))
+
+# 绘制图形，并指定纵坐标轴的范围
+p <- ggplot(UR, aes(x = parm, y = estimate, group = 分类)) +
+  geom_line(color = "black", position = position_dodge(width = 0.5)) +
+  geom_point(position = position_dodge(width = 0.5), size = 1.5, shape = 21, fill = "black") +
+  geom_errorbar(aes(ymin = min90, ymax = max90), width = 0.2, position = position_dodge(width = 0.5)) +
+  scale_x_discrete(labels = c("", "事前2-3期 ", "", " 事后1-2期", "", " 事后5-6期", "", "事后9-10期 ")) +
+  xlab("事件时间") + ylab("回归系数") +
+  theme_grey(base_family = "STKaiti") +
+  theme_classic() +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey") +
+  facet_grid(. ~ 分类, scales = "free_y")
+
+p
+
+```
+
+

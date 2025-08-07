@@ -1,0 +1,79 @@
+---
+title: "世界生育率趋势图"
+author: "小咩"
+date: "2024-03-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = ".")
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(showtext)
+showtext_auto()
+```
+
+```{r}
+getwd()
+world <- read.csv("WF.csv")
+world
+# 
+selected_data <- filter(world, 国家名 %in% c("United States", "India", "United Kingdom", "Korea, Rep.", "Japan", "China"))
+# selected_data <- filter(world, 国家名 %in% c("India", "China"))
+selected_data
+```
+
+```{r}
+ggplot(data = world, aes(x = 年份, y = 生育率)) +  
+  geom_line(data = world %>% filter(国家名== "World"), aes(linetype = "solid"), size = 1) +
+  xlab("年份") + ylab("总和生育率") + ggtitle("世界平均总和生育率趋势")+ theme_grey(base_family = "STKaiti" )+
+  theme(legend.position = "none") + # 去掉图例 
+  theme_minimal() +
+  geom_hline(yintercept = 2.1, linetype = "solid", color = "red")
+
+
+```
+
+
+```{r}
+p <- ggplot(selected_data, aes(x = 年份, y = 生育率, group = 国家名)) +
+  geom_line(aes(linetype = 国家名), color = "black", position = position_dodge(width = 0.5)) +# 绘制折线
+  geom_point(position = position_dodge(width = 0.5), size = 0.2, shape = 21, fill = "black") +  # 绘制数据点
+  xlab("年份") + ylab("总和生育率") + ggtitle("世界主要国家总和生育率趋势")+ theme_grey(base_family = "STKaiti" )+
+  theme_classic()
+
+p <- p +
+  geom_hline(yintercept = 2.1, linetype = "solid", color = "red")
+p
+
+```
+
+
+```{r}
+# selected_data <- filter(world, 国家名 %in% c("India", "China"))
+
+# 绘制折线图
+p <- ggplot(selected_data, aes(x = 年份, y = 生育率, group = 国家名)) +
+  geom_line(aes(linetype = 国家名), color = "black", position = position_dodge(width = 0.5)) +  # 绘制折线
+  geom_point(position = position_dodge(width = 0.5), size = 0.2, shape = 21, fill = "black") +  # 绘制数据点
+  xlab("年份") + ylab("总和生育率") + ggtitle("世界主要国家总和生育率趋势") + 
+  theme_grey(base_family = "STKaiti") +  # 设置中文字体
+  theme_classic()
+
+# 添加横线
+p <- p + geom_hline(yintercept = 2.1, linetype = "solid", color = "red")
+
+# 修改图例文字为中文
+p <- p + scale_linetype_manual(values = c("solid", "dashed", "dotted", "dotdash", "longdash", "twodash"), 
+                                labels = c("中国", "印度", "日本", "韩国", "英国", "美国"))
+
+# 显示图形
+print(p)
+
+
+```
+
+
