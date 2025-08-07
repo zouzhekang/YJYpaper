@@ -1,0 +1,60 @@
+---
+title: "事件研究法-母职惩罚"
+author: "小咩"
+date: "2024-03-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = ".")
+```
+
+```{r 加载需要的包}
+library(showtext)
+showtext_auto()
+library(patchwork)
+library(dplyr)
+```
+
+
+```{r 读取数据}
+data <- read.csv("cp_es_india.csv")
+data
+```
+
+```{r}
+data$分类 <- factor(data$分类, levels = c("高母职惩罚地区", "低母职惩罚地区"))
+data$parm <- factor(data$parm, levels = c("T_4", "T_3", "T_2", "T_1", "T0", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8"))
+
+p1 <- ggplot(filter(data, 受教育程度 == "高受教育程度"), aes(x = parm, y = estimate, group = 分类)) +
+  geom_line(color = "black", position = position_dodge(width = 0.5)) +
+  geom_point(position = position_dodge(width = 0.5), size = 1.5, shape = 21, fill = "black") +
+  geom_errorbar(aes(ymin = min90, ymax = max90), width = 0.2, position = position_dodge(width = 0.5)) +
+  scale_x_discrete(labels = c("-4期", "  ", "-2期", "  ", "0期", " ", "2期", " ", "4期", " ", "6期", " ", "8期")) +
+  xlab("事件时间") + ylab("回归系数") + ggtitle("") + theme_grey(base_family = "STKaiti") +
+  theme_classic() +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey") +
+  facet_grid(受教育程度~分类, scales = "free_y")+
+  ggtitle("")
+
+p2 <- ggplot(filter(data, 受教育程度 == "平均受教育程度"), aes(x = parm, y = estimate, group = 分类)) +
+  geom_line(color = "black", position = position_dodge(width = 0.5)) +
+  geom_point(position = position_dodge(width = 0.5), size = 1.5, shape = 21, fill = "black") +
+  geom_errorbar(aes(ymin = min90, ymax = max90), width = 0.2, position = position_dodge(width = 0.5)) +
+  scale_x_discrete(labels = c("-4期", "  ", "-2期", "  ", "0期", " ", "2期", " ", "4期", " ", "6期", " ", "8期")) +
+  xlab("事件时间") + ylab("回归系数") + ggtitle("") + theme_grey(base_family = "STKaiti") +
+  theme_classic() +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey") +
+  facet_grid(受教育程度~分类, scales = "free_y")+
+  ggtitle("")
+
+
+p1
+p2
+
+
+```
+
+
+
+

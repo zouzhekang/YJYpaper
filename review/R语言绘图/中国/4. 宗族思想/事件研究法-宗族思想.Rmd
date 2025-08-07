@@ -1,0 +1,73 @@
+---
+title: "事件研究法-宗族思想"
+author: "小咩"
+date: "2024-03-14"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = ".")
+```
+
+
+```{r 加载需要的包}
+library(showtext)
+showtext_auto()
+library(patchwork)
+library(dplyr)
+```
+
+
+```{r 读取数据}
+data <- read.csv("clan_es.csv")   # Rmd文件和数据放在一个目录里面，就不用设置读取路径了
+data
+```
+
+
+```{r}
+data$分类 <- factor(data$分类, levels = c("宗族文化较强地区", "宗族文化较弱地区"))
+data$parm <- factor(data$parm, levels = c("T_45", "T_23", "T_1", "T12", "T34", "T56", "T78", "T910"))
+
+# 上面两句是把变量转为因子格式（有顺序的列表，你可以这样理解）
+
+p <- ggplot(data, aes(x = parm, y = estimate, group = 分类)) +
+  geom_line(color = "black", position = position_dodge(width = 0.5)) + # 画线
+  geom_point(position = position_dodge(width = 0.5), size = 1.5, shape = 21, fill = "black") +  # 画点
+  geom_errorbar(aes(ymin = min90, ymax = max90), width = 0.2, position = position_dodge(width = 0.5)) +  # 画error bar
+  scale_x_discrete(labels = c("", "事前2-3期 ", "", " 事后1-2期", "", " 事后5-6期", "", "事后9-10期 ")) +  # 设定x轴刻度
+  xlab("事件时间") + ylab("回归系数") +  # xy轴标签
+  theme_grey(base_family = "STKaiti") +  # 字体设置
+  theme_classic() +  # 画图主题设置
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey") +  # 线条样式设置
+  facet_grid(. ~ 分类, scales = "free_y")  # 根据分类变量分面，y轴自由缩放
+
+p
+
+
+```
+
+
+```{r}
+data <- read.csv("clan_es_firstsex.csv")
+
+data$分类 <- factor(data$分类, levels = c("宗族文化较强地区", "宗族文化较弱地区"))
+
+data$parm <- factor(data$parm, levels = c("T_45", "T_23", "T_1", "T12", "T34", "T56", "T78", "T910"))
+
+p <- ggplot(data, aes(x = parm, y = estimate, group = 分类)) +
+  geom_line(color = "black", position = position_dodge(width = 0.5)) +
+  geom_point(position = position_dodge(width = 0.5), size = 1.5, shape = 21, fill = "black") +
+  geom_errorbar(aes(ymin = min90, ymax = max90), width = 0.2, position = position_dodge(width = 0.5)) +
+  scale_x_discrete(labels = c("", "事前2-3期 ", "", " 事后1-2期", "", " 事后5-6期", "", "事后9-10期 ")) +
+  xlab("事件时间") + ylab("回归系数") +
+  theme_grey(base_family = "STKaiti") +
+  theme_classic() +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey") +
+  facet_grid(头胎性别 ~ 分类, scales = "free_y")  # 根据分类变量分面，y轴自由缩放
+
+p
+
+```
+
+
