@@ -1,0 +1,562 @@
+
+. do "D:\BaiduNetdiskDownload\杨景媛-硕士学位论文调查审核\第4-6章（基准回归及拟事件研究法）\印度研究\dofiles\5. 双重固定效应回归.do"
+
+. *---------------------------------------*
+. *                               印度样本(DHS)                               *
+. *                                描述性回归                                *
+. *                                 杨景媛                                     *
+. *                               2024.03.08                              *
+. *---------------------------------------*
+. 
+. 
+. * --> step1 数据处理
+. 
+. * 2005:87,925
+. * 2015:499,627
+. 
+. * 先处理2005/2006年数据
+. use $data/processed2005, clear  //87,925
+
+. keep interviewy birthy state UR edu religion childnum homeson homeadu outson outdau marital sedu muyu CT firstbirth dv recent_dv fertility fertil
+> ity1 work jobtype caste earnmore
+
+. save $data/forreg05, replace
+file D:/BaiduNetdiskDownload/杨景媛-硕士学位论文调查审核/第4-6章（基准回归及拟事件研究法）/印度研究/data/forreg05.dta saved
+
+. 
+. * 再处理2015/2016年数据
+. use $data/processed2015, clear   //499,627
+
+. keep interviewy birthy state UR edu religion childnum homeson homeadu outson outdau marital sedu muyu CT firstbirth dv recent_dv fertility fertil
+> ity1 work jobtype caste earnmore
+
+. save $data/forreg15, replace
+file D:/BaiduNetdiskDownload/杨景媛-硕士学位论文调查审核/第4-6章（基准回归及拟事件研究法）/印度研究/data/forreg15.dta saved
+
+. /* 
+> * 原始回归
+> 
+> *--> step2 回归
+> // 按照城乡分组
+> cap est drop *
+> use $data/forreg05, clear
+> reghdfe dv fertility1, a(state edu birthy marital religion caste UR) vce(cluster state)
+>         est sto m1
+> reghdfe dv fertility1 if UR == 1, a(state edu birthy marital religion caste) vce(cluster state)
+>         est sto m2
+> reghdfe dv fertility1 if UR == 2, a(state edu birthy marital religion caste) vce(cluster state)
+>         est sto m3
+>         
+> use $data/forreg15, clear
+> reghdfe dv fertility1, a(state sedu edu birthy marital religion caste UR) vce(cluster state)
+>         est sto m4
+> reghdfe dv fertility1 if UR == 1, a(state edu birthy marital religion caste) vce(cluster state)
+>         est sto m5
+> reghdfe dv fertility1 if UR == 2, a(state edu birthy marital religion caste) vce(cluster state)
+>         est sto m6
+> esttab m*, keep(fertility1) star(* 0.1 ** 0.05 *** 0.01) title("table 5.4")
+>         
+> esttab m* using $output/table1.rtf, replace keep(fertility1) star(* 0.1 ** 0.05 *** 0.01)       
+> 
+> // 按照种姓情况分组
+> cap est drop *
+> use $data/forreg05, clear
+> reghdfe dv fertility1, a(state edu birthy marital religion UR) vce(cluster state)
+>         est sto m1
+> reghdfe dv fertility1 if caste == 0, a(state edu birthy marital religion UR) vce(cluster state)
+>         est sto m2
+> reghdfe dv fertility1 if caste == 1, a(state edu birthy marital religion UR) vce(cluster state) 
+>         est sto m3
+> 
+> use $data/forreg15, clear
+> reghdfe dv fertility1, a(state sedu edu birthy marital religion UR caste) vce(cluster state)
+>         est sto m4
+> reghdfe dv fertility1 if caste == 0, a(state edu birthy marital religion UR) vce(cluster state)
+>         est sto m5
+> reghdfe dv fertility1 if caste == 1, a(state edu birthy marital religion UR) vce(cluster state)
+>         est sto m6
+> dis("table5.5")
+> esttab m*, keep(fertility1) star(* 0.1 ** 0.05 *** 0.01) title("table 5.5")
+> 
+> esttab m* using $output/table2.rtf, replace keep(fertility1) star(* 0.1 ** 0.05 *** 0.01)
+>  */
+. 
+. 
+. 
+. 
+. 
+. * 修正了错误后的结果（和之前的回归结果相差不大，说明我的结果基本稳健）
+. {
+. *--> step2 回归
+. // 按照城乡分组
+. cap est drop *
+. use $data/forreg05, clear
+. reghdfe dv fertility1, a(state edu birthy marital religion caste UR) vce(cluster state)
+(dropped 1 singleton observations)
+(MWFE estimator converged in 10 iterations)
+
+HDFE Linear regression                            Number of obs   =     84,161
+Absorbing 7 HDFE groups                           F(   1,     28) =      97.45
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0899
+                                                  Adj R-squared   =     0.0891
+                                                  Within R-sq.    =     0.0034
+Number of clusters (state)   =         29         Root MSE        =     0.4073
+
+                                 (Std. err. adjusted for 29 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |   .0404459   .0040972     9.87   0.000     .0320531    .0488386
+       _cons |   .1801222   .0060156    29.94   0.000     .1677999    .1924446
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        29          29           0    *|
+         edu |         5           1           4     |
+      birthy |        36           1          35     |
+     marital |         1           1           0    ?|
+    religion |        11           1          10    ?|
+       caste |         2           1           1    ?|
+          UR |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m1
+. reghdfe dv fertility1 if UR == 1, a(state edu birthy marital religion caste) vce(cluster state)
+(dropped 1 singleton observations)
+(MWFE estimator converged in 9 iterations)
+
+HDFE Linear regression                            Number of obs   =     36,925
+Absorbing 6 HDFE groups                           F(   1,     28) =      72.33
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.1058
+                                                  Adj R-squared   =     0.1038
+                                                  Within R-sq.    =     0.0039
+Number of clusters (state)   =         29         Root MSE        =     0.3863
+
+                                 (Std. err. adjusted for 29 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |   .0430703   .0050642     8.50   0.000     .0326968    .0534438
+       _cons |   .1517515    .006969    21.78   0.000     .1374761    .1660269
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        29          29           0    *|
+         edu |         5           1           4     |
+      birthy |        36           1          35     |
+     marital |         1           1           0    ?|
+    religion |        11           1          10    ?|
+       caste |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m2
+. reghdfe dv fertility1 if UR == 2, a(state edu birthy marital religion caste) vce(cluster state)
+(dropped 1 singleton observations)
+(MWFE estimator converged in 10 iterations)
+
+HDFE Linear regression                            Number of obs   =     47,235
+Absorbing 6 HDFE groups                           F(   1,     28) =      45.28
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0781
+                                                  Adj R-squared   =     0.0765
+                                                  Within R-sq.    =     0.0029
+Number of clusters (state)   =         29         Root MSE        =     0.4224
+
+                                 (Std. err. adjusted for 29 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |   .0377474   .0056097     6.73   0.000     .0262565    .0492383
+       _cons |   .2036387   .0086399    23.57   0.000     .1859408    .2213367
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        29          29           0    *|
+         edu |         5           1           4     |
+      birthy |        36           1          35     |
+     marital |         1           1           0    ?|
+    religion |        10           1           9    ?|
+       caste |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m3
+.         
+. use $data/forreg15, clear
+. reghdfe dv fertility1, a(state edu birthy marital religion caste UR) vce(cluster state)
+(MWFE estimator converged in 9 iterations)
+
+HDFE Linear regression                            Number of obs   =    476,837
+Absorbing 7 HDFE groups                           F(   1,     35) =      55.34
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0085
+                                                  Adj R-squared   =     0.0084
+                                                  Within R-sq.    =     0.0003
+Number of clusters (state)   =         36         Root MSE        =     0.1873
+
+                                 (Std. err. adjusted for 36 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |   .0059742   .0008031     7.44   0.000     .0043438    .0076047
+       _cons |   .0284748   .0011117    25.61   0.000      .026218    .0307316
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        36          36           0    *|
+         edu |         4           1           3     |
+      birthy |        37           1          36     |
+     marital |         1           1           0    ?|
+    religion |        10           1           9    ?|
+       caste |         2           1           1    ?|
+          UR |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m4
+. reghdfe dv fertility1 if UR == 1, a(state edu birthy marital religion caste) vce(cluster state)
+(MWFE estimator converged in 9 iterations)
+
+HDFE Linear regression                            Number of obs   =    133,249
+Absorbing 6 HDFE groups                           F(   1,     35) =      21.06
+Statistics robust to heteroskedasticity           Prob > F        =     0.0001
+                                                  R-squared       =     0.0112
+                                                  Adj R-squared   =     0.0106
+                                                  Within R-sq.    =     0.0002
+Number of clusters (state)   =         36         Root MSE        =     0.1769
+
+                                 (Std. err. adjusted for 36 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |   .0046721   .0010181     4.59   0.000     .0026053    .0067389
+       _cons |   .0266744   .0013094    20.37   0.000     .0240163    .0293325
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        36          36           0    *|
+         edu |         4           1           3     |
+      birthy |        37           1          36     |
+     marital |         1           1           0    ?|
+    religion |        10           1           9    ?|
+       caste |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m5
+. reghdfe dv fertility1 if UR == 2, a(state edu birthy marital religion caste) vce(cluster state)
+(dropped 1 singleton observations)
+(MWFE estimator converged in 10 iterations)
+
+HDFE Linear regression                            Number of obs   =    343,587
+Absorbing 6 HDFE groups                           F(   1,     35) =      55.04
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0080
+                                                  Adj R-squared   =     0.0078
+                                                  Within R-sq.    =     0.0004
+Number of clusters (state)   =         36         Root MSE        =     0.1912
+
+                                 (Std. err. adjusted for 36 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |    .006374   .0008592     7.42   0.000     .0046298    .0081182
+       _cons |    .029254   .0012219    23.94   0.000     .0267733    .0317346
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        36          36           0    *|
+         edu |         4           1           3     |
+      birthy |        37           1          36     |
+     marital |         1           1           0    ?|
+    religion |         9           1           8    ?|
+       caste |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m6
+. esttab m*, keep(fertility1) star(* 0.1 ** 0.05 *** 0.01) title("table 5.4")
+
+table 5.4
+------------------------------------------------------------------------------------------------------------
+                      (1)             (2)             (3)             (4)             (5)             (6)   
+                       dv              dv              dv              dv              dv              dv   
+------------------------------------------------------------------------------------------------------------
+fertility1         0.0404***       0.0431***       0.0377***      0.00597***      0.00467***      0.00637***
+                   (9.87)          (8.50)          (6.73)          (7.44)          (4.59)          (7.42)   
+------------------------------------------------------------------------------------------------------------
+N                   84161           36925           47235          476837          133249          343587   
+------------------------------------------------------------------------------------------------------------
+t statistics in parentheses
+* p<0.1, ** p<0.05, *** p<0.01
+.         
+. esttab m* using $output/table1_revised2025.rtf, replace keep(fertility1) star(* 0.1 ** 0.05 *** 0.01)   
+(output written to D:/BaiduNetdiskDownload/杨景媛-硕士学位论文调查审核/第4-6章（基准回归及拟事件研究法）/印度研究/output/table1_revised2025.rtf)
+. 
+. // 按照种姓情况分组
+. cap est drop *
+. use $data/forreg05, clear
+. reghdfe dv fertility1, a(state edu birthy marital religion UR) vce(cluster state)
+(MWFE estimator converged in 10 iterations)
+
+HDFE Linear regression                            Number of obs   =     87,925
+Absorbing 6 HDFE groups                           F(   1,     28) =     102.64
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0903
+                                                  Adj R-squared   =     0.0894
+                                                  Within R-sq.    =     0.0036
+Number of clusters (state)   =         29         Root MSE        =     0.4067
+
+                                 (Std. err. adjusted for 29 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |   .0414457   .0040909    10.13   0.000     .0330658    .0498255
+       _cons |   .1776172   .0060071    29.57   0.000     .1653122    .1899222
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        29          29           0    *|
+         edu |         5           1           4     |
+      birthy |        36           1          35     |
+     marital |         1           1           0    ?|
+    religion |        12           1          11    ?|
+          UR |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m1
+. reghdfe dv fertility1 if caste == 0, a(state edu birthy marital religion UR) vce(cluster state)
+(MWFE estimator converged in 10 iterations)
+
+HDFE Linear regression                            Number of obs   =     54,105
+Absorbing 6 HDFE groups                           F(   1,     28) =      73.21
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0830
+                                                  Adj R-squared   =     0.0817
+                                                  Within R-sq.    =     0.0033
+Number of clusters (state)   =         29         Root MSE        =     0.4252
+
+                                 (Std. err. adjusted for 29 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |   .0402854   .0047082     8.56   0.000     .0306411    .0499297
+       _cons |   .2078603   .0071968    28.88   0.000     .1931183    .2226022
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        29          29           0    *|
+         edu |         5           1           4     |
+      birthy |        36           1          35     |
+     marital |         1           1           0    ?|
+    religion |        11           1          10    ?|
+          UR |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m2
+. reghdfe dv fertility1 if caste == 1, a(state edu birthy marital religion UR) vce(cluster state) 
+(dropped 1 singleton observations)
+(MWFE estimator converged in 8 iterations)
+
+HDFE Linear regression                            Number of obs   =     30,056
+Absorbing 6 HDFE groups                           F(   1,     28) =      57.77
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0895
+                                                  Adj R-squared   =     0.0871
+                                                  Within R-sq.    =     0.0035
+Number of clusters (state)   =         29         Root MSE        =     0.3715
+
+                                 (Std. err. adjusted for 29 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |   .0389112   .0051194     7.60   0.000     .0284246    .0493978
+       _cons |    .132718   .0069601    19.07   0.000     .1184609    .1469751
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        29          29           0    *|
+         edu |         5           1           4     |
+      birthy |        36           1          35     |
+     marital |         1           1           0    ?|
+    religion |        11           1          10    ?|
+          UR |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m3
+. 
+. use $data/forreg15, clear
+. reghdfe dv fertility1, a(state sedu edu birthy marital religion UR caste) vce(cluster state)
+(MWFE estimator converged in 11 iterations)
+
+HDFE Linear regression                            Number of obs   =     82,554
+Absorbing 8 HDFE groups                           F(   1,     35) =      32.85
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0705
+                                                  Adj R-squared   =     0.0695
+                                                  Within R-sq.    =     0.0012
+Number of clusters (state)   =         36         Root MSE        =     0.3944
+
+                                 (Std. err. adjusted for 36 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |   .0243797   .0042533     5.73   0.000      .015745    .0330145
+       _cons |   .1785873   .0058706    30.42   0.000     .1666695    .1905052
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        36          36           0    *|
+        sedu |         5           1           4     |
+         edu |         4           1           3     |
+      birthy |        37           1          36    ?|
+     marital |         1           1           0    ?|
+    religion |         9           1           8    ?|
+          UR |         2           1           1    ?|
+       caste |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m4
+. reghdfe dv fertility1 if caste == 0, a(state edu birthy marital religion UR) vce(cluster state)
+(MWFE estimator converged in 9 iterations)
+
+HDFE Linear regression                            Number of obs   =    375,747
+Absorbing 6 HDFE groups                           F(   1,     35) =      60.48
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0078
+                                                  Adj R-squared   =     0.0076
+                                                  Within R-sq.    =     0.0004
+Number of clusters (state)   =         36         Root MSE        =     0.1942
+
+                                 (Std. err. adjusted for 36 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |    .006719   .0008639     7.78   0.000     .0049651    .0084728
+       _cons |   .0301109   .0012165    24.75   0.000     .0276413    .0325806
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        36          36           0    *|
+         edu |         4           1           3     |
+      birthy |        37           1          36     |
+     marital |         1           1           0    ?|
+    religion |        10           1           9    ?|
+          UR |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m5
+. reghdfe dv fertility1 if caste == 1, a(state edu birthy marital religion UR) vce(cluster state)
+(dropped 1 singleton observations)
+(MWFE estimator converged in 9 iterations)
+
+HDFE Linear regression                            Number of obs   =    101,089
+Absorbing 6 HDFE groups                           F(   1,     34) =       6.00
+Statistics robust to heteroskedasticity           Prob > F        =     0.0196
+                                                  R-squared       =     0.0090
+                                                  Adj R-squared   =     0.0082
+                                                  Within R-sq.    =     0.0001
+Number of clusters (state)   =         35         Root MSE        =     0.1592
+
+                                 (Std. err. adjusted for 35 clusters in state)
+------------------------------------------------------------------------------
+             |               Robust
+          dv | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+  fertility1 |   .0026176   .0010687     2.45   0.020     .0004457    .0047895
+       _cons |   .0228438   .0013843    16.50   0.000     .0200305     .025657
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+       state |        35          35           0    *|
+         edu |         4           1           3     |
+      birthy |        37           1          36     |
+     marital |         1           1           0    ?|
+    religion |         9           1           8    ?|
+          UR |         2           1           1    ?|
+-----------------------------------------------------+
+? = number of redundant parameters may be higher
+* = FE nested within cluster; treated as redundant for DoF computation
+.         est sto m6
+. dis("table5.5")
+table5.5
+. esttab m*, keep(fertility1) star(* 0.1 ** 0.05 *** 0.01) title("table 5.5")
+
+table 5.5
+------------------------------------------------------------------------------------------------------------
+                      (1)             (2)             (3)             (4)             (5)             (6)   
+                       dv              dv              dv              dv              dv              dv   
+------------------------------------------------------------------------------------------------------------
+fertility1         0.0414***       0.0403***       0.0389***       0.0244***      0.00672***      0.00262** 
+                  (10.13)          (8.56)          (7.60)          (5.73)          (7.78)          (2.45)   
+------------------------------------------------------------------------------------------------------------
+N                   87925           54105           30056           82554          375747          101089   
+------------------------------------------------------------------------------------------------------------
+t statistics in parentheses
+* p<0.1, ** p<0.05, *** p<0.01
+. 
+. esttab m* using $output/table2_revised2025.rtf, replace keep(fertility1) star(* 0.1 ** 0.05 *** 0.01)
+(output written to D:/BaiduNetdiskDownload/杨景媛-硕士学位论文调查审核/第4-6章（基准回归及拟事件研究法）/印度研究/output/table2_revised2025.rtf)
+.         
+. }
+
+. 
+end of do-file
+
+. 
