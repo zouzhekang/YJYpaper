@@ -2718,12 +2718,12 @@ NFHS4 调 查 匹 配 得 到 的 拟 面 板 数 据 ， 回 归 控 制 了 �
 [69] Grossbard S. The Marriage Motive: A Price Theory of Marriage: How Marriage Markets Affect Employment, Consumption, and Savings[M]. New York, NY: Springer New York, 2015.
 [70] Gu X, Li H, Peng L. The anti-domestic violence law and women's welfare: Evidence from a natural experiment in China[J]. Journal of Economic Behavior & Organization, 2022, 202: 1-16.
 [71] Guarnieri E, Rainer H. Colonialism and female empowerment: A two-sided legacy[J]. Journal of Development Economics, 2021, 151: 102666.
-[72] Guo R. A Theory of Differential Fertility under Filial Piety[J].
-[73] Heath R, Hidrobo M, Roy S. Cash transfers, polygamy, and intimate partner violence: Experimental evidence from Mali[J]. Journal of Development Economics, 2020, 143: 102410.
-[74] Henke A, Hsu L chi. The gender wage gap, weather, and intimate partner violence[J]. Review of Economics of the Household, 2020, 18(2): 413-429.
-[75] Hidrobo M, Fernald L. Cash transfers and domestic violence[J]. Journal of Health Economics 2013, 32(1): 304-319.
-[76] Hortaçsu A, Hwang S I M, Mathur D. Monetary incentives on inter-caste marriages in India: Theory and evidence[J]. Journal of Development Economics, 2019, 141: 102371.
-[77] Hsu L, Henke A. Intimate Partner Violence[M]. Cham: Springer International Publishing, 2022: 1-23.
+
+[72] Heath R, Hidrobo M, Roy S. Cash transfers, polygamy, and intimate partner violence: Experimental evidence from Mali[J]. Journal of Development Economics, 2020, 143: 102410.
+[73] Henke A, Hsu L chi. The gender wage gap, weather, and intimate partner violence[J]. Review of Economics of the Household, 2020, 18(2): 413-429.
+[74] Hidrobo M, Fernald L. Cash transfers and domestic violence[J]. Journal of Health Economics 2013, 32(1): 304-319.
+[75] Hortaçsu A, Hwang S I M, Mathur D. Monetary incentives on inter-caste marriages in India: Theory and evidence[J]. Journal of Development Economics, 2019, 141: 102371.
+[76] Hsu L, Henke A. Intimate Partner Violence[M]. Cham: Springer International Publishing, 2022: 1-23.
 [78] Huang W, Lei X, Sun A. Fertility Restrictions and Life Cycle Outcomes: Evidence from the One-Child Policy in China[J]. The Review of Economics and Statistics, 2021: 1-17.
 [79] Huth-Bocks A C, Levendosky A A, Semel M A. The Direct and Indirect Effects of Domestic Violence on Young Children's Intellectual Functioning[J]. Journal of Family Violence, 2001.
 [80] Iyengar R. Does the certainty of arrest reduce domestic violence? Evidence from mandatory and recommended arrest laws[J]. Journal of Public Economics, 2009, 93(1-2): 85-98.
@@ -2734,26 +2734,22 @@ NFHS4 调 查 匹 配 得 到 的 拟 面 板 数 据 ， 回 归 控 制 了 �
 [85] Lundberg S, Pollak R A. Separate Spheres Bargaining and the Marriage Market[J]. Journal of Political Economy, 1993, 101(6): 988-1010.
 [86] Manser M, Brown M. Marriage and Household Decision-Making: A Bargaining Analysis[J]. International Economic Review, 1980, 21(1): 31.
 [87] McElroy M B, Horney M J. Nash-Bargained Household Decisions: Toward a Generalization of the Theory of Demand[J]. International Economic Review, 1981, 22(2): 333.
-[88] McElroy M B, Horney M J. Nash-Bargained Household Decisions: Toward a Generalization of the Theory of Demand[J]. International Economic Review, 1981, 22(2): 333.
-[89] Menon S. The effect of marital endowments on domestic violence in India[J]. Journal of Development Economics, 2020, 143: 102389.
-[90] Miller A R, Segal C, Spencer M K. Effects of COVID-19 shutdowns on domestic violence in US cities[J]. Journal of Urban Economics, 2022, 131: 103476.
-[91] Miller A R, Segal C. Do Female Officers Improve Law Enforcement Quality? Effects on Crime Reporting and Domestic Violence[J]. Review of Economic Studies, 2019, 86(5): 2220-2247.
-[92] Molina T, Tanaka M. Globalization and Female Empowerment: Evidence from Myanmar[J]. Economic Development and Cultural Change, 2023.
-[93] Palmer C, Phillips D C, Sullivan J X. Does emergency financial assistance reduce crime?[J]. Journal of Public Economics, 2019, 169: 34-51.
-[94] Peterman A, Valli E, Palermo T. Government Antipoverty Programming and Intimate Partner Violence in Ghana[J]. Economic Development and Cultural Change, 2022, 70(2): 529-566.
-[95] Pollak R A. An intergenerational model of domestic violence[J]. Journal of Population Economics, 2004, 17(2): 311-329.
-[96] Ramos A. Household Decision Making with Violence: Implications for Conditional Cash Transfer Programs[J].
-[97] Roy S, Hidrobo M, Hoddinott J, et al. Transfers, Behavior Change Communication, and Intimate Partner Violence: Postprogram Evidence from Rural Bangladesh[J]. Review of Economics and Statistics, 2019, 101(5): 865-877.
-[98] Schneider D, Harknett K, McLanahan S. Intimate Partner Violence in the Great Recession[J]. DEMOGRAPHY, 2016, 53(2): 471-505.
-[99] Stevenson B, Wolfers J. Bargaining in the Shadow of the Law: Divorce Laws and Family Distress[J]. The Quarterly Journal of Economics, 2006, 121(1): 267-288.
-[100]Sun A, Zhao Y. Divorce, abortion, and the child sex ratio: The impact of divorce reform in China[J]. Journal of Development Economics, 2016, 120: 53-69.
-[101]Tauchen H V, Witte A D, Long S K. Domestic Violence: A Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491.
-[102]Tauchen H, Witte A, Long S. Domestic Violence - a Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491-511.
-[103]Terror as a Bargaining Instrument: A Case Study of Dowry Violence in Rural India[J]. The American Economic Review, 2024.
-[104]Tur-Prats A. Family Types and Intimate Partner Violence: A Historical Perspective[J]. Review of Economics and Statistics, 2019, 101(5): 878-891.
-[105]Wilson W W, Haiges R, Christe K. Contents Lists Available at Sciencedirect[J]. 2023.
-[106]Zhang Y, Breunig R. Female breadwinning and domestic abuse: evidence from Australia[J]. Journal of Population Economics, 2023, 36(4): 2925-2965.
-[107]Zhou D, Li X, Su Y. The Impacts of Education on Domestic Violence: Evidence from China[J]. Applied Economics, 2021, 53(58): 6702-6720.
+[88] Menon S. The effect of marital endowments on domestic violence in India[J]. Journal of Development Economics, 2020, 143: 102389.
+[89] Miller A R, Segal C, Spencer M K. Effects of COVID-19 shutdowns on domestic violence in US cities[J]. Journal of Urban Economics, 2022, 131: 103476.
+[90] Miller A R, Segal C. Do Female Officers Improve Law Enforcement Quality? Effects on Crime Reporting and Domestic Violence[J]. Review of Economic Studies, 2019, 86(5): 2220-2247.
+[91] Molina T, Tanaka M. Globalization and Female Empowerment: Evidence from Myanmar[J]. Economic Development and Cultural Change, 2023.
+[92] Palmer C, Phillips D C, Sullivan J X. Does emergency financial assistance reduce crime?[J]. Journal of Public Economics, 2019, 169: 34-51.
+[93] Peterman A, Valli E, Palermo T. Government Antipoverty Programming and Intimate Partner Violence in Ghana[J]. Economic Development and Cultural Change, 2022, 70(2): 529-566.
+[94] Pollak R A. An intergenerational model of domestic violence[J]. Journal of Population Economics, 2004, 17(2): 311-329.
+[95] Roy S, Hidrobo M, Hoddinott J, et al. Transfers, Behavior Change Communication, and Intimate Partner Violence: Postprogram Evidence from Rural Bangladesh[J]. Review of Economics and Statistics, 2019, 101(5): 865-877.
+[96] Schneider D, Harknett K, McLanahan S. Intimate Partner Violence in the Great Recession[J]. DEMOGRAPHY, 2016, 53(2): 471-505.
+[97] Stevenson B, Wolfers J. Bargaining in the Shadow of the Law: Divorce Laws and Family Distress[J]. The Quarterly Journal of Economics, 2006, 121(1): 267-288.
+[98] Sun A, Zhao Y. Divorce, abortion, and the child sex ratio: The impact of divorce reform in China[J]. Journal of Development Economics, 2016, 120: 53-69.
+[99] Tauchen H V, Witte A D, Long S K. Domestic Violence: A Nonrandom Affair[J]. International Economic Review, 1991, 32(2): 491-511.
+[100] Bloch F, Rao V. Terror as a bargaining instrument: A case study of dowry violence in rural India[J]. American Economic Review, 2002, 92(4): 1029-1043.
+[101] Tur-Prats A. Family Types and Intimate Partner Violence: A Historical Perspective[J]. Review of Economics and Statistics, 2019, 101(5): 878-891.
+[102] Zhang Y, Breunig R. Female breadwinning and domestic abuse: evidence from Australia[J]. Journal of Population Economics, 2023, 36(4): 2925-2965.
+[103] Zhou D, Li X, Su Y. The Impacts of Education on Domestic Violence: Evidence from China[J]. Applied Economics, 2021, 53(58): 6702-6720.
 </pre>
 
 ## 致谢
