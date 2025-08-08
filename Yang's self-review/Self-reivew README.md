@@ -168,6 +168,8 @@ data <- rbind(data1, list1, list2)
 - 图2.1缺失，程序中无相关作图代码，无法复现。
 - 图1.1、1.2原始代码有低级错误，修正后可复现。
 - 图1.3、2.2、2.3可复现。
+
+【补充说明｜与总仓库“涉嫌造假”第3条一致】原论文“图2.1 全球各国家暴发生率直方图”的纵轴标注为“频数”，但图中出现小数，违反了频数只能取整数的基本定义；且自审材料的Rmd中完全缺失该图的作图代码与数据。两点叠加，构成对该图数据可信度的重大疑点（参见 ../README.md 中“涉嫌造假”第3点）。
 本文档是为**学术诚信目的**编制的，代表对公开可用学术工作的事实分析。所有指控都基于有记录的证据和提交学术材料的比较分析。
 
 ---
@@ -307,6 +309,8 @@ Figure 2.3:
 - Figure 2.1 is missing; no relevant plotting code in the program, cannot be reproduced.
 - Figures 1.1 and 1.2 had code errors, but can be reproduced after correction.
 - Figures 1.3, 2.2, and 2.3 can be reproduced.
+
+Additional note (consistent with the main repo README, “Suspected Fabrication” #3): In the published thesis, Figure 2.1 labels the y-axis as “frequency” yet shows decimals, which contradicts the definition that frequencies are integers. Together with the complete absence of plotting code/data for this figure in the self-review Rmd, this creates a serious credibility concern about the figure’s data (see ../README.md, item 3 under “Suspected Fabrication”).
 
 
 
