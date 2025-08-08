@@ -1,9 +1,12 @@
 *---------------------------------------*
 *				  基准回归	  			*
-*				pooled reg   			*
+*			logistic regression  		*
 *				   杨景媛		 		*
-*				2023.12.22				*
+*			修正版本 2025.01.09			*
 *---------------------------------------*
+* 修正说明：将二元因变量的线性回归改为logistic回归
+* 原问题：dv1是二元变量，使用reghdfe违反统计学基本假设
+* 修正方法：使用logit模型，将固定效应转为控制变量
 
 
 cd $temp
@@ -29,35 +32,53 @@ cd $temp
 est drop *
 * --> 1990年数据
 use $data/MarriedFemale1990, clear
-reghdfe dv1 fertility2, a(province edu1 birthy sedu1) vce(robust)
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1, vce(robust)
 	est sto all1990
-reghdfe dv1 fertility2 if UR== 1, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto all1990_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if UR== 1, vce(robust)
 	est sto all1990U
-reghdfe dv1 fertility2 if UR== 2, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto all1990U_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if UR== 2, vce(robust)
 	est sto all1990R
-esttab all1990*, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
+	margins, dydx(fertility2) post
+	est sto all1990R_mfx
+esttab all1990_mfx all1990U_mfx all1990R_mfx, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
 
 * --> 2000年数据
 use $data/MarriedFemale2000, clear
-reghdfe dv1 fertility2, a(province edu1 birthy sedu1) vce(robust)
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1, vce(robust)
 	est sto all2000
-reghdfe dv1 fertility2 if UR== 1, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto all2000_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if UR== 1, vce(robust)
 	est sto all2000U
-reghdfe dv1 fertility2 if UR== 2, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto all2000U_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if UR== 2, vce(robust)
 	est sto all2000R
-esttab all2000*, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
+	margins, dydx(fertility2) post
+	est sto all2000R_mfx
+esttab all2000_mfx all2000U_mfx all2000R_mfx, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
 
 * --> 2010年数据
 use $data/MarriedFemale2010, clear
-reghdfe dv1 fertility2, a(province edu1 birthy sedu1) vce(robust)
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1, vce(robust)
 	est sto all2010
-reghdfe dv1 fertility2 if UR== 1, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto all2010_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if UR== 1, vce(robust)
 	est sto all2010U
-reghdfe dv1 fertility2 if UR== 2, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto all2010U_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if UR== 2, vce(robust)
 	est sto all2010R
-esttab all2010*, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
+	margins, dydx(fertility2) post
+	est sto all2010R_mfx
+esttab all2010_mfx all2010U_mfx all2010R_mfx, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
 
-esttab all1990* all2000* all2010* using $output/table1.rtf, replace keep(fertility*) star(* 0.1 ** 0.05 *** 0.01)
+esttab all1990_mfx all2000_mfx all2010_mfx using $output/table1_corrected.rtf, replace keep(fertility*) star(* 0.1 ** 0.05 *** 0.01) title("修正后的logistic回归结果 - 边际效应")
 }
 
 * —->  Table2  <--- *
@@ -66,21 +87,33 @@ esttab all1990* all2000* all2010* using $output/table1.rtf, replace keep(fertili
 use $data/MarriedFemale1990, clear
 est drop *
 // 区分生育是否完成（以40岁为分界点）
-reghdfe dv1 fertility2 if birthed == 1, a(province edu1 birthy sedu1) vce(robust)
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if birthed == 1, vce(robust)
 	est sto birthed1990
-reghdfe dv1 fertility2 if birthed == 1 & UR== 1, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto birthed1990_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if birthed == 1 & UR== 1, vce(robust)
 	est sto birthed1990U
-reghdfe dv1 fertility2 if birthed == 1 & UR== 2, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto birthed1990U_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if birthed == 1 & UR== 2, vce(robust)
 	est sto birthed1990R
-reghdfe dv1 fertility2 if birthed == 0, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto birthed1990R_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if birthed == 0, vce(robust)
 	est sto birthing1990
-reghdfe dv1 fertility2 if birthed == 0 & UR== 1, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto birthing1990_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if birthed == 0 & UR== 1, vce(robust)
 	est sto birthing1990U
-reghdfe dv1 fertility2 if birthed == 0 & UR== 2, a(province edu1 birthy sedu1) vce(robust)
+	margins, dydx(fertility2) post
+	est sto birthing1990U_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if birthed == 0 & UR== 2, vce(robust)
 	est sto birthing1990R
-esttab birth*1990*, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
+	margins, dydx(fertility2) post
+	est sto birthing1990R_mfx
+esttab birthed1990_mfx birthed1990U_mfx birthed1990R_mfx birthing1990_mfx birthing1990U_mfx birthing1990R_mfx, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
 
-esttab birth*1990* using $output/table2_1.rtf, replace keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
+esttab birthed1990_mfx birthed1990U_mfx birthed1990R_mfx birthing1990_mfx birthing1990U_mfx birthing1990R_mfx using $output/table2_1_corrected.rtf, replace keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
 
 * --> 2000 年
 use $data/MarriedFemale2000, clear
@@ -92,23 +125,35 @@ gen already = 1 if lchild_age > 12
 
 // 生育已完成（最小的孩子已经13岁了）
 est drop *
-reghdfe dv1 fertility2 if already == 1, a(province edu1 birthy sedu1) vce(robust)
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 1, vce(robust)
 est sto m1
-reghdfe dv1 fertility2 if already == 1 & UR == 1, a(province edu1 birthy sedu1) vce(robust)   //城镇
+margins, dydx(fertility2) post
+est sto m1_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 1 & UR == 1, vce(robust)   //城镇
 est sto m2
-reghdfe dv1 fertility2 if already == 1 & UR == 2, a(province edu1 birthy sedu1) vce(robust)   //乡村
+margins, dydx(fertility2) post
+est sto m2_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 1 & UR == 2, vce(robust)   //乡村
 est sto m3
+margins, dydx(fertility2) post
+est sto m3_mfx
 // 生育未完成（最小的孩子还小于13岁）
-reghdfe dv1 fertility2 if already == 0, a(province edu1 birthy sedu1) vce(robust)
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 0, vce(robust)
 est sto m4
-reghdfe dv1 fertility2 if already == 0 & UR == 1, a(province edu1 birthy sedu1) vce(robust)   //城镇
+margins, dydx(fertility2) post
+est sto m4_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 0 & UR == 1, vce(robust)   //城镇
 est sto m5
-reghdfe dv1 fertility2 if already == 0 & UR == 2, a(province edu1 birthy sedu1) vce(robust)   //乡村
+margins, dydx(fertility2) post
+est sto m5_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 0 & UR == 2, vce(robust)   //乡村
 est sto m6
+margins, dydx(fertility2) post
+est sto m6_mfx
 
-esttab m*, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
+esttab m1_mfx m2_mfx m3_mfx m4_mfx m5_mfx m6_mfx, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
 
-esttab m* using $output/table2_2.rtf, replace keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
+esttab m1_mfx m2_mfx m3_mfx m4_mfx m5_mfx m6_mfx using $output/table2_2_corrected.rtf, replace keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
 
 * --> 2010 年
 use $data/MarriedFemale2010, clear
@@ -120,24 +165,69 @@ gen already = 1 if lchild_age > 12
 
 // 生育已完成（最小的孩子已经13岁了）
 est drop *
-reghdfe dv1 fertility2 if already == 1, a(province edu1 birthy sedu1) vce(robust)
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 1, vce(robust)
 est sto m1
-reghdfe dv1 fertility2 if already == 1 & UR == 1, a(province edu1 birthy sedu1) vce(robust)   //城镇
+margins, dydx(fertility2) post
+est sto m1_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 1 & UR == 1, vce(robust)   //城镇
 est sto m2
-reghdfe dv1 fertility2 if already == 1 & UR == 2, a(province edu1 birthy sedu1) vce(robust)   //乡村
+margins, dydx(fertility2) post
+est sto m2_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 1 & UR == 2, vce(robust)   //乡村
 est sto m3
+margins, dydx(fertility2) post
+est sto m3_mfx
 // 生育未完成（最小的孩子还小于13岁）
-reghdfe dv1 fertility2 if already == 0, a(province edu1 birthy sedu1) vce(robust)
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 0, vce(robust)
 est sto m4
-reghdfe dv1 fertility2 if already == 0 & UR == 1, a(province edu1 birthy sedu1) vce(robust)   //城镇
+margins, dydx(fertility2) post
+est sto m4_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 0 & UR == 1, vce(robust)   //城镇
 est sto m5
-reghdfe dv1 fertility2 if already == 0 & UR == 2, a(province edu1 birthy sedu1) vce(robust)   //乡村
+margins, dydx(fertility2) post
+est sto m5_mfx
+logit dv1 fertility2 i.province i.edu1 i.birthy i.sedu1 if already == 0 & UR == 2, vce(robust)   //乡村
 est sto m6
+margins, dydx(fertility2) post
+est sto m6_mfx
 
-esttab m*, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
+esttab m1_mfx m2_mfx m3_mfx m4_mfx m5_mfx m6_mfx, keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
 
-esttab m* using $output/table2_3.rtf, replace keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
+esttab m1_mfx m2_mfx m3_mfx m4_mfx m5_mfx m6_mfx using $output/table2_3_corrected.rtf, replace keep(fertility2) star(* 0.1 ** 0.05 *** 0.01)
 }
+
+/*
+=============================================================================
+                         统计方法修正说明                        
+=============================================================================
+
+问题识别：
+原代码使用reghdfe对二元因变量dv1进行线性回归，这违反了统计学基本假设：
+1. 线性回归假设因变量连续分布，但dv1只能取0或1
+2. 线性回归预测值可能超出[0,1]范围，违反概率基本性质
+3. 残差无法满足正态分布和同方差假设
+
+修正方法：
+1. 将reghdfe替换为logit命令，使用logistic回归处理二元因变量
+2. 将原absorption的固定效应转换为控制变量 i.province i.edu1 i.birthy i.sedu1
+3. 使用margins计算边际效应，便于解释和比较
+4. 保持robust标准误以控制异方差
+
+理论依据：
+- Wooldridge (2020): "Introductory Econometrics: A Modern Approach", Chapter 17
+- Greene (2018): "Econometric Analysis", Chapter 23  
+- Cameron & Trivedi (2010): "Microeconometrics Using Stata", Chapter 14
+
+输出文件：
+- table1_corrected.rtf: 修正后的基准回归结果
+- table2_1_corrected.rtf: 修正后的1990年分组回归
+- table2_2_corrected.rtf: 修正后的2000年分组回归  
+- table2_3_corrected.rtf: 修正后的2010年分组回归
+
+注意事项：
+边际效应的解释：coefficients表示生育决策对家庭暴力发生概率的影响
+=============================================================================
+*/
 
 
 
