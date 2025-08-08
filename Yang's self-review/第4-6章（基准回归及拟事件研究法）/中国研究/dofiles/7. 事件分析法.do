@@ -2,8 +2,9 @@
 *			Pseudo Panel Data			*
 *				  micro		 			*
 *				  杨景媛		 			*
-*				2024.03.02				*
+*			修正版本 2025.01.09			*
 *---------------------------------------*
+* 修正说明：将二元因变量的线性回归改为logistic回归
 
 cd $temp
 global Rpath "/Users/yuan/Desktop/论文核查/杨景媛-硕士学位论文调查审核/R语言绘图"
@@ -76,7 +77,7 @@ save temp_pseudo, replace
 * --> step 3：开始回归
 //全样本
 use temp_pseudo, clear
-reghdfe dv1 T_45 T_23 T12 T34 T56 T78 T910, a(province birthy UR edu1) 
+logit dv1 T_45 T_23 T12 T34 T56 T78 T910 i.province i.birthy i.UR i.edu1, vce(robust) 
 est sto m1    // drop掉的怀孕的那一期
 coefplot m1, keep(T*) vertical
 parmest, saving("ols_estimate.dta", replace) format(estimate %8.3f std %8.3f t %8.3f) level(90)
@@ -94,7 +95,7 @@ export delimited using "$Rpath/中国/1. 整体样本/all_es.csv",replace
 
 //城镇样本
 use temp_pseudo, clear
-reghdfe dv1 T_45 T_23 T12 T34 T56 T78 T910 if UR == 1, a(province birthy edu1)   // 城市
+logit dv1 T_45 T_23 T12 T34 T56 T78 T910 i.province i.birthy i.edu1 if UR == 1, vce(robust)   // 城市
 est sto m2   // drop掉的怀孕的那一期
 parmest, saving("ols_estimate.dta", replace) format(estimate %8.3f std %8.3f t %8.3f) level(90)
 use ols_estimate, clear
@@ -109,7 +110,7 @@ save temp1, replace
 
 //农村样本
 use temp_pseudo, clear
-reghdfe dv1 T_45 T_23 T12 T34 T56 T78 T910 if UR == 2, a(province birthy edu1)   // 乡村
+logit dv1 T_45 T_23 T12 T34 T56 T78 T910 i.province i.birthy i.edu1 if UR == 2, vce(robust)   // 乡村
 est sto m3   // drop掉的怀孕的那一期
 parmest, saving("ols_estimate.dta", replace) format(estimate %8.3f std %8.3f t %8.3f) level(90)
 use ols_estimate, clear
@@ -128,13 +129,13 @@ export delimited using "$Rpath/中国/1. 整体样本/UR_es.csv",replace
 
 
 use temp_pseudo, clear
-reghdfe dv1 T_45 T_23 T12 T34 T56 T78 T910, a(province birthy UR edu1) 
+logit dv1 T_45 T_23 T12 T34 T56 T78 T910 i.province i.birthy i.UR i.edu1, vce(robust) 
 est sto m1    // drop掉的怀孕的那一期
 use temp_pseudo, clear
-reghdfe dv1 T_45 T_23 T12 T34 T56 T78 T910 if UR == 1, a(province birthy edu1)   // 城市
+logit dv1 T_45 T_23 T12 T34 T56 T78 T910 i.province i.birthy i.edu1 if UR == 1, vce(robust)   // 城市
 est sto m2  
 use temp_pseudo, clear
-reghdfe dv1 T_45 T_23 T12 T34 T56 T78 T910 if UR == 2, a(province birthy edu1)   // 乡村
+logit dv1 T_45 T_23 T12 T34 T56 T78 T910 i.province i.birthy i.edu1 if UR == 2, vce(robust)   // 乡村
 est sto m3   // drop掉的怀孕的那一期
 
 

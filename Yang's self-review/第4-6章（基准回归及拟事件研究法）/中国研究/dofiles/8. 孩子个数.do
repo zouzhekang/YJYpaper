@@ -2,8 +2,10 @@
 *				  Chilnum	  			*
 *				哪一胎影响最大	   			*
 *				   杨景媛		 		*
-*				2024.03.05				*
+*			修正版本 2025.01.09			*
 *---------------------------------------*
+* 修正说明：将二元因变量的线性回归改为logistic回归
+* 原问题：dv1是二元变量，使用reghdfe违反统计学基本假设
 
 
 cd $temp
@@ -13,17 +15,17 @@ cd $temp
 est drop *
 use $data/MarriedFemale1990, clear
 replace childnum = 6 if childnum >= 6
-reghdfe dv1 i.childnum, a(province edu1 UR birthy sedu1) vce(cluster province)
+logit dv1 i.childnum i.province i.edu1 i.UR i.birthy i.sedu1, vce(cluster province)
 est sto m1990
 
 use $data/MarriedFemale2000, clear
 replace childnum = 6 if childnum >= 6
-reghdfe dv1 i.childnum, a(province edu1 UR birthy sedu1) vce(cluster province)
+logit dv1 i.childnum i.province i.edu1 i.UR i.birthy i.sedu1, vce(cluster province)
 est sto m2000
 
 use $data/MarriedFemale2010, clear
 replace childnum = 6 if childnum >= 6
-reghdfe dv1 i.childnum, a(province edu1 UR birthy sedu1) vce(cluster province)
+logit dv1 i.childnum i.province i.edu1 i.UR i.birthy i.sedu1, vce(cluster province)
 est sto m2010
 
 coefplot m1990 m2000 m2010, drop(_cons) vertical  ///
@@ -34,7 +36,7 @@ clear
 // 1990
 use $data/MarriedFemale1990, clear
 replace childnum = 6 if childnum >= 6
-reghdfe dv1 i.childnum, a(province edu1 birthy sedu1) vce(cluster province)
+logit dv1 i.childnum i.province i.edu1 i.birthy i.sedu1, vce(cluster province)
 outreg2 using $R/childnum/myfile1990, replace nonote noaster  stats(coef ci)  
 seeout
 
@@ -55,7 +57,7 @@ export delimited using $R/childnum/forR1990.csv, replace
 // 2000
 use $data/MarriedFemale2000, clear
 replace childnum = 6 if childnum >= 6
-reghdfe dv1 i.childnum, a(province edu1 birthy sedu1) vce(cluster province)
+logit dv1 i.childnum i.province i.edu1 i.birthy i.sedu1, vce(cluster province)
 outreg2 using $R/childnum/myfile2000, replace nonote noaster  stats(coef ci) 
 seeout
 
@@ -77,7 +79,7 @@ export delimited using $R/childnum/forR2000.csv, replace
 // 2010
 use $data/MarriedFemale2010, clear
 replace childnum = 6 if childnum >= 6
-reghdfe dv1 i.childnum, a(province edu1 UR birthy sedu1) vce(cluster province)
+logit dv1 i.childnum i.province i.edu1 i.UR i.birthy i.sedu1, vce(cluster province)
 outreg2 using $R/childnum/myfile2010, replace nonote noaster  stats(coef ci) 
 seeout
 

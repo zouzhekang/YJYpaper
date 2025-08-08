@@ -1,8 +1,9 @@
 *---------------------------------------*
 *			机制分析：封建思想				*
 *				  杨景媛		 			*
-*				2024.03.14				*
+*			修正版本 2025.01.09			*
 *---------------------------------------*
+* 修正说明：将二元因变量的线性回归改为logistic回归
 
 
 cd $temp
@@ -100,7 +101,7 @@ save forqing, replace
 
 // 较封建地区
 use forqing, clear
-reghdfe dv1 T_45 T_23 T12 T34 T56 T78 T910 if ave_guan >= 0.0196, a(birthy UR edu1) // 封建
+logit dv1 T_45 T_23 T12 T34 T56 T78 T910 i.birthy i.UR i.edu1 if ave_guan >= 0.0196, vce(robust) // 封建
 est sto m1  
 parmest, saving("ols_estimate.dta", replace) format(estimate %8.3f std %8.3f t %8.3f) level(90)
 use ols_estimate, clear
@@ -114,7 +115,7 @@ save temp1, replace
 
 // 较开放地区
 use forqing, clear
-reghdfe dv1 T_45 T_23 T12 T34 T56 T78 T910 if ave_guan < 0.0196, a(birthy UR edu1) // 不封建
+logit dv1 T_45 T_23 T12 T34 T56 T78 T910 i.birthy i.UR i.edu1 if ave_guan < 0.0196, vce(robust) // 不封建
 est sto m2
 parmest, saving("ols_estimate.dta", replace) format(estimate %8.3f std %8.3f t %8.3f) level(90)
 use ols_estimate, clear

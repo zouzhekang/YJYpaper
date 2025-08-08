@@ -2,8 +2,9 @@
 *		数据处理-Pseudo Panel Data		*
 *				  cell		 			*
 *				  杨景媛		 			*
-*				2023.12.23				*
+*			修正版本 2025.01.09			*
 *---------------------------------------*
+* 修正说明：将二元因变量的线性回归改为logistic回归
 
 
 /*
@@ -101,9 +102,9 @@ drop if count <= 15
 
 est drop *
 
-qui reghdfe dv1 fertility2 [fweight = count], absorb(province year age_group UR edu1) vce(cluster province)
+qui logit dv1 fertility2 i.province i.year i.age_group i.UR i.edu1 [fweight = count], vce(cluster province)
 est sto pseudo_all_unbalanced
-qui reghdfe dv1 fertility2 [fweight = count] if UR == 1, absorb(province year age_group edu1) vce(cluster province)
+qui logit dv1 fertility2 i.province i.year i.age_group i.edu1 [fweight = count] if UR == 1, vce(cluster province)
 est sto pseudo_U_unbalanced
 qui reghdfe dv2 fertility2 [fweight = count] if UR == 2, absorb(province year age_group edu1) vce(cluster province)
 est sto pseudo_R_unbalanced
@@ -112,9 +113,9 @@ esttab pseudo_*_unbalanced, keep(fertility*) star(* 0.1 ** 0.05 *** 0.01)
 
 keep if age_group == 3 | age_group == 4 | age_group == 5  // balanced panel data
 xtset kkk year
-qui reghdfe dv1 fertility2 [fweight = count], absorb(province year age_group UR edu1) vce(cluster province)
+qui logit dv1 fertility2 i.province i.year i.age_group i.UR i.edu1 [fweight = count], vce(cluster province)
 est sto pseudo_all_balanced
-qui reghdfe dv1 fertility2 [fweight = count] if UR == 1, absorb(province year age_group edu1) vce(cluster province)
+qui logit dv1 fertility2 i.province i.year i.age_group i.edu1 [fweight = count] if UR == 1, vce(cluster province)
 est sto pseudo_U_balanced
 qui reghdfe dv2 fertility2 [fweight = count] if UR == 2, absorb(province year age_group edu1) vce(cluster province)
 est sto pseudo_R_balanced

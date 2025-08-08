@@ -1,8 +1,9 @@
 *---------------------------------------*
 *			机制分析：母职惩罚				*
 *				  杨景媛		 			*
-*				2024.03.03				*
+*			修正版本 2025.01.09			*
 *---------------------------------------*
+* 修正说明：将二元因变量的线性回归改为logistic回归
 
 cd $temp
 global Rpath "/Users/yuan/Desktop/论文核查/杨景媛-硕士学位论文调查审核/R语言绘图"
@@ -80,7 +81,7 @@ save temp, replace
 // 高母职惩罚
 use temp, clear
 keep if Hcp == 1
-reghdfe dv1 T_45 T_23 T12 T34 T56 T78 T910 , a(province birthy UR edu1) 
+logit dv1 T_45 T_23 T12 T34 T56 T78 T910 i.province i.birthy i.UR i.edu1, vce(robust) 
 est sto m1
 parmest, saving("ols_estimate.dta", replace) format(estimate %8.3f std %8.3f t %8.3f) level(90)
 use ols_estimate, clear
@@ -97,7 +98,7 @@ save temp1, replace
 // 低母职惩罚
 use temp, clear
 keep if Hcp == 0
-reghdfe dv1 T_45 T_23 T12 T34 T56 T78 T910 , a(province birthy UR edu1) 
+logit dv1 T_45 T_23 T12 T34 T56 T78 T910 i.province i.birthy i.UR i.edu1, vce(robust) 
 est sto m2    
 parmest, saving("ols_estimate.dta", replace) format(estimate %8.3f std %8.3f t %8.3f) level(90)
 use ols_estimate, clear
