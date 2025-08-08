@@ -937,7 +937,7 @@ This repository provides a systematic documentation of academic irregularities i
 
 **Security Notice**: The blogger (Li Ranyu Xin) received an unexpected nocturnal visit from unidentified individuals. Documentation available on [Quark Cloud](https://pan.quark.cn/s/10cebfa84661#/list/share).
 
-**The master's thesis survey and review**:
+**Master's Thesis Repository**:
 The master's thesis survey and review by Yang Jingyuan is available on the cloud storage platform [Quark Cloud](https://pan.quark.cn/s/b94924fdb2c0), which contains the missing Indian data for this project.
 
 **Related Resources**: [Yang Jingyuan Incident Documentation](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
