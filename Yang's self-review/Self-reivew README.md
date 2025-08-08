@@ -158,9 +158,10 @@ data <- rbind(data1, list1, list2)
 
 复现结果：
 >图1.1：
-![图1.1](./LineChart1.1.png)
-图1.2：
-![图1.2](./LineChart1.2.png)
+>![图1.1](./LineChart1.1.png)
+
+>图1.2：
+>![图1.2](./LineChart1.2.png)
 
 ---
 
@@ -198,11 +199,13 @@ data <- rbind(data1, list1, list2)
 - 检查Rmd文件，未发现任何直方图作图代码，无法复现该图。
 复现结果：
 >图1.3：
-![图1.3](./LineChart1.3.png)
-图2.2：
-![图2.2](./LineChart2.2.png)
-图2.3：
-![图2.3](./LineChart2.3.png)
+>![图1.3](./LineChart1.3.png)
+
+>图2.2：
+>![图2.2](./LineChart2.2.png)
+
+>图2.3：
+>![图2.3](./LineChart2.3.png)
 
 **结论：**
 - 图2.1缺失，程序中无相关作图代码，无法复现。
@@ -338,9 +341,10 @@ After correction, the code runs normally.
 
 Reproduction results:
 >Figure 1.1:
- ![Figure 1.1](./LineChart1.1.png)
-Figure 1.2:
- ![Figure 1.2](./LineChart1.2.png)
+> ![Figure 1.1](./LineChart1.1.png)
+
+>Figure 1.2:
+> ![Figure 1.2](./LineChart1.2.png)
 
 ---
 
@@ -379,11 +383,13 @@ Figure 1.2:
 - The other 3 figures can be output by adjusting the code:
 Reproduction results:
 >Figure 1.3:
-![Figure 1.3](./LineChart1.3.png)
-Figure 2.2:
-![Figure 2.2](./LineChart2.2.png)
-Figure 2.3:
-![Figure 2.3](./LineChart2.3.png)
+>![Figure 1.3](./LineChart1.3.png)
+
+>Figure 2.2:
+>![Figure 2.2](./LineChart2.2.png)
+
+>Figure 2.3:
+>![Figure 2.3](./LineChart2.3.png)
 
 **Conclusion:**
 - Figure 2.1 is missing; no relevant plotting code in the program, cannot be reproduced.
