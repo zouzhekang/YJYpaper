@@ -44,60 +44,7 @@
 - `自己收集整理的数据/` - **自己收集和整理的数据**
   - `世界家暴数据整理/` - 全球家庭暴力数据汇编
   - `道观数据爬取与整理/` - 宗教场所数据爬取和整理
-## ❗图表复现问题说明
 
-根据“杨的自我审查与数据文件”，论文部分图表无法完全复现。对图表目录中6张关键图的复现情况如下：
-
-### 图1.1 中国家庭暴力的时间趋势图
-### 图1.2 印度家庭暴力的时间趋势图
-复现路径：`R语言绘图/绪论-中印家暴趋势（分别）/绪论-时间趋势.Rmd`
-
-**发现问题：**
-原始R代码存在低级错误：
-
-```r
-data1 <- read.csv("time_trend.csv")
-list1 <- c(UR = "城镇", year = 2020, dv1 = 0.02)
-list2 <- c(UR = "农村", year = 2020, dv1 = 0.02)
-# 错误写法：data <- rbind(data, list1, list2)
-# 正确写法：
-data <- rbind(data1, list1, list2)
-```
-修正后可正常运行。
-
-复现结果：
->图1.1：
-![图1.1](./LineChart1.1.png)
-图1.2：
-![图1.2](./LineChart1.2.png)
-
----
-
-### 图1.3 中印两国生育率趋势图
-### 图2.1 全球各国家暴发生率直方图
-### 图2.2 世界平均总和生育率趋势
-### 图2.3 世界主要国家总和生育率趋势
-复现路径：`R语言绘图/绪论-世界生育率/世界生育率趋势图.Rmd`
-
-**发现问题：**
-- 程序仅输出3张图，缺失“图2.1 全球各国家暴发生率直方图”。
-- 检查Rmd文件，未发现任何直方图作图代码，无法复现该图。
-
-复现结果：
->图1.3：
-![图1.3](./LineChart1.3.png)
-图2.2：
-![图2.2](./LineChart2.2.png)
-图2.3：
-![图2.3](./LineChart2.3.png)
-
-**结论：**
-- 图2.1缺失，程序中无相关作图代码，无法复现。
-- 图1.1、1.2原始代码有低级错误，修正后可复现。
-- 图1.3、2.2、2.3可复现。
-- 图2.1缺失，程序中无相关作图代码，无法复现。
-- 图1.1、1.2原始代码有低级错误，修正后可复现。
-- 图1.3、2.2、2.3可复现。
 
 ## 📋概述
 
@@ -159,6 +106,15 @@ data <- rbind(data1, list1, list2)
 - **方法缺陷**：不当的统计方法
 
 ## 📊错误统计分析
+
+基于主仓库中的综合错误文档（持续更新）：
+
+- 伪造/篡改：11+ 个有记录的实例
+- 抄袭：3+ 个确认案例
+- 数据错误：12+ 个计算/事实错误
+- 方法错误：12+ 个分析缺陷
+- 引用违规：14+ 个引用违规
+- 写作/格式错误：54+ 处语言与格式问题
 
 
 
@@ -262,6 +218,44 @@ data <- rbind(data1, list1, list2)
 
 ---
 
+
+## 📋 Overview
+
+This folder contains **Yang Jingyuan's own review and data files** submitted **after** Wuhan University requested her to examine her thesis following widespread exposure of academic irregularities. The contents serve as **documented evidence** of the author's acknowledgment of errors in her work that was somehow awarded as an "**Excellent Master's Thesis**."
+
+## 🔍Critical Questions Raised
+
+### How Was This Thesis Awarded Excellence?
+
+The presence of this self-review folder raises fundamental questions about Wuhan University's academic oversight:
+
+1. **Quality Control Failure**: How did a thesis with systematic errors pass initial review?
+2. **Excellence Award Process**: What criteria were used to designate this flawed work as "excellent"?
+3. **Institutional Responsibility**: Who was responsible for the original evaluation process?
+4. **Academic Standards**: What does this say about the university's academic integrity standards?
+
+## 📁Folder Contents
+
+### Core Documentation
+- `YJYpaper_Master_Thesis_Review.pdf` - **Yang's official self-review acknowledging errors**
+- `List_of_Figures_and_Tables.xlsx` - Revised data tables and figures
+
+### Data Reconstruction Attempts
+- `R语言绘图/` - R-based data visualization attempts
+  - `中国/` - China-specific analyses (4 subdirectories)
+  - `印度/` - India-specific analyses (4 subdirectories)  
+  - `中国母职惩罚可视化/` - China motherhood penalty visualization
+  - `印度母职惩罚可视化/` - India motherhood penalty visualization
+  - `绪论-世界生育率/` - Global fertility rate analysis
+  - `绪论-中印家暴趋势（分别）/` - China-India domestic violence trends
+
+- `Stata绘图/` - Stata-based statistical analyses
+  - `世界生育率与家暴/` - Global fertility and domestic violence correlation
+
+- `自己收集整理的数据/` - **Self-collected and organized data**
+  - `世界家暴数据整理/` - Global domestic violence data compilation
+  - `道观数据爬取与整理/` - Religious site data scraping and organization
+
 ### Chart Reproduction Issues
 
 According to the self-review and data files, several key figures in the thesis cannot be fully reproduced. The status of 6 key figures is as follows:
@@ -314,44 +308,7 @@ Figure 2.3:
 - Figures 1.1 and 1.2 had code errors, but can be reproduced after correction.
 - Figures 1.3, 2.2, and 2.3 can be reproduced.
 
----
 
-## 📋 Overview
-
-This folder contains **Yang Jingyuan's own review and data files** submitted **after** Wuhan University requested her to examine her thesis following widespread exposure of academic irregularities. The contents serve as **documented evidence** of the author's acknowledgment of errors in her work that was somehow awarded as an "**Excellent Master's Thesis**."
-
-## 🔍Critical Questions Raised
-
-### How Was This Thesis Awarded Excellence?
-
-The presence of this self-review folder raises fundamental questions about Wuhan University's academic oversight:
-
-1. **Quality Control Failure**: How did a thesis with systematic errors pass initial review?
-2. **Excellence Award Process**: What criteria were used to designate this flawed work as "excellent"?
-3. **Institutional Responsibility**: Who was responsible for the original evaluation process?
-4. **Academic Standards**: What does this say about the university's academic integrity standards?
-
-## 📁Folder Contents
-
-### Core Documentation
-- `YJYpaper_Master_Thesis_Review.pdf` - **Yang's official self-review acknowledging errors**
-- `List_of_Figures_and_Tables.xlsx` - Revised data tables and figures
-
-### Data Reconstruction Attempts
-- `R语言绘图/` - R-based data visualization attempts
-  - `中国/` - China-specific analyses (4 subdirectories)
-  - `印度/` - India-specific analyses (4 subdirectories)  
-  - `中国母职惩罚可视化/` - China motherhood penalty visualization
-  - `印度母职惩罚可视化/` - India motherhood penalty visualization
-  - `绪论-世界生育率/` - Global fertility rate analysis
-  - `绪论-中印家暴趋势（分别）/` - China-India domestic violence trends
-
-- `Stata绘图/` - Stata-based statistical analyses
-  - `世界生育率与家暴/` - Global fertility and domestic violence correlation
-
-- `自己收集整理的数据/` - **Self-collected and organized data**
-  - `世界家暴数据整理/` - Global domestic violence data compilation
-  - `道观数据爬取与整理/` - Religious site data scraping and organization
 
 ## 🚨Academic Misconduct Implications
 
