@@ -43,7 +43,7 @@
 
 ❗博主（李然于心）被粉衣哥带几个金哥深夜登门拜访了！！！视频在[夸克网盘](https://pan.quark.cn/s/10cebfa84661#/list/share)，顿时有点害怕捏！！！  
 
-杨景媛的硕士学位论文调查审核网盘[夸克网盘](https://pan.quark.cn/s/b94924fdb2c0)，有本项目缺少的印度数据
+杨景媛的硕士学位论文调查审核网盘：[夸克网盘](https://pan.quark.cn/s/b94924fdb2c0)，有本项目缺少的印度数据。
 
 友情链接：[杨景媛事件相关](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
 
