@@ -122,9 +122,26 @@
 
 根据“杨的自我审查与数据文件”，论文部分图表无法完全复现。对图表目录中6张关键图的复现情况如下：
 
-### 图1.1 中国家庭暴力的时间趋势图
-### 图1.2 印度家庭暴力的时间趋势图
-复现路径：`R语言绘图/绪论-中印家暴趋势（分别）/绪论-时间趋势.Rmd`
+<table>
+  <thead>
+    <tr>
+      <th>图号</th>
+      <th>标题</th>
+      <th>复现路径</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>图1.1</td>
+      <td>中国家庭暴力的时间趋势图</td>
+      <td rowspan="2"><code>R语言绘图/绪论-中印家暴趋势（分别）/绪论-时间趋势.Rmd</code></td>
+    </tr>
+    <tr>
+      <td>图1.2</td>
+      <td>印度家庭暴力的时间趋势图</td>
+    </tr>
+  </tbody>
+</table>
 
 **发现问题：**
 原始R代码存在低级错误：
@@ -147,11 +164,34 @@ data <- rbind(data1, list1, list2)
 
 ---
 
-### 图1.3 中印两国生育率趋势图
-### 图2.1 全球各国家暴发生率直方图
-### 图2.2 世界平均总和生育率趋势
-### 图2.3 世界主要国家总和生育率趋势
-复现路径：`R语言绘图/绪论-世界生育率/世界生育率趋势图.Rmd`
+<table>
+  <thead>
+    <tr>
+      <th>图号</th>
+      <th>标题</th>
+      <th>复现路径</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>图1.3</td>
+      <td>中印两国生育率趋势图</td>
+      <td rowspan="4"><code>R语言绘图/绪论-世界生育率/世界生育率趋势图.Rmd</code></td>
+    </tr>
+    <tr>
+      <td>图2.1</td>
+      <td>全球各国家暴发生率直方图</td>
+    </tr>
+    <tr>
+      <td>图2.2</td>
+      <td>世界平均总和生育率趋势</td>
+    </tr>
+    <tr>
+      <td>图2.3</td>
+      <td>世界主要国家总和生育率趋势</td>
+    </tr>
+  </tbody>
+</table>
 
 **发现问题：**
 - 程序仅输出3张图，缺失“图2.1 全球各国家暴发生率直方图”。
@@ -262,9 +302,26 @@ The presence of this self-review folder raises fundamental questions about Wuhan
 
 According to the self-review and data files, several key figures in the thesis cannot be fully reproduced. The status of 6 key figures is as follows:
 
-#### Figure 1.1 Time Trend of Domestic Violence in China
-#### Figure 1.2 Time Trend of Domestic Violence in India
-Reproduction path: `R语言绘图/绪论-中印家暴趋势（分别）/绪论-时间趋势.Rmd`
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Title</th>
+      <th>Reproduction Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1.1</td>
+      <td>Time Trend of Domestic Violence in China</td>
+      <td rowspan="2"><code>R语言绘图/绪论-中印家暴趋势（分别）/绪论-时间趋势.Rmd</code></td>
+    </tr>
+    <tr>
+      <td>Figure 1.2</td>
+      <td>Time Trend of Domestic Violence in India</td>
+    </tr>
+  </tbody>
+</table>
 
 **Issue found:**
 The original R code contains a basic error:
@@ -287,11 +344,34 @@ Figure 1.2:
 
 ---
 
-#### Figure 1.3 Fertility Trends in China and India
-#### Figure 2.1 Histogram of Global Domestic Violence Rates
-#### Figure 2.2 World Average Total Fertility Rate Trend
-#### Figure 2.3 Total Fertility Rate Trends in Major Countries
-Reproduction path: `R语言绘图/绪论-世界生育率/世界生育率趋势图.Rmd`
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Title</th>
+      <th>Reproduction Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1.3</td>
+      <td>Fertility Trends in China and India</td>
+      <td rowspan="4"><code>R语言绘图/绪论-世界生育率/世界生育率趋势图.Rmd</code></td>
+    </tr>
+    <tr>
+      <td>Figure 2.1</td>
+      <td>Histogram of Global Domestic Violence Rates</td>
+    </tr>
+    <tr>
+      <td>Figure 2.2</td>
+      <td>World Average Total Fertility Rate Trend</td>
+    </tr>
+    <tr>
+      <td>Figure 2.3</td>
+      <td>Total Fertility Rate Trends in Major Countries</td>
+    </tr>
+  </tbody>
+</table>
 
 **Issue found:**
 - Only 3 figures are output; "Figure 2.1 Histogram of Global Domestic Violence Rates" is missing.
