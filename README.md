@@ -43,6 +43,8 @@
 
 ❗博主（李然于心）被粉衣哥带几个金哥深夜登门拜访了！！！视频在[夸克网盘](https://pan.quark.cn/s/10cebfa84661#/list/share)，顿时有点害怕捏！！！  
 
+杨景媛的硕士学位论文调查审核网盘[夸克网盘](https://pan.quark.cn/s/b94924fdb2c0)，有本项目缺少的印度数据
+
 友情链接：[杨景媛事件相关](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
 
 ## 📋TODO  
@@ -934,6 +936,9 @@ This repository provides a systematic documentation of academic irregularities i
 **Evidence Documentation**: Video, audio, and photographic evidence submitted to judicial authorities by the complainant is available via [Baidu Cloud](https://pan.baidu.com/s/1Jvw5mXjDltMEHARtg6c6Rg?pwd=i86x)
 
 **Security Notice**: The blogger (Li Ranyu Xin) received an unexpected nocturnal visit from unidentified individuals. Documentation available on [Quark Cloud](https://pan.quark.cn/s/10cebfa84661#/list/share).
+
+**The master's thesis survey and review**:
+The master's thesis survey and review by Yang Jingyuan is available on the cloud storage platform [Quark Cloud](https://pan.quark.cn/s/b94924fdb2c0), which contains the missing Indian data for this project.
 
 **Related Resources**: [Yang Jingyuan Incident Documentation](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
 
