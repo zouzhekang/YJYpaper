@@ -17,6 +17,7 @@
 - [📋 概述](#概述)
 - [🔍 提出的关键问题](#提出的关键问题)
 - [📁 文件夹内容](#文件夹内容)
+- [❗ 图表复现问题说明](#图表复现问题说明)
 - [🚨 学术不端影响](#学术不端影响)
 - [⚖️ 法律和伦理考量](#法律和伦理考量)
 - [🎯 关键证据要点](#关键证据要点)
@@ -27,9 +28,76 @@
 
 ---
 
-###### 中文版本
+### 数据重建尝试
+
+- `R语言绘图/` - 基于R的数据可视化尝试
+  - `中国/` - 中国特定分析（4个子目录）
+  - `印度/` - 印度特定分析（4个子目录）
+  - `中国母职惩罚可视化/` - 中国母职惩罚可视化
+  - `印度母职惩罚可视化/` - 印度母职惩罚可视化
+  - `绪论-世界生育率/` - 全球生育率分析
+  - `绪论-中印家暴趋势（分别）/` - 中印家庭暴力趋势
+
+- `Stata绘图/` - 基于Stata的统计分析
+  - `世界生育率与家暴/` - 全球生育率与家庭暴力相关性
+
+- `自己收集整理的数据/` - **自己收集和整理的数据**
+  - `世界家暴数据整理/` - 全球家庭暴力数据汇编
+  - `道观数据爬取与整理/` - 宗教场所数据爬取和整理
+## ❗图表复现问题说明
+
+根据“杨的自我审查与数据文件”，论文部分图表无法完全复现。对图表目录中6张关键图的复现情况如下：
+
+### 图1.1 中国家庭暴力的时间趋势图
+### 图1.2 印度家庭暴力的时间趋势图
+复现路径：`R语言绘图/绪论-中印家暴趋势（分别）/绪论-时间趋势.Rmd`
+
+**发现问题：**
+原始R代码存在低级错误：
+
+```r
+data1 <- read.csv("time_trend.csv")
+list1 <- c(UR = "城镇", year = 2020, dv1 = 0.02)
+list2 <- c(UR = "农村", year = 2020, dv1 = 0.02)
+# 错误写法：data <- rbind(data, list1, list2)
+# 正确写法：
+data <- rbind(data1, list1, list2)
+```
+修正后可正常运行。
+
+复现结果：
+>图1.1：
+![图1.1](./LineChart1.1.png)
+图1.2：
+![图1.2](./LineChart1.2.png)
 
 ---
+
+### 图1.3 中印两国生育率趋势图
+### 图2.1 全球各国家暴发生率直方图
+### 图2.2 世界平均总和生育率趋势
+### 图2.3 世界主要国家总和生育率趋势
+复现路径：`R语言绘图/绪论-世界生育率/世界生育率趋势图.Rmd`
+
+**发现问题：**
+- 程序仅输出3张图，缺失“图2.1 全球各国家暴发生率直方图”。
+- 检查Rmd文件，未发现任何直方图作图代码，无法复现该图。
+
+复现结果：
+>图1.3：
+![图1.3](./LineChart1.3.png)
+图2.2：
+![图2.2](./LineChart2.2.png)
+图2.3：
+![图2.3](./LineChart2.3.png)
+
+**结论：**
+- 图2.1缺失，程序中无相关作图代码，无法复现。
+- 图1.1、1.2原始代码有低级错误，修正后可复现。
+- 图1.3、2.2、2.3可复现。
+- 图2.1缺失，程序中无相关作图代码，无法复现。
+- 图1.1、1.2原始代码有低级错误，修正后可复现。
+- 图1.3、2.2、2.3可复现。
 
 ## 📋概述
 
@@ -47,26 +115,6 @@
 4. **学术标准**：这对大学的学术诚信标准说明了什么？
 
 ## 📁文件夹内容
-
-### 核心文档
-- `YJYpaper_Master_Thesis_Review.pdf` - **杨的官方自我审查承认错误**
-- `List_of_Figures_and_Tables.xlsx` - 修订的数据表和图表
-
-### 数据重建尝试
-- `R语言绘图/` - 基于R的数据可视化尝试
-  - `中国/` - 中国特定分析（4个子目录）
-  - `印度/` - 印度特定分析（4个子目录）
-  - `中国母职惩罚可视化/` - 中国母职惩罚可视化
-  - `印度母职惩罚可视化/` - 印度母职惩罚可视化
-  - `绪论-世界生育率/` - 全球生育率分析
-  - `绪论-中印家暴趋势（分别）/` - 中印家庭暴力趋势
-
-- `Stata绘图/` - 基于Stata的统计分析
-  - `世界生育率与家暴/` - 全球生育率与家庭暴力相关性
-
-- `自己收集整理的数据/` - **自己收集和整理的数据**
-  - `世界家暴数据整理/` - 全球家庭暴力数据汇编
-  - `道观数据爬取与整理/` - 宗教场所数据爬取和整理
 
 ## 🚨学术不端影响
 
@@ -112,50 +160,58 @@
 
 ## 📊错误统计分析
 
-基于主仓库中的综合错误文档：
 
-- **伪造/篡改**：11+个有记录的实例
-- **抄袭**：3+个确认案例
-- **数据错误**：12+个计算/事实错误
-- **方法错误**：12+个分析缺陷
-- **引用违规**：14+个引用违规
-- **写作/格式错误**：54+个语言和格式问题
 
-## 🏛️所需机构回应
+## ❗图表复现问题说明
 
-### 需要立即行动
-1. **学位撤销**：撤销授予杨景媛的硕士学位
-2. **优秀撤销**：撤回"优秀硕士论文"称号
-3. **审查委员会调查**：检查原始评估过程
-4. **政策改革**：加强学术诚信监督机制
-5. **公众问责**：就机构失败发表透明声明
+根据“杨的自我审查与数据文件”，论文部分图表无法完全复现。对图表目录中6张关键图的复现情况如下：
 
-### 长期改革
-1. **增强审查流程**：实施更严格的论文评估协议
-2. **质量保证**：建立独立验证机制
-3. **教职员工培训**：提高学术诚信意识
-4. **技术整合**：使用抄袭检测和数据验证工具
-5. **透明措施**：公布评估标准和流程
+### 图1.1 中国家庭暴力的时间趋势图
+### 图1.2 印度家庭暴力的时间趋势图
+复现路径：`R语言绘图/绪论-中印家暴趋势（分别）/绪论-时间趋势.Rmd`
 
-## 📝文档时间线
+**发现问题：**
+原始R代码存在低级错误：
 
-| 日期 | 事件 | 意义 |
-|------|-------|-------------|
-| 2024年 | 原始论文提交 | 工作包含系统性错误 |
-| 2024年 | 授予"优秀"称号 | 评估中的机构失败 |
-| 2024年底/2025年初 | 公开曝光 | 记录学术违规 |
-| 2025年 | 大学要求审查 | 机构损害控制 |
-| 2025年 | 提交自我审查 | **作者的隐性错误承认** |
+```r
+data1 <- read.csv("time_trend.csv")
+list1 <- c(UR = "城镇", year = 2020, dv1 = 0.02)
+list2 <- c(UR = "农村", year = 2020, dv1 = 0.02)
+# 错误写法：data <- rbind(data, list1, list2)
+# 正确写法：
+data <- rbind(data1, list1, list2)
+```
+修正后可正常运行。
 
-## 🔗相关文档
+复现结果：
+>图1.1：
+![图1.1](./LineChart1.1.png)
+图1.2：
+![图1.2](./LineChart1.2.png)
 
-- **主要错误汇编**：[../README.md](../README.md)
-- **原始论文**：[../paper/YJYpaper.pdf](../paper/YJYpaper.pdf)
-- **举报指南**：[../doc/compilations.md](../doc/compilations.md)
-- **正式投诉**：[../report/](../report/)
+---
 
-## ⚠️法律声明
+### 图1.3 中印两国生育率趋势图
+### 图2.1 全球各国家暴发生率直方图
+### 图2.2 世界平均总和生育率趋势
+### 图2.3 世界主要国家总和生育率趋势
+复现路径：`R语言绘图/绪论-世界生育率/世界生育率趋势图.Rmd`
 
+**发现问题：**
+- 程序仅输出3张图，缺失“图2.1 全球各国家暴发生率直方图”。
+- 检查Rmd文件，未发现任何直方图作图代码，无法复现该图。
+复现结果：
+>图1.3：
+![图1.3](./LineChart1.3.png)
+图2.2：
+![图2.2](./LineChart2.2.png)
+图2.3：
+![图2.3](./LineChart2.3.png)
+
+**结论：**
+- 图2.1缺失，程序中无相关作图代码，无法复现。
+- 图1.1、1.2原始代码有低级错误，修正后可复现。
+- 图1.3、2.2、2.3可复现。
 本文档是为**学术诚信目的**编制的，代表对公开可用学术工作的事实分析。所有指控都基于有记录的证据和提交学术材料的比较分析。
 
 ---
@@ -176,6 +232,7 @@
 
 ---
 
+
 ###### English Version
 
 # Yang Jingyuan's Self-Review and Data Documentation
@@ -188,18 +245,74 @@
 
 </div>
 
+
 ### Table of Contents
 
 - [📋 Overview](#overview)
 - [🔍 Critical Questions Raised](#critical-questions-raised)
 - [📁 Folder Contents](#folder-contents)
+- [❗ Chart Reproduction Issues](#chart-reproduction-issues)
 - [🚨 Academic Misconduct Implications](#academic-misconduct-implications)
-- [⚖️ Legal and Ethical Considerations](#legal-andethical-considerations)
+- [⚖️ Legal and Ethical Considerations](#legal-and-ethical-considerations)
 - [🎯 Key Evidence Points](#key-evidence-points)
 - [📊 Statistical Analysis of Errors](#statistical-analysis-of-errors)
 - [🏛️ Institutional Response Required](#institutional-response-required)
 - [📝 Documentation Timeline](#documentation-timeline)
 - [🔗 Related Documentation](#related-documentation)
+
+---
+
+### Chart Reproduction Issues
+
+According to the self-review and data files, several key figures in the thesis cannot be fully reproduced. The status of 6 key figures is as follows:
+
+#### Figure 1.1 Time Trend of Domestic Violence in China
+#### Figure 1.2 Time Trend of Domestic Violence in India
+Reproduction path: `R语言绘图/绪论-中印家暴趋势（分别）/绪论-时间趋势.Rmd`
+
+**Issue found:**
+The original R code contains a basic error:
+
+```r
+data1 <- read.csv("time_trend.csv")
+list1 <- c(UR = "城镇", year = 2020, dv1 = 0.02)
+list2 <- c(UR = "农村", year = 2020, dv1 = 0.02)
+# Incorrect: data <- rbind(data, list1, list2)
+# Correct:
+data <- rbind(data1, list1, list2)
+```
+After correction, the code runs normally.
+
+Reproduction results:
+>Figure 1.1:
+ ![Figure 1.1](./LineChart1.1.png)
+Figure 1.2:
+ ![Figure 1.2](./LineChart1.2.png)
+
+---
+
+#### Figure 1.3 Fertility Trends in China and India
+#### Figure 2.1 Histogram of Global Domestic Violence Rates
+#### Figure 2.2 World Average Total Fertility Rate Trend
+#### Figure 2.3 Total Fertility Rate Trends in Major Countries
+Reproduction path: `R语言绘图/绪论-世界生育率/世界生育率趋势图.Rmd`
+
+**Issue found:**
+- Only 3 figures are output; "Figure 2.1 Histogram of Global Domestic Violence Rates" is missing.
+- No histogram plotting code is found in the Rmd file, so this figure cannot be reproduced.
+- The other 3 figures can be output by adjusting the code:
+Reproduction results:
+>Figure 1.3:
+![Figure 1.3](./LineChart1.3.png)
+Figure 2.2:
+![Figure 2.2](./LineChart2.2.png)
+Figure 2.3:
+![Figure 2.3](./LineChart2.3.png)
+
+**Conclusion:**
+- Figure 2.1 is missing; no relevant plotting code in the program, cannot be reproduced.
+- Figures 1.1 and 1.2 had code errors, but can be reproduced after correction.
+- Figures 1.3, 2.2, and 2.3 can be reproduced.
 
 ---
 
