@@ -217,10 +217,13 @@ data <- rbind(data1, list1, list2)
 
 ## 🧪 基于 Stata 的回归复现核查（表5.4/表5.5）
 
-根据自审资料“印度研究”的数据与 Stata 代码（见本目录下的 `stata.txt`），对表5.4（城乡分组）与表5.5（种姓分组）进行了复现与对照：
+根据自审资料“印度研究”的数据与 Stata 代码（见本目录下的 [./stata.txt](./stata.txt))，对表5.4（城乡分组）与表5.5（种姓分组）进行了复现与对照：
 
 - 代码版本：自审文件声称“修正了错误”的版本；核心命令框架为
-  - 全样本（表5.4 列(1) 示例）：`reghdfe dv fertility1, a(state edu birthy marital religion caste UR) vce(cluster state)`
+  - 全样本（表5.4 列(1) 示例）：
+  ```stata
+  reghdfe dv fertility1, a(state edu birthy marital religion caste UR) vce(cluster state)
+  ```
   - 分组样本：按 UR 和 caste 条件估计 m1–m6，并用 esttab 汇总为表5.4/5.5。
 - 对照结果：见下图；绿色高亮=与自审“修正结果”一致，红色高亮=不一致。
 
@@ -232,7 +235,7 @@ data <- rbind(data1, list1, list2)
 - 表5.5：低种姓(5)与高种姓(6)与复现一致，但全样本(4)与复现不一致。
 - 可疑点：全样本(4)的数值呈现接近“分样本之和”的迹象，存在人为调整输出的合理怀疑。
 
-说明：上述判断基于相同代码、口径与聚类稳健标准误设定下的重跑结果；运行日志见 `./stata.txt`。
+说明：上述判断基于相同代码、口径与聚类稳健标准误设定下的重跑结果；运行日志见 [./stata.txt](./stata.txt)。
 
 ### 2) 回归拟合度极低，结论可靠性存疑
 
@@ -241,7 +244,7 @@ data <- rbind(data1, list1, list2)
 ![表5.4(1) 运行截图](./table5.4run.png)
 
 - 组内 R 方（Within R-sq.）仅 0.0034。吸收 state/教育/出生年/婚姻/宗教/种姓/城乡 等高维固定效应后，`fertility1` 对 `dv` 的“可解释剩余变异”约 0.34%。
-- 从 `./stata.txt` 可见，两期×三分组×两（共 12 次）回归中，无一列的组内 R 方超过 0.005，表示解释力极弱。
+- 从 [./stata.txt](./stata.txt) 可见，两期×三分组×两（共 12 次）回归中，无一列的组内 R 方超过 0.005，表示解释力极弱。
 - 因而，即便方向具统计显著，也难以据此作出“生育增加→家暴持续上升”的强断言；建议补充报告效应量/边际效应、抽样设计与加权、模型设定等，并披露可复现脚本与自动化导出产物，解释与自审“修正结果”的差异来源。
 
 小结：
@@ -496,10 +499,12 @@ Additional note (consistent with the main repo README, “Suspected Fabrication�
 
 ## 🧪 Stata-based Reproduction Check (Tables 5.4/5.5)
 
-Using the India-study data and Stata code provided in the self-review package (see `./stata.txt`), we reproduced Tables 5.4 (urban–rural groups) and 5.5 (caste groups):
+Using the India-study data and Stata code provided in the self-review package (see [./stata.txt](./stata.txt)), we reproduced Tables 5.4 (urban–rural groups) and 5.5 (caste groups):
 
 - Code version: the self-claimed “errors fixed” version. Core command for full sample (Table 5.4 col. (1)):
-  - `reghdfe dv fertility1, a(state edu birthy marital religion caste UR) vce(cluster state)`
+  ```stata
+  reghdfe dv fertility1, a(state edu birthy marital religion caste UR) vce(cluster state)
+  ```
   - Grouped runs by UR and caste generate m1–m6, summarized via esttab into Tables 5.4/5.5.
 - Side-by-side comparison: green cells match the self-review “revised results”; red cells do not.
 
@@ -520,7 +525,7 @@ For Table 5.4 full sample (1) (2005/06 wave):
 ![Table 5.4(1) run screenshot](./table5.4run.png)
 
 - Within R-sq. is only 0.0034: after absorbing high-dimensional FEs (state/education/birth year/marital/religion/caste/urban–rural), fertility1 explains about 0.34% of the remaining variation in dv.
-- From `./stata.txt`, none of the 12 regressions (two waves × three groupings × two) has Within R-sq. above 0.005, indicating extremely limited explanatory power.
+- From [./stata.txt](./stata.txt), none of the 12 regressions (two waves × three groupings × two) has Within R-sq. above 0.005, indicating extremely limited explanatory power.
 - Thus, even with statistical significance, the evidence does not support a strong claim that domestic violence “keeps rising” with fertility; practical significance, weighting/design, and model specification require more complete reporting, along with reproducible scripts and automated exports to explain the discrepancies.
 
 Takeaways:
@@ -539,13 +544,13 @@ Takeaways:
 
 and [stata.txt](./stata.txt).
 
-Exact code used (as quoted in the query):
+Exact code used (English-annotated version):
 
 ```stata
-* 修正了错误后的结果（和之前的回归结果相差不大，说明我的结果基本稳健）
+* Results after "fixing errors" (differences vs. previous runs are minor; author claims robustness)
 {
-*--> step2 回归
-// 按照城乡分组
+*--> step2 Regression
+// Group by urban–rural (UR)
 cap est drop *
 use $data/forreg05, clear
 reghdfe dv fertility1, a(state edu birthy marital religion caste UR) vce(cluster state)
@@ -566,7 +571,7 @@ esttab m*, keep(fertility1) star(* 0.1 ** 0.05 *** 0.01) title("table 5.4")
 	
 esttab m* using $output/table1_revised2025.rtf, replace keep(fertility1) star(* 0.1 ** 0.05 *** 0.01)	
 
-// 按照种姓情况分组
+// Group by caste
 cap est drop *
 use $data/forreg05, clear
 reghdfe dv fertility1, a(state edu birthy marital religion UR) vce(cluster state)
@@ -590,9 +595,6 @@ esttab m* using $output/table2_revised2025.rtf, replace keep(fertility1) star(* 
 
 }
 ```
-
-
-
 
 
 ## 🚨Academic Misconduct Implications
