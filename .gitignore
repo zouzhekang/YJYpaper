@@ -1,0 +1,29 @@
+# Temporary validation files
+*.tmp
+validation_*.txt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# LaTeX output files
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Editor files
+.vscode/
+.idea/
+*~
+.DS_Store
+
+# Temporary backup files
+*.bak
+*.backup
