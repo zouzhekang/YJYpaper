@@ -1168,11 +1168,19 @@ As shown above, 0.01% should be 1 out of 10,000 women.
 Data from Figure 2.15 on page 24 of the thesis (Figure 2.1 above) was extracted and linearly fitted (see Figure 2.2 above), yielding a linear fit of y=0.1067x R²=0.1083. Detailed data is available in the [attachment](./paper/testdata.csv).  
 Verification shows this data has an R² of only 0.1, proving that fertility quantity is almost unrelated to domestic violence incidence.  
 
-3. **Methodological Flaw in Cultural Measurement** (page 25, sixth line from bottom):   
+3. **Methodological Flaw in Cultural Measurement and Religious Bias** (page 25, sixth line from bottom):   
 
 >This thesis uses the number of Taoist temples per capita in each region to measure the degree of traditional thinking in that region
 
-**Analysis**: This represents a fundamental misunderstanding of cultural measurement. Religious distribution varies significantly across regions due to historical, geographical, and demographic factors unrelated to "traditional thinking." Using Taoist temple density as a proxy for traditionalism lacks theoretical foundation and empirical validity.
+**Methodological Error**: This represents a fundamental misunderstanding of cultural measurement. Religious distribution varies significantly across regions due to historical, geographical, and demographic factors unrelated to "traditional thinking." Using Taoist temple density as a proxy for traditionalism lacks theoretical foundation and empirical validity.
+
+**Religious Discrimination Issues**:
+- **Selective Religious Data Usage**: The thesis exclusively uses Taoist temple data while completely ignoring Buddhist temples, Christian churches, mosques, and other religious facilities, demonstrating obvious **selection bias**
+- **Lack of Religious Representativeness**: In China's multi-religious society, Buddhism, Christianity, Islam, and other religions have significant influence across different regions. Using only Taoist data creates serious **representational bias**
+- **Methodological Discrimination**: Without any theoretical or empirical justification, the thesis equates Taoism with "traditional thought" while excluding other religions, constituting systematic **religious discrimination**
+- **Logical Contradiction**: If the author indeed has Buddhist background as alleged (such as copying Buddhist scriptures), yet deliberately excludes Buddhist facility data in academic research, this further highlights the **bias** and **dishonesty** in research methodology
+
+This issue not only violates the **objectivity principle** of academic research but may also involve **religious discrimination** ethical concerns, seriously undermining the fairness and credibility of academic scholarship.
 
 4. **Statistical Overfitting** (Figure 2.18, page 26):  
 
@@ -1667,7 +1675,21 @@ Are references in Wuhan University School of Economics and Management theses sor
 
 ### Ethical Considerations in Research Design
 
-**Analysis**: This thesis attempts to establish causal relationships between domestic violence and fertility, traditional culture, religion, and women's employment despite demonstrably poor data fit (R² = 0.1). The forced association of domestic violence with cultural and religious factors, particularly given the methodological deficiencies identified above, raises serious questions about research ethics and responsible scholarship. Such analyses risk perpetuating harmful stereotypes and may contribute to discriminatory attitudes toward specific cultural or religious communities.  
+**Analysis**: This thesis attempts to establish causal relationships between domestic violence and fertility, traditional culture, religion, and women's employment despite demonstrably poor data fit (R² = 0.1). The forced association of domestic violence with cultural and religious factors, particularly given the methodological deficiencies identified above, raises serious questions about research ethics and responsible scholarship. Such analyses risk perpetuating harmful stereotypes and may contribute to discriminatory attitudes toward specific cultural or religious communities.
+
+#### Religious Discrimination in Research Methodology
+
+The thesis demonstrates systematic **religious discrimination** and **selection bias** in its use of religious data:
+
+1. **Exclusive Religious Data Selection**: Page 25 exclusively uses "per capita Taoist temple data by region" to measure regional traditional thinking levels, completely ignoring Buddhist temples, Christian churches, mosques, and other religious facilities.
+
+2. **Lack of Religious Representativeness**: As a multi-religious society, China has significant influence from Buddhism, Christianity, Islam, and other religions across different regions. Selecting only Taoist data creates serious **representational bias**.
+
+3. **Methodological Discrimination**: Without any theoretical or empirical foundation, the thesis equates Taoism with "traditional thought" while excluding other religions, constituting systematic **religious discrimination**.
+
+4. **Logical Inconsistency**: If the author indeed has Buddhist background as rumored (such as copying Buddhist scriptures), yet deliberately excludes Buddhist facility data in academic research, this further highlights the **bias** and **dishonesty** in research methodology.
+
+This issue not only violates the **objectivity principle** of academic research but may also involve **religious discrimination** ethical concerns, seriously undermining the fairness and credibility of academic scholarship.  
 
 ### Bibliographic Irregularities
 
