@@ -1773,10 +1773,10 @@ By conducting a full-text search for the first author (Yang did not use referenc
 ```
 A total of 67 references, which constitute more than half of all the references listed in the bibliography.
 
-14. Reference format does not comply with Wuhan University School of Economics and Management master's thesis standards  
+13. Reference format does not comply with Wuhan University School of Economics and Management master's thesis standards  
 References [100] to [107], no space between number and name (after ])  
 
-15. **Systematic Misuse of Pollak (2004): Misrepresentation of Intergenerational Domestic Violence Model**
+14. **Systematic Misuse of Pollak (2004): Misrepresentation of Intergenerational Domestic Violence Model**
 
 The thesis repeatedly cites Pollak (2004)'s "Intergenerational Model of Domestic Violence" but demonstrates severe misinterpretation and academic misrepresentation across multiple instances:
 
