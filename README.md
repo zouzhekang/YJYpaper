@@ -43,7 +43,11 @@
 
 ❗博主（李然于心）被粉衣哥带几个金哥深夜登门拜访了！！！视频在[夸克网盘](https://pan.quark.cn/s/10cebfa84661#/list/share)，顿时有点害怕捏！！！  
 
+包含上条内容的防和谐网盘：[Filen 网盘](https://app.filen.io/#/d/7f673014-ec87-4236-9228-7c2c27726cc6%23564d68592d62306543534b785a593942784a544a4a6f716c74615f5a302d3333)
+
 杨景媛的硕士学位论文调查审核网盘：[夸克网盘](https://pan.quark.cn/s/b94924fdb2c0)，有本项目缺少的印度数据。
+
+包含上条内容的防和谐网盘：[Filen 网盘](https://app.filen.io/#/d/66a36ea8-d79f-4ce1-b42b-181db8945869%23rlwmiGuBFtR7Nl1JoheSdto2Y0UxafPg)，解压后大小为5.45GB(MacOS 基准)。
 
 友情链接：[杨景媛事件相关](https://github.com/yangjingyuan0828/awesome-yangjingyuan)
 
