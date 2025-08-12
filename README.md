@@ -849,7 +849,11 @@ c^f + c^m = (1+\alpha)(w^f + w^m - \phi b)
 例如第九至十页1.2.2小节引用的论文，我在参考文献中大部分都找不到。
 
 12. 参考文献内容疑似未在正文引用  
-参考文献[90], [91], [96], [97], [99], [68] 未在正文中找到
+通过对第一作者进行全文检索（杨在正文中并没有使用参考文献编号来进行引用），发现以下参考文献在正文中没有被引用：
+```
+[2], [3], [4], [5], [6], [8], [9], [10], [11], [13], [14], [15], [16], [17], [18], [19], [20], [21], [22], [23], [25], [28], [29], [31], [32], [33], [34], [37], [38], [39], [41], [42], [45], [46], [48], [49], [51], [52], [53], [54], [55], [58], [61], [62], [64], [66], [68], [70], [72], [73], [75], [76], [77], [80], [89], [90], [91], [92], [93], [94], [96], [97], [98], [99], [100], [104], [105]
+```
+共计 67 条，占参考文献总数的一半以上。
 
 13. 参考文献格式不符合武汉大学经管学院硕士学位论文规范  
 参考文献[100]到[107]，序号与姓名间（]之后）无空格  
@@ -1763,7 +1767,11 @@ Paper URL: https://www.aeaweb.org/articles?id=10.1257/00028280260344588
 For example, the papers cited in section 1.2.2 on pages 9-10, most cannot be found in the reference list.
 
 12. Reference content suspected not cited in main text  
-References [90], [91], [96], [97], [99], [68] not found in main text
+By conducting a full-text search for the first author (Yang did not use reference number for citations in the main text), it was found that the following references were not cited in the main text:
+```
+[2], [3], [4], [5], [6], [8], [9], [10], [11], [13], [14], [15], [16], [17], [18], [19], [20], [21], [22], [23], [25], [28], [29], [31], [32], [33], [34], [37], [38], [39], [41], [42], [45], [46], [48], [49], [51], [52], [53], [54], [55], [58], [61], [62], [64], [66], [68], [70], [72], [73], [75], [76], [77], [80], [89], [90], [91], [92], [93], [94], [96], [97], [98], [99], [100], [104], [105]
+```
+A total of 67 references, which constitute more than half of all the references listed in the bibliography.
 
 13. Reference format does not comply with Wuhan University School of Economics and Management master's thesis standards  
 References [100] to [107], no space between number and name (after ])  
